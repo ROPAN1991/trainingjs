@@ -164,3 +164,15 @@ const finalSettings = {
 
 // console.log(finalSettings)
 
+// --------------------------- деструктуризація об'єктів
+
+const playlist = {
+  name: 'Мій суперплейлист',
+  rating: 5,
+  tracks: ['track-1', 'track-2', 'track-3'],
+  trackCount: 3
+} 
+
+const {name, rating, tracks, trackCount} = playlist
+
+// console.log(name, rating, tracks, trackCount)
