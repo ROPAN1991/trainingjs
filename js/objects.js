@@ -173,6 +173,102 @@ const playlist = {
   trackCount: 3
 } 
 
-const {name, rating, tracks, trackCount} = playlist
+// const {name, rating, tracks, trackCount} = playlist
+
+// --------------- щоб перейменувати локальну змінну через свойство на об'єкт
+
+// const {name, 
+//   rating, 
+//   tracks, 
+//   trackCount: numberOfTracks
+// } = playlist
+
+// console.log(numberOfTracks)
 
 // console.log(name, rating, tracks, trackCount)
+
+// ----------------------------- диструктуризація в глибину об'єктів 
+
+const profile = {
+  profileName: 'John Smith',
+  tag: 'jhnsmt',
+  locationProfile: 'Ocho Rios, Jamaika',
+  avatar: 'https://www.instagram.com/',
+  stats: {
+    folowers: 5603,
+    views: 4827,
+    likes: 1308
+  }
+}
+
+const {
+  profileName,
+  tag,
+  locationProfile,
+  avatar,
+  stats: { folowers, views, likes },
+} = profile;
+
+// console.log(profileName, tag, locationProfile, avatar, folowers, views, likes)
+
+// --------------------------- приклад деструктуризації масивів 
+
+const rgb = [ 255, 100, 80 ];
+const [red, green, blue] = rgb;
+
+// console.log(red, green, blue)
+
+// ---------------------------------------- знати найбільший рейтинг і вивести ім'я і рейтинг. ТРЕБА ВИРІШИТИ!!!!!!
+
+// const authors = {
+//   ben: 4,
+//   jack: 7,
+//   tom: 9,
+//   smith: 6
+// }
+
+// const entries = Object.entries(authors);
+
+// for (const [theName, theRating] of entries ) {
+//   console.log(theName, theRating)
+// }
+
+// ----------------------------------- забираємо частину свойств в локальну змінну, а все інше що не диструктуризували забираємно на змінну
+
+// const profileTwo = {
+//   profileNameTwo: 'Ben Clock',
+//   tagTwo: 'bnclk',
+//   locationTwo: 'Ukraine, Kyiv',
+//   avatarTwo: 'https://www.facebook.com/',
+//   statsTwo: {
+//     folowersTwo: 5603,
+//     viewsTwo: 4827,
+//     likesTwo: 1308
+//   }
+// }
+
+// const {profileNameTwo, tagTwo, locationTwo, ...restProps} = profileTwo;
+// console.log(profileNameTwo, tagTwo, locationTwo);
+// console.log(restProps)
+
+// ------------------------------------- патерн об'єкт налаштувань
+
+
+const showProfileInfo = function (userProfile) {
+  const {profiletThree, tagThree, locationThree, ...restProps} = userProfile;
+  console.log(restProps)
+};
+
+const profiletThree = {
+  profileNameThree: 'Snoop Dogg',
+  tagThree: 'snd',
+  locationThree: 'USA, New York',
+  avatarThree: 'https://www.google.com/',
+  statsThree: {
+    folowersThree: 10000000,
+    viewsThree: 868680698068,
+    likesThree: 124325676
+  }
+}
+
+// showProfileInfo(profile)
