@@ -128,4 +128,19 @@ const currentTemps = [4, 5, 6];
 const nextWeekTemps = [6, 7, 8];
 
 const allTemps = [...lastWeekTemps, ...currentTemps, ...nextWeekTemps];
-console.log(allTemps)
+// console.log(allTemps)
+
+// ----------------------------- роспиляємо об'єкти
+
+const a = { x: 1, y: 2 };
+const b = { x: 0, z: 3 };
+
+const c = {
+  ...a,
+  x: 10,
+  ...b,
+  y: 20
+}
+
+// console.log(c)
+
