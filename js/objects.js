@@ -144,3 +144,23 @@ const c = {
 
 // console.log(c)
 
+// -------------------------- змінюємо налаштування на сайті 
+
+const defaultSettings = {
+  theme: "light",
+  showNotifications: true,
+  hideSudebar: false,
+};
+
+const userSettings = {
+  showNotifications: false,
+  hideSudebar: true,
+}
+
+const finalSettings = {
+  ...defaultSettings,
+  ...userSettings,
+}
+
+// console.log(finalSettings)
+
