@@ -314,20 +314,120 @@
 
 // 4) Метод shift() видаляє один або декілька елементів напочатку масиву
 
-const numbers = [5, 4, 3, 2, 1];
+// const numbers = [5, 4, 3, 2, 1];
 
-console.log(numbers.shift()); // [4, 3, 2, 1]
-console.log(numbers)
+// console.log(numbers.shift()); // [4, 3, 2, 1]
+// console.log(numbers)
 
-console.log(numbers.shift()); // [3, 2, 1]
-console.log(numbers)
+// console.log(numbers.shift()); // [3, 2, 1]
+// console.log(numbers)
 
-console.log(numbers.shift()); // [2, 1]
-console.log(numbers)
+// console.log(numbers.shift()); // [2, 1]
+// console.log(numbers)
 
-console.log(numbers.shift()); // [1]
-console.log(numbers)
+// console.log(numbers.shift()); // [1]
+// console.log(numbers)
 
-console.log(numbers.shift()); // []
-console.log(numbers)
+// console.log(numbers.shift()); // []
+// console.log(numbers)
 
+
+// ----------------------------------------Метод slice()-----------------------------------------------
+
+// slice(begin, end) повертає новий масив, що містить копію частини вихідного масиву, не змінюючи його. Копія створюється з begin і до, але не включно, end - індекси елементів вихідного масиву.
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi", "Lime", "Banan"];
+// console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
+
+// Якщо begin і end не зазначені, буде створена повна копія вихідного масиву.
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice()); // ["Mango", Ajax", "Poly", "Kiwi"]
+
+// Якщо не зазначено end, копіювання буде зі start і до кінця вихідного масиву.
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1)); // ["Ajax", "Poly", "Kiwi"]
+// console.log(clients.slice(2)); // ["Poly", "Kiwi"]
+
+// Якщо значення start від'ємне, а end не зазначено - будуть скопійовані останні start елементи
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(-2)); // ["Poly", "Kiwi"]
+
+// ---------------------------------------------Метод splice()---------------------------------------------------
+
+// Щоб видалити елементи в масиві, передаються два аргументи.
+
+// position - вказує на позицію (індекс) першого елемента для видалення
+// num - визначає кількість елементів, що видаляються
+
+// Метод splice змінює вихідний масив і повертає масив, що містить видалені елементи. Наприклад, у нас є масив оцінок, який містить п'ять чисел від 1 до 5.
+
+// const scores = [1, 2, 3, 4, 5];
+
+// // Видаляємо три елементи масиву, починаючи з першого елемента 
+
+// const deletedScores = scores.splice(0, 3);
+
+// // Тепер масив scores містить два елементи
+// console.log(scores); // [4, 5]
+
+// // А масив deletedScores містить три видалені елементи
+// console.log(deletedScores); // [1, 2, 3]
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// const deletedNumbers = numbers.splice(3, 5)
+// console.log(numbers)
+// console.log(deletedNumbers)
+
+// Для того, щоб додати один або декілька елементів в масив, необхідно передати три або більше аргументи, за такої умови, другий аргумент повинен дорівнювати нулю.
+
+// splice(position, 0, new_element_1, new_element_2, ...)
+
+// 1)Аргумент position вказує початкову позицію в масиві, куди будуть вставлені нові елементи.
+// 2)Другий аргумент - це нуль, він говорить методу не видаляти елементи в місці додавання нових.
+// 3)Третій, четвертий і всі наступні аргументи - це нові елементи, які додаються в масив.
+
+// const colors = ["red", "green", "blue"];
+
+// colors.splice(2, 0, "purple");
+// console.log(colors); // ["red", "green", "purple", "blue"]
+
+// Заміна - це операція додавання, в якій видаляються елементи в місці додавання нових. Для цього необхідно передати мінімум три аргументи. Кількість елементів, що видаляються і додаються, може не збігатися.
+
+// splice(position, num, new_element_1, new_element_2, ...)
+
+// 1)position - вказує на позицію (індекс) першого елемента для видалення
+// 2)num - визначає кількість елементів, що видаляються
+// 3)Третій, четвертий і всі наступні аргументи - це нові елементи, які додаються в масив.
+
+// const languages = ["C", "C++", "Java", "JavaScript"];
+
+// // Заміняємо елемент з індексом 1 на новий
+// languages.splice(1, 1, "Python");
+// console.log(languages); // ["C", "Python", "Java", "JavaScript"]
+
+// // Заміняємо один елемент (з індексом 2) на декілька
+// languages.splice(2, 1, "C#", "Swift", "Go");
+// console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
+
+// const colors = ['red', 'green', 'yelow']
+// const addColors = colors.splice(1, 2, 'dark', 'silver')
+// console.log(colors)
+
+// --------------------------------------------Метод concat()---------------------------------------------------
+
+// Об'єднує два або більше масивів в один. Він не змінює масив, на якому викликається, а повертає новий. Порядок аргументів методу впливає на порядок елементів нового масиву.
+
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Monkong", "Singu"];
+
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst); // ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"]
+
+// const allClientsWithNewFirst = newClients.concat(oldClients);
+// console.log(allClientsWithNewFirst); // ["Monkong", "Singu", "Mango", "Ajax", "Poly", "Kiwi"]
+
+// console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
+// console.log(newClients); // ["Monkong", "Singu"]
