@@ -477,3 +477,42 @@
   
 //   const values = Object.values(book);
 //   console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+
+// Масив значень властивостей також можна перебрати циклом for...of, наприклад, для отримання загальної суми числових значень.
+
+// Припустимо, що нам потрібно порахувати загальну кількість продуктів в об'єкті формату ім'я-продукту: кількість. У такому випадку, буде доречним метод Object.values() для того, щоб отримати масив усіх значень, а потім зручно додати їх.
+
+// const goods = {
+//     apples: 6,
+//     grapes: 3,
+//     bread: 4,
+//     cheese: 7,
+//   };
+  
+//   const values = Object.values(goods); // [6, 3, 4, 7]
+  
+//   let total = 0;
+  
+//   for (const value of values) {
+//     total += value;
+//   }
+  
+//   console.log(total); // 20
+
+// --------------------------------------------------Метод Object.entries()-повертає масив імені властивості і значення----------------------
+
+// Метод Object.entries(obj) повертає масив записів, кожен елемент якого, буде ще один масив з 2-х елементів: імені властивості і значення цієї властивості з об'єкта obj.
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   };
+//   const keys = Object.keys(book);
+//   console.log(keys); // ['title', 'author', 'rating']
+  
+//   const values = Object.values(book);
+//   console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+  
+//   const entries = Object.entries(book);
+//   // [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
