@@ -640,11 +640,11 @@ const students = [
 
 // Позбутися таких «мертвих» змінних можна за допомогою групування викликів методів у ланцюжку. Кожний наступний метод буде виконуватися на основі результату роботи попереднього.
 
-const names = [...students]
-  .sort((a, b) => a.score - b.score)
-  .map(student => student.name);
+// const names = [...students]
+//   .sort((a, b) => a.score - b.score)
+//   .map(student => student.name);
 
-console.log(names); // ['Аякс', 'Полі', 'Манго', 'Ківі']
+// console.log(names); // ['Аякс', 'Полі', 'Манго', 'Ківі']
 
 // 1.Робимо копію вихідного масиву перед сортуванням.
 // 2.На копії викликаємо метод sort().
@@ -652,12 +652,12 @@ console.log(names); // ['Аякс', 'Полі', 'Манго', 'Ківі']
 // 4.Змінній names присвоюється результат роботи методу map().
 // 5.Отримаємо масив унікальних відвідуваних предметів, відсортований за алфавітом.
 
-const uniqueSortedCourses = students
-  .flatMap(student => student.courses)
-  .filter((course, index, array) => array.indexOf(course) === index)
-  .sort((a, b) => a.localeCompare(b));
+// const uniqueSortedCourses = students
+//   .flatMap(student => student.courses)
+//   .filter((course, index, array) => array.indexOf(course) === index)
+//   .sort((a, b) => a.localeCompare(b));
 
-console.log(uniqueSortedCourses); // ['біологія', 'інформатика', 'література', 'математика', 'фізика']
+// console.log(uniqueSortedCourses); // ['біологія', 'інформатика', 'література', 'математика', 'фізика']
 
 // 1.На вихідному масиві викликаємо flatMap() і робимо розгладжений масив усіх курсів.
 // 2.До результату методу flatMap() застосовуємо метод filter() для фільтрації унікальних елементів.
