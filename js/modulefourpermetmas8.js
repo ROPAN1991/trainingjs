@@ -452,14 +452,14 @@
   
 //   // Мабуть, збирання тегів - не одиночна операція, тому напишемо функцію
 //   // для збирання тегів з колекції
-//   const getTags = tweets =>
-//     tweets.reduce((allTags, tweet) => {
-//       allTags.push(...tweet.tags);
+  // const getTags = tweets =>
+  //   tweets.reduce((allTags, tweet) => {
+  //     allTags.push(...tweet.tags);
   
-//       return allTags;
-//     }, []);
+  //     return allTags;
+  //   }, []);
   
-//   console.log(getTags(tweets));
+  // console.log(getTags(tweets));
 
 //   Після того, як ми зібрали всі теги з постів, добре б було порахувати кількість унікальних тегів в масиві. І знову reduce стане в пригоді.
 
@@ -479,6 +479,7 @@
 //     }, []);
   
 //   const tags = getTags(tweets);
+
   
 //   // Винесемо callback-функцію окремо, а в reducе передамо посилання на неї.
 //   // Це стандартна практика, якщо callback-функція досить велика.
@@ -486,21 +487,23 @@
 //   // Якщо в об'єкті-акумуляторі acc відсутня своя властивість з ключем tag,
 //   // то створюємо її і записуємо їй значення 0.
 //   // В іншому випадку збільшуємо значення на 1.
-//   const getTagStats = (acc, tag) => {
-//     if (!acc.hasOwnProperty(tag)) {
-//       acc[tag] = 0;
-//     }
+  // const getTagStats = (acc, tag) => {
+  //   if (!acc.hasOwnProperty(tag)) {
+  //     acc[tag] = 0;
+  //   }
   
-//     acc[tag] += 1;
+  //   acc[tag] += 1;
   
-//     return acc;
-//   };
+  //   return acc;
+  // };
+
+ 
   
-//   // Початкове значення акумулятора - це порожній об'єкт {}
-//   const countTags = tags => tags.reduce(getTagStats, {});
+  // Початкове значення акумулятора - це порожній об'єкт {}
+  // const countTags = tags => tags.reduce(getTagStats, {});
   
-//   const tagCount = countTags(tags);
-//   console.log(tagCount);
+  // const tagCount = countTags(tags);
+  // console.log(tagCount);
 
 // --------------------------------------------------------------Метод sort()---------------------------------------------------------------
 
@@ -622,12 +625,12 @@
 
 // У нас є масив об'єктів з іменами, балами і відвідуваними предметами кожного студента.
 
-const students = [
-    { name: "Манго", score: 83, courses: ["математика", "фізика"] },
-    { name: "Полі", score: 59, courses: ["інформатика", "математика"] },
-    { name: "Аякс", score: 37, courses: ["фізика", "біологія"] },
-    { name: "Ківі", score: 94, courses: ["література", "інформатика"] },
-  ];
+// const students = [
+//     { name: "Манго", score: 83, courses: ["математика", "фізика"] },
+//     { name: "Полі", score: 59, courses: ["інформатика", "математика"] },
+//     { name: "Аякс", score: 37, courses: ["фізика", "біологія"] },
+//     { name: "Ківі", score: 94, courses: ["література", "інформатика"] },
+//   ];
 
 //   Необхідно отримати масив їхніх імен, відсортованих за зростанням балів за тест. З цією метою ми відсортуємо копію масиву методом sort(), після чого методом map() створимо масив значень властивості name з відсортованого масиву.
 
