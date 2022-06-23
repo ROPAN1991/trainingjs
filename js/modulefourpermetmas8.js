@@ -568,6 +568,15 @@
 // const descendingScores = [...scores].sort((a, b) => b - a);
 // console.log(descendingScores); // [92, 74, 61, 56, 35, 19]
 
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a,b) => a - b );
+
+// const descendingReleaseDates = [...releaseDates].sort((a,b) => b - a);
+
+
 // ----------------------------------------------Свій порядок сортування рядків-------------------------------------------------------------
 
 // Для сортування рядків в алфавітному порядку, за зростанням або спаданням, використовується метод рядків localeCompare().
@@ -594,6 +603,38 @@
 
 // const inReversedOrder = [...students].sort((a, b) => b.localeCompare(a));
 // console.log(inReversedOrder); // ['Юля', 'Олег', 'Катя', 'Віка', 'Борис', 'Андрій']
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a,b)=> a - b);
+
+// const alphabeticalAuthors = [...authors].sort((a, b) => {
+//   if (a > b) {
+//     return 1
+//   }
+//   if (a < b) {
+//     return -1
+//   }
+
+// });
+
+
+// const sortByDescendingFriendCount = users => {
+//   return [...users].sort((a,b) => b.friends.length - a.friends.length)   
+//  };
+
+//  console.log(sortByDescendingFriendCount(users))
+
+
+
+
 
 // ---------------------------------------------------Сортування об'єктів----------------------------------------------------------------
 
@@ -668,6 +709,10 @@
 // 4.Змінній uniqueSortedCourses присвоюється результат роботи методу sort().
 
 // Ланцюжок методів може бути довільної довжини, але, зазвичай, не більше 2-3 операцій. По-перше, перебираючі методи використовуються для порівняно простих операцій над колекцією. По-друге, виклик кожного наступного методу - це додаткове перебирання масиву, що за великої кількості, може позначитися на продуктивності.
+
+
+
+
 
 
 
