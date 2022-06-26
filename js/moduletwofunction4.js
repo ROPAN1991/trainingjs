@@ -73,6 +73,31 @@
 //   count(2); // countFrom = 2, countTo = 10, step = 1
 //   count(); // countFrom = 0, countTo = 10, step = 1
 
+// function count(countFrom = 0, countTo = 11, step = 1) {
+//   console.log(`countFrom: ${countFrom}, countTo: ${countTo}, step: ${step}`);
+
+//   for (let i = countFrom; i <= countTo; i += step) {
+//     console.log(i)
+//   }
+// }
+
+// count(1, 3)
+// count(2)
+// count()
+
+// function count (countFrom = 0, countTo = 20, step = 1) {
+//   console.log(`countFrom: ${countFrom}, countTo: ${countTo}, step: ${step}`)
+
+//   for (let i = countFrom; i <= countTo; i += step) {
+//     console.log(i)
+//   }
+// }
+
+// count (1, 11)
+// count(3, 9)
+// count (2)
+// count()
+
 // -----------------------------------------------------псевдомасив arguments------------------------------------------------------------------
 
 // Доступ до списку всіх аргументів можна отримати за допомогою спеціальної змінної arguments, яка доступна тільки всередині функції і зберігає всі аргументи у якості псевдомасиву.
@@ -95,6 +120,31 @@
 //   console.log(multiply(1, 2, 3, 4)); //  24
 //   console.log(multiply(1, 2, 3, 4, 5)); //  120
 
+// function multiply () {
+//   let total = 1;
+
+//   for (const argument of arguments) {
+//       total *= argument
+//   }
+//   return total
+// }
+
+// console.log(multiply(3,4,5))
+// console.log(multiply(2,3,7))
+// console.log(multiply(3,3,3))
+
+// function plus () {
+//   let total = 0
+
+//   for (const argument of arguments) {
+//     total += argument
+//   }
+//   return total
+// }
+
+// console.log(plus(3,4,2))
+// console.log(plus(1,2,2))
+// console.log(plus(5,2,4))
 // ---------------------------------------------перетворення псевдомасиву-------------------------------------------------------------
 
 // Зазвичай псевдомасив необхідно перетворити у повноцінний масив, оскільки у псевдомасиву відсутні методи масиву, наприклад slice() або includes(). На практиці застосовують декілька основних способів.
@@ -104,6 +154,7 @@
 // function fn() {
 //     // Змінна args буде містити повноцінний масив
 //     const args = Array.from(arguments);
+    
     
 //   }
 
@@ -172,13 +223,49 @@
 //     console.log(`Результат множення дорівнює ${x * y * z}`);
 //   }
 //   multiply(2,3,4)
-  
+
+  // function plus (a,b,c) {
+  //   console.log(`результат додавання ${a + b + c}`)
+  // }
+
+  // plus(1,2,4)
+
+  // function minus (a,b,c) {
+  //   console.log(`результат віднімнання ${a - b - c}`)
+  // }
+  // minus(10, 2, 1)
+
+  // function division (a, b, c) {
+  //   console.log(`операція ділення ${a / b / c}`)
+  // }
+  // division(9,3,3)
+
   // Функціональний вираз (function expression)
 //   const multiply = function (x, y, z) {
 //     console.log(`Результат множення дорівнює ${x * y * z}`);
 //   };
 // multiply(1,2,3)
 
+// const plus = function (a,b,c) {
+//   console.log(`операція додавання ${a + b + c}`)
+// }
+// plus(3,3,3)
+// plus(1,3,5)
+// plus(5,4,4)
+
+// const minus = function (a,b,c) {
+//   console.log(`операція віднімання ${a - b - c}`)
+// }
+// minus(10, 1, 2)
+// minus(5, 3, 2)
+// minus(7,2,2)
+
+// const division = function (a,b,c) {
+//   console.log(`операція ділення ${a / b / c}`)
+// }
+// division (9,3,3)
+// division (4,2,1)
+// division (12,3,2)
 // Різниця в тому, що функціональний вираз не можна викликати до місця його створення, тільки після нього, тому що це буквально оголошення const змінної.
 
 // // ❌ Помилка! Не працює виклик до оголошення
@@ -229,6 +316,49 @@
 //   }
 // }
 
+// const globalNumber = 9
+// console.log(globalNumber)
+
+// function num() {
+//   console.log(globalNumber)
+// }
+
+// for (let i = 0; i < 7; i +=1) {
+//   console.log(globalNumber)
+//   if (i === 3) {
+//     console.log(globalNumber)
+//   }
+// }
+
+// const globalScope = 25
+// console.log(globalScope);
+
+// function scope () {
+//   console.log(globalScope)
+// }
+
+// for(let i = 0; i < 25; i += 1) {
+//   console.log(globalScope)
+//   if (i === 5) {
+//     console.log(globalScope)
+// }
+
+// }
+
+// const globalNumberTwo = 7
+// console.log(globalNumberTwo);
+
+// function numberTwo () {
+//   console.log(globalNumberTwo)
+// }
+
+// for (let i = 0; i < 7; i += 1) {
+//   console.log(globalNumberTwo)
+//   if (i === 4) {
+//     console.log(globalNumberTwo)
+//   }
+// }
+
 // --------------------------------------------блочна область видимості-------------------------------------------------
 
 // Змінні, оголошені всередині інструкцій if, for, функцій та інших блоків коду, взятих у фігурні дужки {}, знаходяться в блоковій області видимості і доступні тільки всередині цього блоку коду або у блоках, вкладених в нього.
@@ -246,13 +376,15 @@
 //     }
 //   }
 
+//   foo()
+
 // //   // ❌ Помилка! Змінна a - недоступна у глобальній області видимості
-// //   console.log(a);
+  // console.log(a);
   
-// //   for (let i = 0; i < 3; i++) {
+  // for (let i = 0; i < 3; i++) {
 // //     // ❌ Помилка! Змінна a - недоступна в цій області видимості
-// //     console.log(a);
-// //   }
+  //   console.log(a);
+  // }
 
 // Це можна уявити у вигляді будинку з кімнатами. Будинок знаходиться в глобальній області видимості. Кожна функція і блок створюють нову кімнату, вкладену всередину будинку. Змінні, оголошені всередині цих кімнат, доступні тільки тоді, коли ви знаходитесь всередині цієї кімнати. За межами кімнати ці змінні - недоступні.
 

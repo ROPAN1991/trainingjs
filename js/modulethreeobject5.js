@@ -24,6 +24,7 @@
 //     "likes birds": true  // имя свойства из нескольких слов должно быть в кавычках
 //   };
 
+// console.log(user)
 // --------------------------------------------------------влкадені властивості---------------------------------------------------------------
 
 // Значенням властивості може бути інший об'єкт, для того, щоб зберігати вкладені і згруповані дані. Наприклад, статистика користувача соціальної мережі складається з кількості відстежувачів, переглядів і лайків, і зберігати ці дані найзручніше у вигляді об'єкта. Те саме з місцем розташування - окремо країна і місто.
@@ -68,6 +69,7 @@
 //   const bookPrice = book.price;
 //   console.log(bookPrice); // undefined
 
+
 // -----------------------------------------------------Звернення до вкладених властивостей---------------------------------------------------
 
 // Для доступу до вкладених властивостей використовується ланцюжок звернень «через крапку». Наприклад, якщо необхідно отримати значення країни користувача, записуємо user.location.country, де user.location - це звернення (шлях) до об'єкта у властивості location, а user.locaton.country звернення до властивості country у цьому об'єкті. Тобто «крапка» вказує наступну вкладеність.
@@ -87,6 +89,46 @@
   
 //   const country = user.location.country;
 //   console.log(country); // 'Jamaica'
+
+
+// const user = {
+//     name: "ROPAN",
+//     age: 30,
+//     stats: {
+//         folowers: 20,
+//         likes: 13,
+//     },
+//     hobbies: ["swiming", "dancing", "fighting"]
+// }
+
+// const howOld = user.age
+// console.log(howOld)
+
+// const hobbiesUser = user.hobbies
+// console.log(hobbiesUser[0])
+
+// const userStatsLikes = user.stats.likes
+// console.log(userStatsLikes)
+
+// const user = {
+//     name: "Ruban",
+//     age: 26,
+//     hobbies: ["cinema", "sport", "music"],
+//     home: {
+//         country: "Ukraine",
+//         city: "Zvenihorodka",
+//     }
+// }
+
+// const userAge = user.age
+// console.log(userAge)
+
+// const userHobbies = user.hobbies
+// console.log(user.hobbies[1])
+
+// const userHome = user.home.city
+// console.log(userHome)
+
 
 // Якщо значення властивості - це масив, тоді у нашому прикладі user.hobbies - звернення до цього масиву. Далі можна отримати доступ до його елементів через квадратні дужки та індекс, або використовувати властивості і методи.
 
@@ -129,6 +171,8 @@
 //   const propKey = "author";
 //   const bookAuthor = book[propKey];
 //   console.log(bookAuthor); // 'Bernard Cornwell'
+
+
 
 // --------------------------------------------------------Зміна значення властивості------------------------------------------------------
 
@@ -188,6 +232,42 @@
 //   console.log(book.translations); // ['ua', 'pl']
  
 
+// const track = {
+//     name: "Good Day",
+//     author: "Dj Break",
+//     genres: ["Techno", "Deep Techno"],
+//     rating: 4,
+// };
+
+// track.price = 30;
+// track.originalLanguage = "Eanglish";
+// track.recording = ["UK", "USA"];
+
+// console.log(track)
+
+// const shoose = {
+//     name: "Nike",
+//     model: "Promodel Ropan",
+//     year: "2027",
+// }
+
+// shoose.price = 150;
+// shoose.genre = ['sport', 'training', 'walk'];
+// shoose.location = {country: "ukraine", city: "kyiv"}
+
+// console.log(shoose)
+
+// const magazine = {
+//     prod1: "Icecream",
+//     prod2: "Water",
+//     date: 22062022
+// }
+
+// magazine.name = "Bublik";
+// magazine.type = ["products", "chemical"]
+// magazine.location = {country: "Ukraine", city: "Pryluki"}
+
+// console.log(magazine)
 // --------------------------------------------------Короткі властивості-------------------------------------------------------
 
 // Іноді, під час створення об'єкта значення властивості необхідно взяти зі змінної або параметра функції з таким самим ім'ям, що і у властивості.
@@ -255,7 +335,7 @@
 //       console.log("Цей метод буде повертати всі книги - властивість books");
 //     },
 //     // Це метод об'єкта
-//     addBook(bookName) {
+//     addBook() {
 //       console.log("Цей метод буде додавати нову книгу у властивість books");
 //     },
 //   };
@@ -321,7 +401,7 @@
 //   musicBox.addSongs('Dream')
 //   console.log(musicBox.getSongs())
 //   musicBox.removeSong('Girl')
-//   console.log(musicBox.getSongs)
+//   console.log(musicBox.getSongs())
   
 // const videoBox = {
 //     videos: ['fight', 'sports', 'weather'],
@@ -422,6 +502,8 @@
 //     genres: ["historical prose", "adventure"],
 //     rating: 8.38,
 //   };
+
+// console.log(book)
   
 //   for (const key in book) {
 //     // Якщо це власна властивість - виконуємо тіло if
@@ -454,6 +536,8 @@
 //     genres: ["historical prose", "adventure"],
 //     rating: 8.38,
 //   };
+
+//   console.log(book)
 //   const keys = Object.keys(book);
   
 //   for (const key of keys) {
@@ -521,23 +605,25 @@
 
 // Стандартний набір повсякденних завдань розробника містить маніпуляцію масивом однотипних об'єктів. Це означає, що всі об'єкти в масиві гарантовано матимуть однаковий набір властивостей, але з різними значеннями.
 
-// const books = [
-//     {
-//       title: "The Last Kingdom",
-//       author: "Bernard Cornwell",
-//       rating: 8.38,
-//     },
-//     {
-//       title: "На березі спокійних вод",
-//       author: "Роберт Шеклі",
-//       rating: 8.51,
-//     },
-//     {
-//       title: "Сон смішної людини",
-//       author: "Федір Достоєвський",
-//       rating: 7.75,
-//     },
-//   ];
+const books = [
+    {
+      title: "The Last Kingdom",
+      author: "Bernard Cornwell",
+      rating: 8.38,
+    },
+    {
+      title: "На березі спокійних вод",
+      author: "Роберт Шеклі",
+      rating: 8.51,
+    },
+    {
+      title: "Сон смішної людини",
+      author: "Федір Достоєвський",
+      rating: 7.75,
+    },
+  ];
+
+
 
 // //   Для перебирання такого масиву використовується стандартний цикл for...of. Значення властивостей кожного об'єкта можна отримати, використовуючи синтаксис «через крапку», оскільки в кожному об'єкті набір властивостей та їх імена будуть однакові, відрізняються тільки значення.
 
@@ -560,6 +646,7 @@
 //   bookNames.push(book.title);
 // }
 
+// console.log(books)
 // console.log(bookNames); // ["The Last Kingdom", "На березі спокійних вод", "Сон смішної людини"]
 
 // // Дізнаємося середній рейтинг усієї нашої колекції. Для цього, додамо усі рейтинги, після чого поділимо це значення на кількість книг в колекції.

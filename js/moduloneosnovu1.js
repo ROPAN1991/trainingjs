@@ -232,6 +232,33 @@
 //   counter += 1;
 // }
 
+// let counter = 0;
+
+// while (counter < 8) {
+//     console.log("counter: ", counter);
+//     counter += 1
+// }
+
+// let counter = 0
+
+// while (counter < 5) {
+//     console.log("counter: ", counter)
+//     counter += 1
+// }
+
+// let counter = 0; 
+// while (counter < 7) {
+//     console.log("counter: ", counter)
+//     counter += 1
+// }
+
+// let counter = 0
+
+// while (counter < 3) {
+//     console.log("counter: ", counter)
+//     counter += 1
+// }
+
 // Будемо заповнювати місця в готелі доти, доки поточна кількість клієнтів не буде дорівнювати максимально можливій.
 
 // let clientCounter = 7;
@@ -241,6 +268,32 @@
 //   console.log(clientCounter);
 //   clientCounter += 1;
 // }
+
+
+// let appleCounter = 21
+// const otherAppleCounter = 30
+
+// while (appleCounter < otherAppleCounter) {
+//     console.log(appleCounter);
+//     appleCounter += 1;
+// }
+
+// let mathCounter = 1
+// const otherCounter = 20
+
+// while (mathCounter < otherCounter) {
+//     console.log(mathCounter)
+//     mathCounter += 1
+// }
+
+// let prod = 5
+// const countProd = 10
+
+// while (prod < countProd) {
+//     console.log(prod)
+//     prod += 1
+// }
+
 
 // --------------------------------------------------Цикл do...while--------------------------------------------------------
 
@@ -253,6 +306,31 @@
 // } while (password.length < 5);
 
 // console.log("Ввели пароль: ", password);
+
+
+// let password = "";
+
+// do {
+//     password = prompt ("введіть пароль довший за 3-х символи", "");
+// } while (password.length < 4);
+
+// console.log("ввели пароль:", password);
+
+// let password = "";
+
+// do {
+//     password = prompt('введіть пароль з більше ніж 5-х символів', password)
+// } while (password.length < 6);
+
+// console.log("введіть пароль", password)
+
+// let password = "";
+
+// do {
+//     password = prompt ('введіть пароль бульше ніж 5 символів', password)
+// } while (password.length < 6);
+
+// console.log('введіть пароль', password)
 
 // ---------------------------------------------------Цикл for----------------------------------------------------------
 
@@ -275,25 +353,70 @@
 //     console.log(i);
 //   }
 
+// for (let i = 0; i <= 20; i += 2) {
+//     console.log(i);
+// }
+
+// for (let i = 0; i < 10; i += 1) {
+//     console.log(i)
+// }
+
+// for (let i = 0; i <= 15; i += 5) {
+//     console.log(i)
+// }
+
 // У прикладі оголошується змінна-лічильник i, ініціалізується значенням 0 і цикл виконується доти, доки i <= 20, тобто умова приводиться до true. Після кожної ітерації лічильник збільшується на 5.
 
 // Порахуємо суму чисел до певного значення.
 
-// const target = 3;
+// const target = 8;
 // let sum = 0;
 
 // for (let i = 0; i < target; i += 1) {
 //   sum += i;
 // }
 
-// console.log(sum);
+// console.log(sum); 
+
+
+// додає 1+2+3+4+5+6+7 = 28
+
+// const target = 5
+// let sum = 0
+
+// for (let i = 0; i < target; i += 1) {
+//     sum += i;
+// }
+
+// console.log(sum)
+
+// const target = 3
+// let multiply = 2
+
+// for (let i = 1; i < target; i += 1) {
+//     multiply *= i;
+// }
+
+// console.log(multiply)
 
 // Згадаємо про операцію a % b і виведемо остачу від ділення за допомогою циклу.
 
 // const max = 10;
-// for (let i = 0; i < max; i += 1) {
+// for (let i = 1; i < max; i += 1) {
 //   console.log(`${max} % ${i} = `, max % i);
 // }
+
+// в результаті в нас виконається
+
+    // 10 % 1 =  0
+    // 10 % 2 =  0
+    // 10 % 3 =  1
+    // 10 % 4 =  2
+    // 10 % 5 =  0
+    // 10 % 8 =  2
+    // 10 % 6 =  4
+    // 10 % 7 =  3
+    // 10 % 9 =  1
 
 // ----------------------------------------------------оператор break---------------------------------------------------------------
 
