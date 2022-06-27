@@ -78,7 +78,7 @@
 //     callback(name);
 //   }
   
-//   // Передаємо інлайн функцію greet у якості колбека
+// //   Передаємо інлайн функцію greet у якості колбека
 //   registerGuest("Манго", function greet(name) {
 //     console.log(`Ласкаво просимо ${name}.`);
 //   });
@@ -88,7 +88,29 @@
 //     console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
 //   });
 
-// ------------------------------------------------------Декілька колбеків--------------------------------------------------------------------
+// function registerCar (name, callback) {
+//     console.log(`register car ${name}`)
+//     callback(name)
+// }
+
+// registerCar("BMW", function regCar(name){
+//     console.log(`yo! nice ${name}`)
+// })
+
+
+// function registerGuest (name, cabllack) {
+//     console.log(`Register ${name}.`)
+//     cabllack(name)
+// }
+
+// registerGuest ("Ropan", function ropa(name){
+//     console.log(`welcome ${name}`)
+// })
+
+// registerGuest ("Ruban", function ruba(name){
+//     console.log(`We waiting for you ${name}`)
+// })
+// // ------------------------------------------------------Декілька колбеків----------------------------------------------------------
 
 // Функція може приймати будь-яку кількість колбеків. Наприклад, уявімо, що ми пишемо логіку прийняття дзвінків для телефону. Програма повинна увімкнути автовідповідач, якщо абонент - недоступний, або з'єднати дзвінок в іншому випадку. Доступність абонента будемо імітувати генератором випадкового числа, щоб між різними викликами функції можна було отримати різні результати.
 
@@ -183,15 +205,15 @@
   
 //   // Передаємо printValue як callback-функцію
 //   repeat(3, printValue);
-//   // 0
-//   // 1
-//   // 2
+  // 0
+  // 1
+  // 2
   
 //   // Передаємо prettyPrint як callback-функцію
 //   repeat(3, prettyPrint);
-//   // Logging value: 0
-//   // Logging value: 1
-//   // Logging value: 2
+  // Logging value: 0
+  // Logging value: 1
+  // Logging value: 2
 
 //   ---------------------------практика
 
@@ -210,10 +232,10 @@
 
 
 //   repeatprod (8, preetyProductValue)
-//   repeat (15, productValue)
+//   repeatprod (15, productValue)
 
 
-// ------------------------------------------------МЕТОД forEach-----------------------------------------------------------
+// ------------------------------------------------МЕТОД forEach---перебирання масиву в роботі з колекцією данних--------------------------
 
 // Метод перебирання масиву, який використовується для заміни циклів for і for...of в роботі з колекцією даних.
 
@@ -238,33 +260,6 @@
 // });
 
 // Єдиним випадком, коли варто використовувати цикли for або for...of для перебирання масиву, - це задачі з перериванням виконання циклу. Перервати виконання методу forEach не можна, він завжди перебирає масив до кінця.
-
-// function filterArray(numbers, value) {
-//     const filteredNumbers = [];
-//     // Change code below this line
-  
-//     numbers.forEach(function (number, index) {
-//       if (numbers[index] > value) {
-//         filteredNumbers.push(numbers[index]);
-//       }
-    
-//     })
-//     // Change code above this line
-//     return filteredNumbers;
-//   }
-
-// const filterArray = (numbers, value) => {
-//     const filteredNumbers = [];
-  
-//     numbers.forEach((number) => {
-//       if (number > value) {
-//         filteredNumbers.push(number);
-//       }
-//     });
-  
-//     // Change code above this line
-//     return filteredNumbers;
-//   }
   
 
 // --------------------------------------------------СТРІЛОЧНІ ФУШКЦІЇ-----------------------------------------------------------------
