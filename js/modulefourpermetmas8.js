@@ -9,10 +9,11 @@
 //       array[i] = array[i] * value;
 //     }
 //   };
-  
+
+
 //   const numbers = [1, 2, 3, 4, 5];
 //   dirtyMultiply(numbers, 2);
-//   // Відбулася мутація вихідних даних - масиву numbers
+// //   // Відбулася мутація вихідних даних - масиву numbers
 //   console.log(numbers); // [2, 4, 6, 8, 10]
 
 //   Функція dirtyMultiply(array, value) множить кожен елемент масиву array на число value. Вона змінює (мутує) вихідний масив за посиланням.
@@ -227,6 +228,24 @@
 // );
 // console.log(average); // Масив об'єктів з іменами Полі і Х'юстон
 
+// просто практика, замінив ім"я 1-го студента, перебрав масив з іменами
+
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+
+// console.log(students)
+
+// const changeFirst = students[0].name = "Маг"
+
+// const names = students.map(student => student.name)
+// console.log(names)
+
+
 // ---------------------------------------------------------Метод find()--------------------------------------------------------------------
 
 // Якщо метод filter(cabllack) використовується для пошуку всіх елементів, що задовольняють умову, то метод find(callback) дозволяє знайти і повернути перший відповідний елемент, після чого перебирання масиву припиняється. Тобто він шукає до першого збігу.
@@ -439,9 +458,9 @@
 //     { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 //   ];
   
-//   // Пройдемо по всіх елементах колекції і додамо значення властивості tags
-//   // до акумулятора, початкове значення якого вкажемо порожнім масивом [].
-//   // На кожній ітерації пушимо в акумулятор усі елементи tweet.tags і повертаємо його.
+// // //   // Пройдемо по всіх елементах колекції і додамо значення властивості tags
+// // //   // до акумулятора, початкове значення якого вкажемо порожнім масивом [].
+// // //   // На кожній ітерації пушимо в акумулятор усі елементи tweet.tags і повертаємо його.
 //   const tags = tweets.reduce((allTags, tweet) => {
 //     allTags.push(...tweet.tags);
   
@@ -471,14 +490,14 @@
 //     { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 //   ];
   
-//   const getTags = tweets =>
-//     tweets.reduce((allTags, tweet) => {
-//       allTags.push(...tweet.tags);
+  // const getTags = tweets =>
+  //   tweets.reduce((allTags, tweet) => {
+  //     allTags.push(...tweet.tags);
   
-//       return allTags;
-//     }, []);
+  //     return allTags;
+  //   }, []);
   
-//   const tags = getTags(tweets);
+  // const tags = getTags(tweets);
 
   
 //   // Винесемо callback-функцію окремо, а в reducе передамо посилання на неї.
@@ -497,6 +516,7 @@
   //   return acc;
   // };
 
+  // console.log(getTagStats(tweets))
  
   
   // Початкове значення акумулятора - це порожній об'єкт {}
@@ -574,7 +594,11 @@
 
 // const ascendingReleaseDates = [...releaseDates].sort((a,b) => a - b );
 
+// console.log(ascendingReleaseDates)
+
 // const descendingReleaseDates = [...releaseDates].sort((a,b) => b - a);
+
+// console.log(descendingReleaseDates)
 
 
 // ----------------------------------------------Свій порядок сортування рядків-------------------------------------------------------------
