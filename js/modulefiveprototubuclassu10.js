@@ -1303,41 +1303,41 @@
 // console.log(editor.number)
 // console.log(editor)
 
-class User {
-    email
+// class User {
+//     email
 
-    constructor(email) {
-        this.email = email;
-    }
+//     constructor(email) {
+//         this.email = email;
+//     }
 
-    get email () {
-        return this.email
-    }
+//     get email () {
+//         return this.email
+//     }
 
-    set email (newEmail) {
-        this.email = newEmail;
-    }
-}
+//     set email (newEmail) {
+//         this.email = newEmail;
+//     }
+// }
 
-class ContentEditor extends User {
-    constructor({name, email}) {
-        super(email)
-        this.name = name
-    }
-}
+// class ContentEditor extends User {
+//     constructor({name, email}) {
+//         super(email)
+//         this.name = name
+//     }
+// }
 
-const editor = new ContentEditor ({
-    name: "Ropan",
-    email: []
-})
+// const editor = new ContentEditor ({
+//     name: "Ropan",
+//     email: []
+// })
 
-console.log(editor)
-console.log(editor.email)
-editor.email = "ropansuper@mail.com"
-console.log(editor)
-console.log(editor.name)
-editor.name = "Ruban"
-console.log(editor.name)
+// console.log(editor)
+// console.log(editor.email)
+// editor.email = "ropansuper@mail.com"
+// console.log(editor)
+// console.log(editor.name)
+// editor.name = "Ruban"
+// console.log(editor.name)
 
 
 
