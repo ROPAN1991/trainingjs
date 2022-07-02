@@ -449,3 +449,46 @@
 
 //   console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
 // }
+
+
+// ----------------------------------------------------закріпдення--------------------------------------------------------------------
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     console.log(numbers[i])
+// }
+
+// let i = 0;
+// while (i < numbers.length) {
+//     console.log(numbers[i]);
+//     i += 1;
+// }
+
+
+
+// let i = 0;
+// do {
+//     console.log(numbers[i]);
+//     i += 1;
+// } while (i < numbers.length)
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     if (i % 2 !== 0) {
+//         continue; // можна порівняти з пропуском ходу в настільній грі.
+//         // break // можна порівняти з повним завершенням настільної гри
+//     }
+//     console.log(numbers[i])
+// }
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < numbers.length; i += 1) {
+   if (numbers[i] === 3) {
+    break
+   }
+    console.log(numbers[i])
+}
