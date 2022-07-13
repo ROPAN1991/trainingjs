@@ -821,109 +821,226 @@
 
 // }
 
-const lastName = 'Ropan'
-console.log(lastName.split(''))
+// const lastName = 'Ropan'
+// console.log(lastName.split(''))
 
-const message = 'I love javascript'
-console.log(message.split(' '))
+// const message = 'I love javascript'
+// console.log(message.split(' '))
 
-const appeal = ['hello', 'how', 'are', 'you', '?']
-console.log(appeal.join(''))
-console.log(appeal.join(' '))
-console.log(appeal.join('-'))
+// const appeal = ['hello', 'how', 'are', 'you', '?']
+// console.log(appeal.join(''))
+// console.log(appeal.join(' '))
+// console.log(appeal.join('-'))
 
-const citrus = ['lime', 'orange', 'lemon']
+// const citrus = ['lime', 'orange', 'lemon']
 
-console.log(citrus.indexOf('lime'))
-console.log(citrus.indexOf('orange'))
-console.log(citrus.indexOf('lemon'))
+// console.log(citrus.indexOf('lime'))
+// console.log(citrus.indexOf('orange'))
+// console.log(citrus.indexOf('lemon'))
 
-const numbers = []
+// const numbers = []
 
-numbers.push(1)
-console.log(numbers)
-numbers.push(2)
-console.log(numbers)
-numbers.push(3)
-console.log(numbers)
-numbers.push(4)
-console.log(numbers)
-numbers.push(5)
-console.log(numbers)
+// numbers.push(1)
+// console.log(numbers)
+// numbers.push(2)
+// console.log(numbers)
+// numbers.push(3)
+// console.log(numbers)
+// numbers.push(4)
+// console.log(numbers)
+// numbers.push(5)
+// console.log(numbers)
 
-numbers.pop(5)
-console.log(numbers)
-numbers.pop(4)
-console.log(numbers)
-numbers.pop(3)
-console.log(numbers)
-numbers.pop(2)
-console.log(numbers)
-numbers.pop(1)
-console.log(numbers)
+// numbers.pop(5)
+// console.log(numbers)
+// numbers.pop(4)
+// console.log(numbers)
+// numbers.pop(3)
+// console.log(numbers)
+// numbers.pop(2)
+// console.log(numbers)
+// numbers.pop(1)
+// console.log(numbers)
 
-numbers.unshift(1)
-console.log(numbers)
-numbers.unshift(2)
-console.log(numbers)
-numbers.unshift(3)
-console.log(numbers)
-numbers.unshift(4)
-console.log(numbers)
-numbers.unshift(5)
-console.log(numbers)
+// numbers.unshift(1)
+// console.log(numbers)
+// numbers.unshift(2)
+// console.log(numbers)
+// numbers.unshift(3)
+// console.log(numbers)
+// numbers.unshift(4)
+// console.log(numbers)
+// numbers.unshift(5)
+// console.log(numbers)
 
-numbers.shift(5)
-console.log(numbers)
-numbers.shift(4)
-console.log(numbers)
-numbers.shift(3)
-console.log(numbers)
-numbers.shift(2)
-console.log(numbers)
-numbers.shift(1)
-console.log(numbers)
+// numbers.shift(5)
+// console.log(numbers)
+// numbers.shift(4)
+// console.log(numbers)
+// numbers.shift(3)
+// console.log(numbers)
+// numbers.shift(2)
+// console.log(numbers)
+// numbers.shift(1)
+// console.log(numbers)
 
-const namesPlayers = ['Messi', 'Boateng', 'Pele']
+// const namesPlayers = ['Messi', 'Boateng', 'Pele']
 
-console.log(namesPlayers.includes('Messi'))
-console.log(namesPlayers.includes('Ronaldo'))
+// console.log(namesPlayers.includes('Messi'))
+// console.log(namesPlayers.includes('Ronaldo'))
 
-const prices = [30,90,70,100,10]
-const priceMore = 50
+// const prices = [30,90,70,100,10]
+// const priceMore = 50
 
-for (let i = 0; i < prices.length; i = i + 1) {
-    if(prices[i] < priceMore) {
-        continue
-    }
-    console.log(`Ціни більше за ${priceMore} це: ${prices[i]}`)
-}
+// for (let i = 0; i < prices.length; i = i + 1) {
+//     if(prices[i] < priceMore) {
+//         continue
+//     }
+//     console.log(`Ціни більше за ${priceMore} це: ${prices[i]}`)
+// }
 
-const people = ['Madonna', 'Messi', 'Socrat', 'MeX']
-const findFriend = 'MeX'
+// const people = ['Madonna', 'Messi', 'Socrat', 'MeX']
+// const findFriend = 'MeX'
 
-const isFriend = people.includes(findFriend)
-if(isFriend) {
-    console.log(`${findFriend} - Це мій друг!`)
-}
+// const isFriend = people.includes(findFriend)
+// if(isFriend) {
+//     console.log(`${findFriend} - Це мій друг!`)
+// }
 
-const bestFriends = ['John', 'Mike', 'Piter', 'Stan']
+// const bestFriends = ['John', 'Mike', 'Piter', 'Stan']
 
-console.log(bestFriends.slice(0,1))
-console.log(bestFriends.slice(1,2))
-console.log(bestFriends.slice(2,3))
-console.log(bestFriends.slice(-1))
+// console.log(bestFriends.slice(0,1))
+// console.log(bestFriends.slice(1,2))
+// console.log(bestFriends.slice(2,3))
+// console.log(bestFriends.slice(-1))
 
-const scores = [1, 2, 3, 4, 5];
-// Видаляємо три елементи масиву, починаючи з першого елемента (індекс 0)
-const deletedScores = scores.splice(0, 3);
-// Тепер масив scores містить два елементи
-console.log(scores); // [4, 5]
-// А масив deletedScores містить три видалені елементи
-console.log(deletedScores); // [1, 2, 3]
+// const scores = [1, 2, 3, 4, 5];
+// // Видаляємо три елементи масиву, починаючи з першого елемента (індекс 0)
+// const deletedScores = scores.splice(0, 3);
+// // Тепер масив scores містить два елементи
+// console.log(scores); // [4, 5]
+// // А масив deletedScores містить три видалені елементи
+// console.log(deletedScores); // [1, 2, 3]
 
-const groups = ['Onyx', 'WuTang', 'NWA', 'The Dog Pound']
-const deleteGroups = groups.splice(0,2)
+// const groups = ['Onyx', 'WuTang', 'NWA', 'The Dog Pound']
+// const deleteGroups = groups.splice(0,2)
 
-console.log(deleteGroups)
-console.log(groups)
+// console.log(deleteGroups)
+// console.log(groups)
+
+
+// const students = ['Mark', 'Lilia', 'Fernandez', 'Julia']
+// const studentsFind = 'Julia'
+
+// const isFind = students.includes(studentsFind)
+// if(isFind) {
+//     console.log(`This is my student: ${studentsFind}`)
+// }
+
+// const allsums = [30, 50, 80, 110, 200, 40]
+
+// const findSum = 50;
+
+// for (let i = 0; i < allsums.length; i = i + 1) {
+//     if(allsums[i] < findSum) {
+//         continue;
+//     }
+//     console.log(`Sum more ${findSum} its: ${allsums[i]}`)
+// }
+
+// const a = 50;
+// const b = 50
+
+// const what = a < b
+
+// console.log(what)
+
+
+// const myBestFriends = ['Casper', 'DemonX', 'West', 'Longman']
+
+// const findBestFriends = 'DemonX'
+
+// const hasBestFriend = myBestFriends.includes(findBestFriends)
+
+// if(hasBestFriend) {
+//     console.log(`this is my bestfriend ${findBestFriends}`)
+// }
+
+// const position = [4,7,10,9,12,11,3]
+
+// const findPos = 5
+
+// for (let i = 0; i < position.length; i = i + 1) {
+//     if (position[i] < findPos) {
+//         continue;
+//     }
+//     console.log(`this numbers: ${position[i]} more: ${findPos}`)
+// }
+
+
+// function numSummm (numBeOne, numBeTwo) {
+//     let result = 1
+
+//     for (let i = 0; i < numBeTwo; i = i + 1) {
+//     result = result * numBeOne
+//     }
+
+//     return result
+// }
+
+// console.log(numSummm(2,3))
+
+// function numbSum (numberOn, numberTw) {
+//     if(numberTw === 1) {
+//         return numberOn
+//     } else {
+//         return numberOn * numbSum(numberOn, numberTw -1)
+//     }
+// }
+
+// console.log(numbSum(2,3))
+
+// const numbers = ['Mango', 'Poly', 'Ajax', 'Kiwi']
+
+// console.log(numbers.slice(0,4))
+// console.log(numbers)
+
+// console.log(numbers.slice(0,3))
+// console.log(numbers)
+
+// console.log(numbers.slice(0,2))
+// console.log(numbers)
+
+// console.log(numbers.slice(0,1))
+// console.log(numbers)
+
+// const scores = [1, 2, 3, 4, 5];
+
+// // Видаляємо три елементи масиву, починаючи з першого елемента (індекс 0)
+// const deletedScores = scores.splice(0, 3);
+
+// // Тепер масив scores містить два елементи
+// console.log(scores); // [4, 5]
+
+// // А масив deletedScores містить три видалені елементи
+// console.log(deletedScores); // [1, 2, 3]
+
+// const numbers = [1,2,3,4,5]
+
+// const newNumber = numbers.splice(2,3)
+// console.log(newNumber)
+// console.log(numbers)
+
+
+// const numbers = [1,2,3,4,5,6,7]
+
+// const newNumbers = numbers.splice(2,2)
+
+// console.log(newNumbers)
+// console.log(numbers)
+
+// const colors = ["red", "green", "blue"];
+
+// colors.splice(2, 0, "purple");
+// console.log(colors); // ["red", "green", "purple", "blue"]
+
