@@ -480,12 +480,12 @@
 
 // --------------------------------------------------------рекурсія----------------------------------------------------------------------
 
-function pow (number, power) {
-  if (power === 0) {
-    return 1;
-  }
+// function pow (number, power) {
+//   if (power === 0) {
+//     return 1;
+//   }
 
-return number + pow(number, power - 1);
-}
+// return number + pow(number, power - 1);
+// }
 
-pow(2,3)
+// pow(2,3)

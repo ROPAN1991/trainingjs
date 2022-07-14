@@ -1044,3 +1044,227 @@
 // colors.splice(2, 0, "purple");
 // console.log(colors); // ["red", "green", "purple", "blue"]
 
+// const user = {
+//     name: "Jacques Gluke",
+//     tag: "jgluke",
+//     location: {
+//       country: "Jamaica",
+//       city: "Ocho Rios",
+//     },
+//     hobbies: ["swiming", "music", "sci-fi"],
+//   };
+  
+//   const locate = user.location;
+//   console.log(locate); // Об'єкт location
+  
+//   const country = user.location.country;
+//   console.log(country); // 'Jamaica'
+
+// const user = {
+//     name: "Jacques Gluke",
+//     tag: "jgluke",
+//     location: {
+//       country: "Jamaica",
+//       city: "Ocho Rios",
+//     },
+//     hobbies: ["swiming", "music", "sci-fi"],
+//   };
+  
+//   const locate = user.location;
+//   console.log(locate); // Об'єкт location
+  
+//   const country = user.location.country;
+//   console.log(country); // 'Jamaica'
+
+//   const hobbies = user.hobbies;
+// console.log(hobbies); // ['swiming', 'music', 'sci-fi']
+
+// const firstHobby = user.hobbies[0];
+// console.log(firstHobby); // 'swiming'
+
+// const numberOfHobbies = user.hobbies.length;
+// console.log(numberOfHobbies); // 3
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+  
+//   const bookTitle = book["title"];
+//   console.log(bookTitle); // 'The Last Kingdom'
+  
+//   const bookGenres = book["genres"];
+//   console.log(bookGenres); // ['historical prose', 'adventurs']
+  
+//   const propKey = "author";
+//   const bookAuthor = book[propKey];
+//   console.log(bookAuthor); // 'Bernard Cornwell'
+
+// const book = {
+//     title: 'Enter',
+//     author: 'Ropan',
+//     genre: ['drama', 'roman']
+// }
+
+// const bookTitle = book['title']
+// console.log(bookTitle)
+// const bookGenre = book['genre']
+// console.log(bookGenre)
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+  
+//   book.rating = 9;
+//   book.isPublic = false;
+//   book.genres.push("драма");
+  
+//   console.log(book.rating); // 9
+//   console.log(book.isPublic); // false
+//   console.log(book.genres); // ['historical prose', 'adventures', 'драма']
+
+// book.title = 'Pop'
+// book.author = 'Ropan'
+// book.genres.splice(0, 1)
+// book.rating = 7
+// book.genres.unshift('roman')
+
+// console.log(book)
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+  
+//   book.pageCount = 836;
+//   book.originalLanguage = "en";
+//   book.translations = ["ua", "ru"];
+  
+//   console.log(book.pageCount); // 836
+//   console.log(book.originalLanguage); // 'en'
+//   console.log(book.translations); // ['ua', 'ru']
+  
+
+//   console.log(book)
+
+// const bookShelf = {
+//     books: ["The Last Kingdom"],
+//     getBooks() {
+//       return this.books;
+//     },
+//     addBook(bookName) {
+//       this.books.push(bookName);
+//     },
+//     removeBook(bookName) {
+//       const bookIndex = this.books.indexOf(bookName);
+//       this.books.splice(bookIndex, 1);
+//     },
+//   };
+  
+//   console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+//   bookShelf.addBook("The Mist");
+//   bookShelf.addBook("Dream Guardian");
+//   console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'The Mist', 'Dream Guardian']
+//   bookShelf.removeBook("The Mist");
+//   console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'Dream Guardian']
+
+// const filmsItem = {
+//     films: ['Enter the void'],
+
+//     getFilms () {
+//         return this.films
+//     },
+
+//     addFilms(filmName) {
+//         this.films.push(filmName)
+//     },
+
+//     removeFilm(filmName) {
+//         const filmIndex = this.films.indexOf(filmName);
+//         this.films.splice(filmIndex, 1)
+//     }
+// }
+
+// console.log(filmsItem.getFilms())
+// filmsItem.addFilms('Get Rich or die trying')
+// filmsItem.addFilms('Green yard')
+// console.log(filmsItem.getFilms())
+// filmsItem.removeFilm('Green yard')
+// console.log(filmsItem.getFilms())
+
+// const filmsColection = {
+//     films: ['One', 'Two', 'Three'],
+
+//     getFilms() {
+//         return this.films
+//     },
+
+//     addFilms(nameFilm) {
+//         return this.films.push(nameFilm)
+//     },
+
+//     removeFilm (nameFilm) {
+//         const findColcetion = this.films.indexOf(nameFilm)
+//         return this.films.splice(findColcetion)
+        
+//     }
+    
+
+// }
+
+// console.log(filmsColection.getFilms())
+// filmsColection.addFilms('Four')
+// console.log(filmsColection.getFilms())
+
+
+// const myFriends = {
+//     allFriends: ['bob', 'tom', 'mike'],
+
+//     getFriends() {
+//         return this.allFriends
+//     },
+
+//     removeFriend (name) {
+//         const findFriend = this.allFriends.indexOf(name)
+//         return this.allFriends.splice(findFriend, 1)
+//     },
+
+//     addFriend (name) {
+//         return this.allFriends.push(name)
+//     }
+// }
+
+// console.log(myFriends.getFriends())
+
+// myFriends.removeFriend('bob')
+
+// console.log(myFriends.getFriends())
+
+// myFriends.addFriend('bob')
+
+// console.log(myFriends.getFriends())
+
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+  
+//   for (const key in book) {
+//     // Ключ
+//     console.log(key);
+//     // Значення властивості з таким ключем
+//     console.log(book[key]);
+//   }
