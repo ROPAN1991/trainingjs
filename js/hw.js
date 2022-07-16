@@ -1778,7 +1778,7 @@
 //     console.log(secondNumber); // Значення другого аргументу
 //     console.log(otherArgs); // Масив інших аргументів
 //   }
-  
+
 //   multiply(1, 2);
 //   multiply(1, 2, 3);
 //   multiply(1, 2, 3, 4);
@@ -1839,3 +1839,308 @@
 // const copyOfNumbers = [...numbers]
 
 // console.log(copyOfNumbers)
+
+// const oldNumbers = [1,2,3,4,5]
+
+// const newNumbers = [6,7,8,9,10]
+
+// const allNumbers = [...oldNumbers, ...newNumbers]
+
+// console.log(allNumbers)
+
+// const oldTemps = [13,22,19,11,18]
+
+// const newTemps = [40,26,10,9,5]
+
+// const allTemps = [...oldTemps, ...newTemps]
+
+// console.log(allTemps)
+
+// const first = { propA: 5, propB: 10 };
+// const second = { propC: 15 };
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+
+// const firstObj = { a: 1, b: 2, c: 3 };
+// const secondObj = { d: 7, e: 8 }
+// const allObj = {...firstObj, ...secondObj}
+// console.log(allObj)
+
+// const first = { a: 12, b: 17, c: 11 };
+// const second = { d: 22, e: 43 };
+// const allNum = {...first, ...second}
+
+// console.log(allNum)
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15, propD: 20 }
+
+// const fourth = { ...second, ...first };
+// console.log(fourth); // { propA: 5, propB: 10, propC: 50, propD: 20 }
+
+// const first = {a: 1, b: 2, c: 3}
+// const second = {d: 7, c: 5}
+
+// const third = {...first, ...second}
+// console.log(third)
+
+// const fourth = {...second, ...first}
+// console.log(fourth)
+
+// const numbers = [1,2,3,4,5,6,7]
+
+// const maxNum = Math.max(...numbers)
+// console.log(maxNum)
+
+// const numbers = [1,2,3,4,5]
+
+// console.log(numbers)
+
+// const copyOfNumbers = [...numbers]
+
+// console.log(copyOfNumbers)
+
+// const firstArray = [1,2,3,4,5]
+
+// const secondArray = [6,7,8,9]
+
+// const allArray = [...firstArray, ...secondArray]
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//     console.log(firstNumber); // Значення першого аргументу
+//     console.log(secondNumber); // Значення другого аргументу
+//     console.log(otherArgs); // Масив інших аргументів
+//   }
+
+//   multiply(1, 2);
+//   multiply(1, 2, 3);
+//   multiply(1, 2, 3, 4);
+
+// function sum (firstNumber, secondNumber, ...otherNumber){
+//     console.log(firstNumber)
+//     console.log(secondNumber)
+//     console.log(otherNumber)
+
+// }
+
+// sum(1,2)
+// sum(1,2,3)
+// sum(1,2,3,4,5,6,7)
+
+// function numbers (first, second, ...other) {
+//     console.log(first)
+//     console.log(second)
+//     console.log(other)
+// }
+
+// numbers(1,2)
+// numbers(1,2,3)
+// numbers(1,2,3,4,5,6,7)
+
+// const numbers = [1,2,3,4,5,6,7]
+
+// const maxNumber = Math.max(...numbers)
+
+// console.log(maxNumber)
+
+// const numbers = [1,2,3,4]
+// console.log(numbers)
+
+// const copyOfNumbers = [...numbers]
+
+// console.log(copyOfNumbers)
+
+// const oldNum = [1,2,3,4]
+// const newNum = [5,6,7,8]
+
+// const allNum = [...oldNum, ...newNum]
+
+// console.log(allNum)
+
+// const objOne = {a: 1, b: 2, c: 3}
+// const objTwo = {e: 8, d: 13}
+
+// const allObj = {...objOne, ...objTwo}
+
+// console.log(allObj)
+
+// const first = {a: 1, b: 2, c: 3}
+// const second = {d: 7, c: 5}
+
+// const third = {...first, ...second}
+
+// console.log(third)
+
+// const fourth = {...second, ...first}
+// console.log(fourth)
+
+// const five = {...first, ...second, c: 11}
+// console.log(five)
+
+// const six = {c: 11, ...first, ...second}
+// console.log(six)
+
+// const seven = {...first, c: 11, ...second}
+// console.log(seven)
+
+// const eight = {...second, c: 11, ...first}
+// console.log(eight)
+
+// function numbers (first, second, ...others) {
+//     console.log(first)
+//     console.log(second)
+//     console.log(others)
+// }
+
+// numbers(1,2)
+// numbers(1,2,3)
+// numbers(1,2,3,4,5,6,7)
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+
+//   const {title, author, genres, isPublic, rating} = book
+
+//   const publics = isPublic ? "Публічний доступ" : "Приватний доступ"
+
+//   console.log(`Книга ${title}, атовра ${author}, що написана в жанрі ${genres} і має рейтинг ${rating} має доступ ${isPublic}`)
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+
+// const {title, author, genres, isPublic, rating} = book
+
+// const publics = isPublic ? 'публічному' : 'закритому';
+
+// const message = `Книга ${title}, атовра ${author}, яка має рейтинг ${rating} знаходиться в ${publics} доступі`
+
+// console.log(message)
+
+// const song = {
+//     name: 'Rider on the storm',
+//     author: 'The Doors',
+//     year: 1987,
+//     isPublic: true,
+//     rating: 10
+// }
+
+// const {name, author, year, isPublic, rating} = song
+
+// const publisher = isPublic ? 'публічному' : 'приватному'
+
+// const message = `Пісня ${name}, гурту ${author}, ${year}року, має рейтинг ${rating} і знаходиться в ${publisher} доступі`
+
+// console.log(message)
+
+// const firstBook = {
+//     title: "The Last Kingdom",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//   };
+
+//   const {
+//     title: firstTitle,
+//     coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+//   } = firstBook;
+
+//   console.log(firstTitle); // The Last Kingdom
+//   console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+//   const secondBook = {
+//     title: "Сон смішної людини",
+//   };
+
+//   const {
+//     title: secondTitle,
+//     coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+//   } = secondBook;
+
+//   console.log(secondTitle); // Сон смішної людини
+//   console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+// const film = {
+//     name: "Enter the void",
+//     director: "Gaspar Noe"
+// }
+
+// const {
+//     name: title,
+//     director: regiser,
+// } = film
+
+// console.log(title)
+// console.log(regiser)
+
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//   ];
+
+//   for (const book of books) {
+//     const {title, author, rating} = book
+
+//     console.log(title)
+//     console.log(author)
+//     console.log(rating)
+//   }
+
+// const songs = [
+//     {
+//         name: "Riders on the Storm", 
+//         author: "The Dors"
+//     }, 
+//     {
+//         name: 'Still Dre',
+//         author: 'Snoop Dogg & Dr. Dre'
+//     }
+// ];
+
+// for (const song of songs) {
+//     const {name, author} = song
+
+//     console.log(author)
+//     console.log(name)
+// }
+
+const user = {
+    name: "Jacques Gluke",
+    tag: "jgluke",
+    stats: {
+      followers: 5603,
+      views: 4827,
+      likes: 1308,
+    },
+  };
+  
+  const {
+    name,
+    tag,
+    stats: { followers, views: userViews, likes: userLikes = 0 },
+  } = user;
+  
+  console.log(name); // Jacques Gluke
+  console.log(tag); // jgluke
+  console.log(followers); // 5603
+  console.log(userViews); // 4827
+  console.log(userLikes); // 1308
