@@ -16,7 +16,6 @@
 //     this.potions.push(newPotion);
 //   },
 
-  
 //  removePotion(potionName) {
 // for (const potion of this.potions){
 //     if (potion.name === potionName) {
@@ -26,7 +25,7 @@
 // }
 //     return `Potion ${potionName} is not in inventory!`;
 //   },
-  
+
 //   updatePotionName(oldName, newName) {
 //     for (const potion of this.potions) {
 //       if (potion.name === oldName)
@@ -37,12 +36,11 @@
 //   // Change code above this line
 // };
 
-
 // let message = 'hello';
 
 // let messageEnd = (5>1) ? ', John' : ', Piter'
 
-// message = message + messageEnd 
+// message = message + messageEnd
 
 // console.log(message)
 
@@ -56,7 +54,7 @@
 //     messageEnd = ', Mike'
 // } else if(5 > 30){
 //     messageEnd = ', John'
-// } else 
+// } else
 //     messageEnd = ', Ropan'
 
 // message = message + messageEnd
@@ -65,7 +63,7 @@
 // let counter = 0
 
 // while (counter < 10) {
-//     console.log("counter: ", counter) 
+//     console.log("counter: ", counter)
 //         counter = counter + 1
 // }
 // let counter = 10
@@ -90,7 +88,7 @@
 // } while(counter)
 
 // for (let i = 0; i < 10; i = i + 1) {
- 
+
 //     if (i === 5) {
 //        continue
 //     }
@@ -111,8 +109,8 @@
 //     console.log(`this is first number: ${numOne}`)
 //     console.log(`this is second number: ${numTwo}`)
 
-//     let numMin = numOne - numTwo 
-//     console.log(numMin) 
+//     let numMin = numOne - numTwo
+//     console.log(numMin)
 // }
 
 // getMinus(11,4)
@@ -167,13 +165,13 @@
 
 //     function getNumTwo() {
 //         numTwo = 4
-//     } 
+//     }
 
 //     getNumOne()
 //     getNumTwo()
 
 //     let numSum = numOne + numTwo
-//     console.log(numSum) 
+//     console.log(numSum)
 // }
 
 // getSum()
@@ -187,7 +185,6 @@
 // let functionRes = calcSum(5, 4)
 
 // console.log(`this is sum: ${functionRes}`)
-
 
 // function getMinus (numOne, numTwo) {
 //     let minus = numOne - numTwo
@@ -208,7 +205,6 @@
 // let newMultiply = getMultiply(3,4)
 
 // console.log(`this is result: ${newMultiply}`)
-
 
 // function getSum (numOne, numTwo) {
 //     let numSum = numOne + numTwo;
@@ -273,10 +269,9 @@
 
 // console.log(calcSumm(2,4))
 
-
 // function clacSum (numOne, numTwo) {
 //     let result = 1;
-    
+
 //     for(let i = 0; i < numTwo; i = i + 1) {
 //         result = result * numOne
 //     }
@@ -284,7 +279,6 @@
 // }
 
 // console.log(clacSum(2,3))
-
 
 // function calcSumm (numOne, numTwo) {
 //     if(numTwo === 1) {
@@ -397,7 +391,6 @@
 
 // console.log(message)
 
-
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
 // const threshold = 15;
 
@@ -415,7 +408,7 @@
 
 // const findName = "Саня"
 
-// let message 
+// let message
 
 // for (const name of names) {
 //     if (findName === "Саня"){
@@ -447,14 +440,13 @@
 // console.log(`Число більше за ${moreNum}:`)
 
 // for (let i = 0; i < numbers.length; i = i + 1) {
-    
+
 //     if (numbers[i] < moreNum) {
 //         continue;
 //     }
-    
+
 //     console.log(numbers[i])
 // }
-
 
 // const prices = [20,30,50,70,80,100,120,110]
 
@@ -575,7 +567,7 @@
 //     }
 
 //     message = 'dont find'
-    
+
 // }
 
 // console.log(message)
@@ -790,7 +782,7 @@
 //   console.log(`${fruit} is a red fruit!`);
 // }
 
-// const people = ['Messi', 'Madonna', 'Moby', 'Meh'] 
+// const people = ['Messi', 'Madonna', 'Moby', 'Meh']
 // const findFriend = 'Meh'
 
 // const isFriendHer = people.includes(findFriend)
@@ -799,7 +791,7 @@
 //     console.log(`this is my friend ${findFriend}`)
 // }
 
-// const ages = [14,12,17,25,27,33] 
+// const ages = [14,12,17,25,27,33]
 
 // const findAge = 18
 
@@ -928,7 +920,6 @@
 // console.log(deleteGroups)
 // console.log(groups)
 
-
 // const students = ['Mark', 'Lilia', 'Fernandez', 'Julia']
 // const studentsFind = 'Julia'
 
@@ -955,7 +946,6 @@
 
 // console.log(what)
 
-
 // const myBestFriends = ['Casper', 'DemonX', 'West', 'Longman']
 
 // const findBestFriends = 'DemonX'
@@ -976,7 +966,6 @@
 //     }
 //     console.log(`this numbers: ${position[i]} more: ${findPos}`)
 // }
-
 
 // function numSummm (numBeOne, numBeTwo) {
 //     let result = 1
@@ -1031,7 +1020,6 @@
 // console.log(newNumber)
 // console.log(numbers)
 
-
 // const numbers = [1,2,3,4,5,6,7]
 
 // const newNumbers = numbers.splice(2,2)
@@ -1053,10 +1041,10 @@
 //     },
 //     hobbies: ["swiming", "music", "sci-fi"],
 //   };
-  
+
 //   const locate = user.location;
 //   console.log(locate); // Об'єкт location
-  
+
 //   const country = user.location.country;
 //   console.log(country); // 'Jamaica'
 
@@ -1069,10 +1057,10 @@
 //     },
 //     hobbies: ["swiming", "music", "sci-fi"],
 //   };
-  
+
 //   const locate = user.location;
 //   console.log(locate); // Об'єкт location
-  
+
 //   const country = user.location.country;
 //   console.log(country); // 'Jamaica'
 
@@ -1092,13 +1080,13 @@
 //     isPublic: true,
 //     rating: 8.38,
 //   };
-  
+
 //   const bookTitle = book["title"];
 //   console.log(bookTitle); // 'The Last Kingdom'
-  
+
 //   const bookGenres = book["genres"];
 //   console.log(bookGenres); // ['historical prose', 'adventurs']
-  
+
 //   const propKey = "author";
 //   const bookAuthor = book[propKey];
 //   console.log(bookAuthor); // 'Bernard Cornwell'
@@ -1121,11 +1109,11 @@
 //     isPublic: true,
 //     rating: 8.38,
 //   };
-  
+
 //   book.rating = 9;
 //   book.isPublic = false;
 //   book.genres.push("драма");
-  
+
 //   console.log(book.rating); // 9
 //   console.log(book.isPublic); // false
 //   console.log(book.genres); // ['historical prose', 'adventures', 'драма']
@@ -1145,15 +1133,14 @@
 //     isPublic: true,
 //     rating: 8.38,
 //   };
-  
+
 //   book.pageCount = 836;
 //   book.originalLanguage = "en";
 //   book.translations = ["ua", "ru"];
-  
+
 //   console.log(book.pageCount); // 836
 //   console.log(book.originalLanguage); // 'en'
 //   console.log(book.translations); // ['ua', 'ru']
-  
 
 //   console.log(book)
 
@@ -1170,7 +1157,7 @@
 //       this.books.splice(bookIndex, 1);
 //     },
 //   };
-  
+
 //   console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
 //   bookShelf.addBook("The Mist");
 //   bookShelf.addBook("Dream Guardian");
@@ -1216,16 +1203,14 @@
 //     removeFilm (nameFilm) {
 //         const findColcetion = this.films.indexOf(nameFilm)
 //         return this.films.splice(findColcetion)
-        
+
 //     }
-    
 
 // }
 
 // console.log(filmsColection.getFilms())
 // filmsColection.addFilms('Four')
 // console.log(filmsColection.getFilms())
-
 
 // const myFriends = {
 //     allFriends: ['bob', 'tom', 'mike'],
@@ -1254,14 +1239,13 @@
 
 // console.log(myFriends.getFriends())
 
-
 // const book = {
 //     title: "The Last Kingdom",
 //     author: "Bernard Cornwell",
 //     genres: ["historical prose", "adventure"],
 //     rating: 8.38,
 //   };
-  
+
 //   for (const key in book) {
 //     // Ключ
 //     console.log(key);
@@ -1276,7 +1260,7 @@
 //     isPublic: true,
 //     rating: 8.38,
 //   };
-  
+
 // const bookTitle = book['title']
 // console.log(bookTitle)
 
@@ -1389,7 +1373,7 @@
 //     genres: ["historical prose", "adventure"],
 //     rating: 8.38,
 //   };
-  
+
 //   for (const key in book) {
 //     // Ключ
 //     console.log(key);
@@ -1490,14 +1474,13 @@
 
 // let totalRating = 0;
 // for (const book of books) {
-//     totalRating = totalRating + book.rating 
+//     totalRating = totalRating + book.rating
 // }
 
 // const averageRating = (totalRating / books.length).toFixed(1);
 // console.log(totalRating)
 // console.log(books.length)
 // console.log(averageRating); // 8.2
-
 
 // const propName = "name";
 // const user = {
@@ -1564,7 +1547,6 @@
 //   console.log(film[key])
 // }
 
-
 // const song = {
 //   name: 'still love',
 //   author: 'John',
@@ -1578,65 +1560,216 @@
 //   console.log(song[key])
 // }
 
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На березі спокійних вод",
-    author: "Роберт Шеклі",
-    rating: 8.51,
-  },
-  {
-    title: "Сон смішної людини",
-    author: "Федір Достоєвський",
-    rating: 7.75,
-  },
-];
+// for (const key of books) {
+//   console.log(key)
 
-for (const key of books) {
-  console.log(key)
+//   console.log(key.author)
+//   console.log(key.title)
+//   console.log(key.rating)
+// }
 
-  console.log(key.author)
-  console.log(key.title)
-  console.log(key.rating)
-}
+// const bookNames = [];
 
+// for (const book of books) {
+//   bookNames.push(book.title);
+// }
 
-const bookNames = [];
+// console.log(bookNames); // ["The Last Kingdom", "На березі спокійних вод", "Сон смішної людини"]
 
-for (const book of books) {
-  bookNames.push(book.title);
-}
+// const bookAuthors = []
 
-console.log(bookNames); // ["The Last Kingdom", "На березі спокійних вод", "Сон смішної людини"]
+// for (const book of books) {
+//   bookAuthors.push(book.author)
+// }
 
+// console.log(bookAuthors)
 
-const bookAuthors = []
+// const bookRatings = []
 
-for (const book of books) {
-  bookAuthors.push(book.author)
-}
+// for (const book of books) {
+//   bookRatings.push(book.rating)
+// }
 
-console.log(bookAuthors)
+// console.log(bookRatings)
 
-const bookRatings = []
+// let totalRating = 0
 
-for (const book of books) {
-  bookRatings.push(book.rating)
-}
+// for (const book of books) {
+//   totalRating = totalRating + book.rating
+// }
 
-console.log(bookRatings)
+// const averageRating = (totalRating / books.length).toFixed(1)
 
-let totalRating = 0
+// console.log(averageRating)
 
-for (const book of books) {
-  totalRating = totalRating + book.rating
-}
+// function multiply(...args) {
+//   console.log(args); // масив усіх аргументів
+// }
 
-const averageRating = (totalRating / books.length).toFixed(1)
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
 
-console.log(averageRating)
+// function numbers (...num) {
+//   console.log(num)
+// }
+
+// numbers(1,2,3)
+// numbers(3,4,5)
+// numbers(5,6,7)
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+
+// for (const book of books) {
+//   console.log(book)
+
+//   console.log(book.title)
+//   console.log(book.author)
+//   console.log(book.rating)
+// }
+
+// let totalRating = 0;
+
+// for (const book of books) {
+//   totalRating = totalRating + book.rating
+// }
+
+// const averageRating = (totalRating / books.length).toFixed(1)
+
+// console.log(`This is average Rating: ${averageRating}`)
+// let totalRating = 0;
+
+// for (const book of books) {
+//   totalRating = totalRating + book.rating;
+// }
+
+// const averageRating = (totalRating / books.length).toFixed(1);
+// console.log(averageRating); // 8.2
+
+// let totalRating = 0;
+
+// for (const book of books) {
+//   totalRating = totalRating + book.rating
+// }
+
+// const averageRating = (totalRating / books.length).toFixed(1)
+
+// console.log(averageRating)
+
+// const songs = ['one', 'two', 'three']
+
+// const findSong = 'two'
+
+// let message
+
+// for (const song of songs){
+//   if(song === findSong) {
+//     message = 'Yes'
+//     break
+//   }
+
+//   message = 'no'
+// }
+// console.log(message)
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// let moreNum = 4
+
+// for (let i = 0; i < numbers.length; i = i + 1) {
+//   if(numbers[i] < moreNum) {
+//     continue;
+//   }
+//   console.log(`чилсо білше ${moreNum} це: ${numbers[i]}`)
+// }
+
+// const numbers = [1,2,3,4,5,6,7,8,9]
+
+// let moreNum = 5
+
+// for (let i = 0; i < numbers.length; i = i + 1) {
+//   if(numbers[i] < moreNum){
+//     continue;
+//   }
+//  console.log(`number ${numbers[i]} more ${moreNum}`)
+// }
+
+// const rappers = ["Tupac", "Eminem", "SnoopDogg"];
+
+// const findNameRapper = "Tupac";
+
+// let message;
+
+// for (const name of rappers) {
+//   if (name === findNameRapper) {
+//     message = "find rapper";
+//     break;
+//   }
+//   message = "didnt find rapper";
+// }
+
+// console.log(message)
+
+// const numbers = [1,2,3,4,5,6,7,8,9]
+
+// const numerMore = 7
+
+// for (let i = 0; i < numbers.length; i = i + 1) {
+//   if(numbers[i] < numerMore) {
+//     continue;
+//   }
+//   console.log(`this number ${numbers[i]} more ${numerMore}`)
+// }
+
+// const name = 'Ruban'
+
+// console.log(name.split(''))
+
+// const message = 'I love javascript'
+
+// console.log(message.split(' '))
+
+// const names = ["Mango", "Poly", "Kiwi", "Ajax"];
+
+// console.log(names.indexOf("Mango"));
+// console.log(names.indexOf("Poly"));
+// console.log(names.indexOf("Kiwi"));
+// console.log(names.indexOf('Ajax'))
+
+// console.log(names.includes('Poly'))
+// console.log(names.includes('Page'))
+
