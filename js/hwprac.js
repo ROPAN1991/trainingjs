@@ -1499,20 +1499,144 @@
 // console.log(averageRating); // 8.2
 
 
-const propName = "name";
-const user = {
-  age: 25,
-  // Ім'я цієї властивості буде взяте зі значення змінної propName
-  [propName]: "Генрі Сибола",
-};
+// const propName = "name";
+// const user = {
+//   age: 25,
+//   // Ім'я цієї властивості буде взяте зі значення змінної propName
+//   [propName]: "Генрі Сибола",
+// };
 
-console.log(user.name); // 'Генрі Сибола'
+// console.log(user.name); // 'Генрі Сибола'
 
-// const bookName = 'name'
+// const filmName = 'name'
 
-// const book = {
-//     year: 1991,
-//     [bookName]: 'Mr.Jack'
+// const film = {
+//   genre: 'fantasy',
+
+//   [filmName]: 'Enter the void'
 // }
 
-// console.log(book.name)
+// console.log(film.name)
+
+// const rappers = {
+//   names: ['Tupac'],
+
+//   getNames () {
+//     return this.names
+//   },
+
+//   addNewRapper (name) {
+//     this.names.push(name)
+//   },
+
+//   removeRapper (name) {
+//     const findNmae = this.names.indexOf(name)
+//     this.names.splice(findNmae, 1)
+//   }
+// }
+
+// console.log(rappers.getNames())
+
+// rappers.addNewRapper('Eminem')
+// rappers.addNewRapper('Snoop Dogg')
+
+// console.log(rappers.getNames())
+
+// rappers.removeRapper('Tupac')
+
+// console.log(rappers.getNames())
+
+// for (const rapper in rappers) {
+//   console.log(rapper)
+
+// }
+
+// const film = {
+//   name: 'Enter the void',
+//   year: 2010,
+//   director: 'Ropan',
+//   genre: 'fantasy',
+// }
+
+// for (const key in film) {
+//   console.log(key)
+
+//   console.log(film[key])
+// }
+
+
+// const song = {
+//   name: 'still love',
+//   author: 'John',
+//   date: '13.07.1989',
+//   rating: 9
+// }
+
+// for (const key in song) {
+//   console.log(key)
+
+//   console.log(song[key])
+// }
+
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "На березі спокійних вод",
+    author: "Роберт Шеклі",
+    rating: 8.51,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
+];
+
+for (const key of books) {
+  console.log(key)
+
+  console.log(key.author)
+  console.log(key.title)
+  console.log(key.rating)
+}
+
+
+const bookNames = [];
+
+for (const book of books) {
+  bookNames.push(book.title);
+}
+
+console.log(bookNames); // ["The Last Kingdom", "На березі спокійних вод", "Сон смішної людини"]
+
+
+const bookAuthors = []
+
+for (const book of books) {
+  bookAuthors.push(book.author)
+}
+
+console.log(bookAuthors)
+
+const bookRatings = []
+
+for (const book of books) {
+  bookRatings.push(book.rating)
+}
+
+console.log(bookRatings)
+
+let totalRating = 0
+
+for (const book of books) {
+  totalRating = totalRating + book.rating
+}
+
+const averageRating = (totalRating / books.length).toFixed(1)
+
+console.log(averageRating)
