@@ -1268,3 +1268,232 @@
 //     // Значення властивості з таким ключем
 //     console.log(book[key]);
 //   }
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
+  
+// const bookTitle = book['title']
+// console.log(bookTitle)
+
+// const bookGenres = book['genres']
+// console.log(bookGenres)
+
+// const author = 'author'
+// const backAuthor = book[author]
+
+// console.log(backAuthor)
+
+// const songs = {
+//     names: ['Hello world'],
+
+//     getSongs () {
+//         return this.names
+//     },
+
+//     addSongs (nameSong) {
+//         this.names.push(nameSong)
+//     },
+
+//     removeSong (nameSong) {
+//         const findSong = this.names.indexOf(nameSong)
+//         this.names.splice(findSong, 1)
+//     }
+// }
+
+// const rappers = {
+//     names: ['Tupac'],
+
+//     getRappers () {
+//         return this.names
+//     },
+
+//     addNewRapper(name) {
+//         this.names.push(name)
+//     },
+
+//     removeRapper(name) {
+//         const findRapper = this.names.indexOf(name)
+
+//         this.names.splice(findRapper, 1)
+//     }
+// }
+
+// console.log(rappers.getRappers())
+
+// rappers.addNewRapper('Eminem')
+// rappers.addNewRapper('DMX')
+// rappers.addNewRapper('Snoop Dogg')
+// console.log(rappers.getRappers())
+
+// rappers.removeRapper('Tupac')
+// console.log(rappers.getRappers())
+
+// const books = {
+//     title: 'Jungle Book',
+//     author: 'Ropan',
+//     genres: ['Event', 'Action'],
+//     location: {
+//         country: 'Ukraine',
+//         city: 'Lviv'
+//     }
+// }
+
+// console.log(books)
+
+// console.log(books.title)
+// books.title = 'Most'
+// books.genres[0] = 'Drama'
+// books.genres[1] = 'Roman'
+// console.log(books)
+// books.location.city = 'Pryluky'
+// console.log(books)
+// books.location.country = 'USA'
+// console.log(books)
+
+// const songs = {
+//     names: ['Wild'],
+
+//     getSongs () {
+//         return this.names
+//     },
+
+//     addNewSong (name) {
+//         this.names.push(name)
+//     },
+
+//     removeSong (name) {
+//         const findSong = this.names.indexOf(name)
+//         this.names.splice(findSong, 1)
+//     }
+// }
+
+// console.log(songs.getSongs())
+
+// songs.addNewSong('Mimi')
+// songs.addNewSong('Ponny')
+
+// console.log(songs.getSongs())
+
+// songs.removeSong('Wild')
+
+// console.log(songs.getSongs())
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+  
+//   for (const key in book) {
+//     // Ключ
+//     console.log(key);
+//     // Значення властивості з таким ключем
+//     console.log(book[key]);
+//   }
+
+// const rappers = {
+//     names: 'Tupac',
+//     genre: 'Rap',
+//     year: 1991,
+//     ratinng: 10
+// };
+
+// for (const key in rappers) {
+//     console.log(key)
+
+//     console.log(rappers[key])
+// }
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+//   const keys = Object.keys(book);
+//   console.log(keys); // ['title', 'author', 'genres', 'rating']
+
+// const songs = {
+//     name: 'Beer',
+//     year: 1994,
+//     genre: 'jungle',
+//     rating: 5
+// }
+
+// const songKey = Object.keys(songs)
+// console.log(songKey)
+
+// const songValue = Object.values(songs);
+// console.log(songValue)
+
+// const songEntries = Object.entries(songs);
+// console.log(songEntries)
+
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//     {
+//       title: "Сон смішної людини",
+//       author: "Федір Достоєвський",
+//       rating: 7.75,
+//     },
+//   ];
+
+//   for (const book of books) {
+//     // Об'єкт книги
+//     console.log(book);
+//     // Назва
+//     console.log(book.title);
+//     // Автор
+//     console.log(book.author);
+//     // Рейтинг
+//     console.log(book.rating);
+//   }
+
+// const bookAuthors = [];
+
+// for(const book of books) {
+//     bookAuthors.push(book.author)
+// }
+
+// console.log(bookAuthors);
+
+// const bookRatings = [];
+
+// for(const book of books) {
+//     bookRatings.push(book.rating)
+// }
+
+// console.log(bookRatings)
+
+// const bookTitles = []
+
+// for(const book of books) {
+//     bookTitles.push(book.title)
+// }
+
+// console.log(bookTitles)
+
+// let totalRating = 0;
+// for (const book of books) {
+//     totalRating = totalRating + book.rating 
+// }
+
+// const averageRating = (totalRating / books.length).toFixed(1);
+// console.log(totalRating)
+// console.log(books.length)
+// console.log(averageRating); // 8.2
