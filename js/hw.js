@@ -1773,3 +1773,69 @@
 // console.log(names.includes('Poly'))
 // console.log(names.includes('Page'))
 
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//     console.log(firstNumber); // Значення першого аргументу
+//     console.log(secondNumber); // Значення другого аргументу
+//     console.log(otherArgs); // Масив інших аргументів
+//   }
+  
+//   multiply(1, 2);
+//   multiply(1, 2, 3);
+//   multiply(1, 2, 3, 4);
+
+// const temps = [13, 11, -14, 27, 2, 8]
+
+// console.log(temps)
+
+// console.log(...temps)
+
+// const maxTemps = Math.max(...temps)
+// console.log(maxTemps)
+
+// const minTemps = Math.min(...temps)
+// console.log(minTemps)
+
+// const numbers = [12, 10, 3, 7, 9, 120, 29]
+
+// const maxNumber = Math.max(...numbers)
+
+// console.log(maxNumber)
+
+// const minNumber = Math.min(...numbers)
+
+// console.log(minNumber)
+
+// const numbers = [3,4,5,6,7]
+
+// console.log(numbers)
+
+// const copyOfNUmbers = [...numbers]
+
+// console.log(copyOfNUmbers)
+
+// const temperatures = [-4, 12, 25, 18, 14]
+
+// const copyOfTemps = [...temperatures]
+
+// console.log(copyOfTemps)
+
+// const ages = [13, 27, 30, 11, 40, 75]
+
+// const copyOfAges = [...ages]
+
+// console.log(copyOfAges)
+
+// const numbers = [1,2,3,4,5,6,7,8]
+
+// const minNumber = Math.min(...numbers)
+// console.log(minNumber)
+
+// const maxNumber = Math.max(...numbers)
+// console.log(maxNumber)
+
+// const numbers = [1,2,3,4,5,6,7,8]
+// console.log(numbers)
+
+// const copyOfNumbers = [...numbers]
+
+// console.log(copyOfNumbers)
