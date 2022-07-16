@@ -1497,3 +1497,22 @@
 // console.log(totalRating)
 // console.log(books.length)
 // console.log(averageRating); // 8.2
+
+
+const propName = "name";
+const user = {
+  age: 25,
+  // Ім'я цієї властивості буде взяте зі значення змінної propName
+  [propName]: "Генрі Сибола",
+};
+
+console.log(user.name); // 'Генрі Сибола'
+
+// const bookName = 'name'
+
+// const book = {
+//     year: 1991,
+//     [bookName]: 'Mr.Jack'
+// }
+
+// console.log(book.name)
