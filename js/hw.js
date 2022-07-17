@@ -2528,3 +2528,37 @@
 // doMath(2,3, add)
 
 // doMath(10,3, sub)
+
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+
+//   return substring;
+  
+// }
+
+// console.log(getSubstring("Hello world", 3))
+// console.log(getSubstring("Hello world", 6))
+// console.log(getSubstring("Hello world", 8))
+// console.log(getSubstring("Hello world", 11))
+// console.log(getSubstring("Hello world", 0))
+
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length -1];
+
+// // Change code above this line
+
+// console.log(courseTopicLength)
+// console.log(firstElement)
+// console.log(lastElement)
+
+// function getNameLength(name) {
+//     const message = `Name ${name} is ${name.length} characters long`; // Change this line
+  
+//     return message;
+//   }
