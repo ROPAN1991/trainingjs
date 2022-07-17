@@ -2145,4 +2145,386 @@
 //   console.log(userViews); // 4827
 //   console.log(userLikes); // 1308
 
+// const propName = 'name'
+// const user = {
+//     age: 30,
+// }
 
+// user[propName] = 'Ropan'
+
+// console.log(user.name)
+
+// const filmName = 'name';
+
+// const film = {
+//     genre: 'action',
+
+//     [filmName]: 'Drive'
+// }
+
+// console.log(film.name)
+
+// const songName = 'name'
+
+// const song = {
+//     author: 'Jack Stone',
+
+//     [songName]: 'Ring'
+// }
+
+// console.log(song.name)
+
+// const songs = {
+//     names: ['Riders on the storm', 'Forever'],
+
+//     getName () {
+//         return this.names
+//     },
+
+//     addNewSong (name) {
+//         this.names.push(name)
+//     },
+
+//     removeSong (name) {
+//         const findSong = this.names.indexOf(name)
+//         this.names.splice(findSong, 1)
+//     }
+// }
+
+// console.log(songs.getName())
+
+// songs.addNewSong('Still Dre')
+// songs.addNewSong('Explosive')
+
+// console.log(songs.getName())
+
+// songs.removeSong('Forever')
+
+// console.log(songs.getName())
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+
+//   for (const key in book) {
+//     console.log(key)
+
+//     console.log(book[key])
+//   }
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+
+//   const keys = Object.keys(book)
+
+//   console.log(keys)
+
+//   const values = Object.values(book)
+
+//   console.log(values)
+
+//   const entries = Object.entries(book)
+
+//   console.log(...entries)
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+
+//   const keys = Object.keys(book)
+
+//   for (const key of keys) {
+//     console.log(key)
+//   }
+
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//     {
+//       title: "Сон смішної людини",
+//       author: "Федір Достоєвський",
+//       rating: 7.75,
+//     },
+//   ];
+
+//   let totalRating = 0
+
+//   for (const book of books) {
+//     totalRating = totalRating + book.rating
+//   }
+
+//   const everageRating = (totalRating / books.length).toFixed(1)
+
+//   console.log(everageRating)
+
+// function greet(name) {
+//     return `Ласкаво просимо ${name}.`;
+//   }
+
+//   // Викликаємо функцію greet і виводимо результат у консоль
+//   console.log(greet("Манго")); // Ласкаво просимо Манго.
+
+//   // Виводимо функцію greet у консоль, не викликаючи її
+//   console.log(greet); // ƒ greet() { return `Ласкаво просимо ${name}.`; }
+
+// function greet (name) {
+//     return `welcome ${name}`
+// }
+
+// console.log(greet('Ropan'))
+
+// console.log(greet)
+
+// function hello (name) {
+//     return `hello ${name}`
+// }
+
+// console.log(hello('Ropan'))
+
+// console.log(hello)
+
+// function book (name) {
+//     return `this is book name - ${name}`
+// }
+
+// console.log(book('Black'))
+
+// console.log(book)
+
+// Колбек-функція
+// function greet(name) {
+//     console.log(`Ласкаво просимо ${name}.`);
+//   }
+
+//   // Функція вищого порядку
+//   function registerGuest(name, callback) {
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+//   }
+
+//   registerGuest("Манго", greet);
+
+// function greet(name) {
+//     console.log(`Welcome dear ${name}`)
+// }
+
+// function registerGuest(name, callback) {
+//     console.log(`Register client ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', greet)
+
+// function greet (name) {
+//     console.log(`welcome dear ${name}`)
+// }
+
+// function registerGuest (name, callback) {
+//     console.log(`register mr(ms) ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', greet)
+
+// function welcome (name) {
+//     console.log(`Welcome dear client ${name}`)
+// }
+
+// function ragiterClient (name, callback) {
+//     console.log(`Register client ${name}`)
+//     callback(name)
+// }
+
+// ragiterClient('Ropan', welcome)
+
+// function hotel(name) {
+//     console.log(`Hello, dear ${name} and welcome`)
+// }
+
+// function register(name, callback) {
+//     console.log(`Register client ${name}`)
+//     callback(name)
+// }
+
+// register('Ropan', hotel)
+
+// function registerGuest(name, callback) {
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+//   }
+
+//   // Передаємо інлайн функцію greet у якості колбека
+//   registerGuest("Манго", function greet(name) {
+//     console.log(`Ласкаво просимо ${name}.`);
+//   });
+
+//   // Передаємо інлайн функцію notify у якості колбека
+//   registerGuest("Полі", function notify(name) {
+//     console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+//   });
+
+// function registerGuest (name, callback) {
+//     console.log(`Реєструємо ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', function greet(name) {
+//     console.log(`Ласкаво просимо шановний ${name}`)
+// })
+
+// registerGuest('Ruban', function register(name){
+//     console.log(`шановний ${name} ваш номер буде готовий через 30 хвилин.`)
+// })
+
+// function registerGuest (name, callback) {
+//     console.log(`Реєструємо гостя ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', function greet(name){
+//     console.log(`Вітаємо шановний ${name}`)
+// })
+
+// registerGuest('Ruban', function register(name){
+//     console.log(`Реєструємо ${name}, ваш номер буде готовий через 30 хвилин`)
+// })
+
+// function registerClient (name, callback) {
+//     console.log(`Реєструємо клієнта ${name}`)
+//     callback(name)
+// }
+
+// registerClient('Ropan', function greet(name){
+//     console.log(`Вітаємо шановний(а) ${name}`)
+// })
+
+// registerClient('Ruban', function registerHotel(name){
+//     console.log(`дякуємо за реєстрацію ${name}. Ваш номер буде готвоий через 30 хвилин`)
+// })
+
+// function greet (name) {
+//     console.log(`Welcome ${name}`)
+// }
+
+// function register (name, callback) {
+//     console.log(`You register ${name}`)
+//     callback(name)
+// }
+
+// register('Ropan', greet)
+
+// function welcome (name) {
+//     console.log(`welcome dear ${name}`)
+// }
+
+// function register(name, callback) {
+//     console.log(`thanks for the register dear ${name}`)
+//     callback(name)
+// }
+
+// register('Ropan', welcome)
+
+// function registerGuest (name, callback) {
+//     console.log(`Реєструємо гостя ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', function greet(name){
+//     console.log(`Вітаємo шановний ${name}`)
+// })
+
+// registerGuest('Ruban', function register(name){
+//     console.log(`Дякуємо за реєстрацію ${name}. Ваш номер буде готовий через 30 хвилин`)
+// })
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//     // Імітуємо доступність абонента випадковим числом
+//     const isRecipientAvailable = Math.random() > 0.5;
+
+//     if (!isRecipientAvailable) {
+//       onNotAvailable(recipient);
+//       return;
+//     }
+
+//     onAvailable(recipient);
+//   }
+
+//   function takeCall(name) {
+//     console.log(`З'єднуємо з ${name}, очікуйте...`);
+//     // Логіка прийняття дзвінка
+//   }
+
+//   function activateAnsweringMachine(name) {
+//     console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//     // Логіка активації автовідповідача
+//   }
+
+//   function leaveHoloMessage(name) {
+//     console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//     // Логіка запису голограми
+//   }
+
+//   processCall("Манго", takeCall, activateAnsweringMachine);
+//   processCall("Полі", takeCall, leaveHoloMessage);
+
+// function callCenterClient(client, onAvailable, onNotAvailable) {
+//   const isClientAvaliable = Math.random() > 0.5;
+
+//   if (!isClientAvaliable) {
+//     onNotAvailable(client);
+//     return;
+//   }
+//   onAvailable(client);
+// }
+
+// function takeCall(name) {
+//   console.log(`З'єднуємо з ${name}, очікуйте`);
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступний залиште автоповідомлення`);
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступний записуємо голограму`);
+// }
+
+// callCenterClient("Ropan", takeCall, activateAnsweringMachine);
+// callCenterClient("Ropan", takeCall, leaveHoloMessage);
+
+
+// const doMath = function (a, b, callback) {
+//     const result = callback(a,b)
+
+//     console.log(result)
+// }
+
+// const add = function (x,y) {
+//     return x + y;
+// }
+
+// const sub = function (x,y) {
+//     return x - y;
+// }
+
+// doMath(2,3, add)
+
+// doMath(10,3, sub)
