@@ -2585,4 +2585,84 @@
 //     return price;
 //   }
 
- 
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//     let message;
+//     // Change code below this line
+//     let totalPrice = pricePerDroid * orderedQuantity
+  
+//     if (totalPrice > customerCredits) {
+//       message = "Insufficient funds!"
+//     } else {
+//       message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`}
+  
+//     // Change code above this line
+//     return message;
+//   }
+  
+//   console.log(makeTransaction(3000, 5, 23000))
+//   console.log(makeTransaction(1000, 3, 15000))
+//   console.log(makeTransaction(5000, 10, 8000))
+//   console.log(makeTransaction(2000, 8, 10000))
+//   console.log(makeTransaction(500, 10, 5000))
+
+// function getShippingCost(country) {
+//     let message;
+//     // Change code below this line
+//     switch (country) {
+//       case "China":
+//       price = 100;
+//       break; 
+  
+//       case "Chile":
+//       price = 250;
+//       break;
+  
+//       case "Australia":
+//       price = 170;
+//       break;
+  
+//       case "Jamaica":
+//       price = 120;
+//       break;
+  
+//       default: 
+//       return "Sorry, there is no delivery to your country";
+//     }
+  
+//     message = `Shipping to ${country} will cost ${price} credits`
+//     // Change code above this line
+//     return message;
+//   }
+  
+//   console.log(getShippingCost("Australia"))
+//   console.log(getShippingCost("Germany"))
+//   console.log(getShippingCost("China"))
+//   console.log(getShippingCost("Chile"))
+//   console.log(getShippingCost("Jamaica"))
+//   console.log(getShippingCost("Sweden"))
+
+// function formatMessage(message, maxLength) {
+//     let result;
+//     // Change code below this line
+//     // result = message.length <= maxLength ? message : message.slice(0, maxLength) + '...'
+//     if (message.length <= maxLength) {
+//         return message
+//     } else {
+//         result = message.slice(0, maxLength) + '...'
+//     }
+    
+//     /// Change code above this line
+//     return result;
+//   }
+
+  
+
+//   console.log(formatMessage("Curabitur ligula sapien", 16))
+//   console.log(formatMessage("Curabitur ligula sapien", 23))
+//   console.log(formatMessage("Vestibulum facilisis purus nec", 20))
+//   console.log(formatMessage("Vestibulum facilisis purus nec", 30))
+//   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))
+//   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))
+
+
+
