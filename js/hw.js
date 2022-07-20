@@ -2510,7 +2510,6 @@
 // callCenterClient("Ropan", takeCall, activateAnsweringMachine);
 // callCenterClient("Ropan", takeCall, leaveHoloMessage);
 
-
 // const doMath = function (a, b, callback) {
 //     const result = callback(a,b)
 
@@ -2529,13 +2528,11 @@
 
 // doMath(10,3, sub)
 
-
 // function getSubstring(string, length) {
 //   const substring = string.slice(0, length); // Change this line
 
-
 //   return substring;
-  
+
 // }
 
 // console.log(getSubstring("Hello world", 3))
@@ -2559,28 +2556,28 @@
 
 // function getNameLength(name) {
 //     const message = `Name ${name} is ${name.length} characters long`; // Change this line
-  
+
 //     return message;
 //   }
 
 // function getSubscriptionPrice(type) {
 //     let price;
 //     // Change code below this line
-  
+
 //    switch (type) { // Change this line
 //       case 'starter': // Change this line
 //         price = 0; // Change this line
 //         break;
-  
+
 //       case 'professional': // Change this line
 //         price = 20; // Change this line
 //         break;
-  
+
 //       case 'organization': // Change this line
 //         price = 50; // Change this line
 //         break;
 //     }
-  
+
 //     // Change code above this line
 //     return price;
 //   }
@@ -2589,16 +2586,16 @@
 //     let message;
 //     // Change code below this line
 //     let totalPrice = pricePerDroid * orderedQuantity
-  
+
 //     if (totalPrice > customerCredits) {
 //       message = "Insufficient funds!"
 //     } else {
 //       message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`}
-  
+
 //     // Change code above this line
 //     return message;
 //   }
-  
+
 //   console.log(makeTransaction(3000, 5, 23000))
 //   console.log(makeTransaction(1000, 3, 15000))
 //   console.log(makeTransaction(5000, 10, 8000))
@@ -2611,29 +2608,29 @@
 //     switch (country) {
 //       case "China":
 //       price = 100;
-//       break; 
-  
+//       break;
+
 //       case "Chile":
 //       price = 250;
 //       break;
-  
+
 //       case "Australia":
 //       price = 170;
 //       break;
-  
+
 //       case "Jamaica":
 //       price = 120;
 //       break;
-  
-//       default: 
+
+//       default:
 //       return "Sorry, there is no delivery to your country";
 //     }
-  
+
 //     message = `Shipping to ${country} will cost ${price} credits`
 //     // Change code above this line
 //     return message;
 //   }
-  
+
 //   console.log(getShippingCost("Australia"))
 //   console.log(getShippingCost("Germany"))
 //   console.log(getShippingCost("China"))
@@ -2650,12 +2647,10 @@
 //     } else {
 //         result = message.slice(0, maxLength) + '...'
 //     }
-    
+
 //     /// Change code above this line
 //     return result;
 //   }
-
-  
 
 //   console.log(formatMessage("Curabitur ligula sapien", 16))
 //   console.log(formatMessage("Curabitur ligula sapien", 23))
@@ -2664,5 +2659,552 @@
 //   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))
 //   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))
 
+// function greet (name) {
+//     return `Welcome dear ${name}`
+// }
+
+// console.log(greet("Ropan"))
+
+// Колбек-функція
+// function greet(name) {
+//     console.log(`Ласкаво просимо ${name}.`);
+//   }
+
+//   // Функція вищого порядку
+//   function registerGuest(name, callback) {
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+//   }
+
+//   registerGuest("Манго", greet);
+
+// Колбек-функція
+
+// function greet(name) {
+//     return `Welcome dear ${name}`
+// }
+
+// console.log(greet('Ropan'))
+// console.log(greet)
+
+// function hotel(name) {
+//     console.log(`Welcome dear ${name}`)
+// }
+
+// function registerClient(name, callback) {
+//     console.log(`Thnk for the register ${name}`)
+//     callback(name)
+// }
+
+// function getSumm () {
+//     let numOne, numTwo
+
+//     function getNumOne() {
+//         numOne = 3
+//     }
+
+//     function getNumTwo() {
+//         numTwo = 4
+//     }
+
+//     getNumOne()
+//     getNumTwo()
+
+//     let sum = numOne + numTwo
+//     console.log(`This is sum ${sum}`)
+// }
+
+// getSumm()
+
+// function calcSum (numOne, numTwo) {
+//     let sum = numOne + numTwo
+
+//     console.log(sum)
+// }
+
+// calcSum(3,2)
+
+// function greet (name) {
+//     console.log(`Welcome ${name}`)
+// }
+
+// function registerGuest (name, callback) {
+//     console.log(`Thanks for the register ${name}`)
+//     callback(name)
+// }
+
+// registerGuest('Ropan', greet)
+
+// function registerGuest (name, callback) {
+//     console.log(`Register guest ${name}`)
+//     callback(name)
+// }
+
+// registerGuest ('Ropan', function greet(name) {
+//     console.log(`Welcome ${name}`)
+// })
+
+// registerGuest('Ruban', function vision(name){
+//     console.log(`Your room is allredy for the 30 minutes ${name}`)
+// })
+
+// function greet(name) {
+//     return `Welcome ${name}`
+// }
+//  console.log(greet('Ropan'))
+//  console.log(greet)
+
+// function greet(name) {
+//     console.log(`Welcome dear ${name}`)
+// }
+
+// function registerClient (name, callback) {
+//     console.log(`We register for you room dear ${name}`)
+//     callback(name)
+// }
+
+// registerClient('Ropan', greet)
+
+// function registerGuest(name, callback) {
+//     console.log(`Register client ${name}`)
+//     callback(name)
+// }
+
+// registerGuest ('Ropan', function greet(name){
+//     console.log(`Hello dear ${name}`)
+// })
+
+// registerGuest('Ruban', function regs(name){
+//     console.log(`Your room is ollredy ${name}`)
+// })
+
+// function greet(name) {
+//     return `Hello and welcome ${name}`
+// }
+
+// console.log(greet('Ropan'))
+// console.log(greet)
+
+// function greet(name) {
+//     console.log(`Hllo dear ${name}`)
+// }
+
+// function regiser(name, callback) {
+//     console.log(`Thanks for the register ${name}`)
+//     callback(name)
+// }
+
+// regiser('Ropan', greet)
+
+// function registerClient(name, callback) {
+//     console.log(`Register guest ${name}`)
+//     callback(name)
+// }
+
+// registerClient('Ropan', function greeet(name){
+//     console.log(`Thanks for the register ${name}`)
+// })
+
+// registerClient('Ruban', function registerRoom(name){
+//     console.log(`Thanks your room be allredy for the 30 minutes ${name}`)
+// })
+
+// function processCall (recipient, onAvailable, onNotAvailable) {
+
+//     const isRecipientAvailable = Math.random() > 0.5
+
+//     if (!isRecipientAvailable) {
+//         onNotAvailable(recipient)
+//         return
+//     } onAvailable(recipient)
+// }
+
+//     function takeCall(name) {
+//         console.log(`З'єднуємо з ${name}`)
+//     }
+
+//     function activateAnsweringMachine(name) {
+//         console.log(`Абонент ${name} не доступний вмикаємо автовідповідач`)
+//     }
+
+//     function leaveHoloMessage(name) {
+//         console.log(`Абонент ${name} не достуний залишаємо голограму`)
+//     }
+
+// processCall('Ropan', takeCall, activateAnsweringMachine)
+// processCall('Ropan', takeCall, leaveHoloMessage)
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//     // Імітуємо доступність абонента випадковим числом
+//     const isRecipientAvailable = Math.random() > 0.5;
+
+//     if (!isRecipientAvailable) {
+//       onNotAvailable(recipient);
+//       return;
+//     }
+
+//     onAvailable(recipient);
+//   }
+
+//   function takeCall(name) {
+//     console.log(`З'єднуємо з ${name}, очікуйте...`);
+//     // Логіка прийняття дзвінка
+//   }
+
+//   function activateAnsweringMachine(name) {
+//     console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//     // Логіка активації автовідповідача
+//   }
+
+//   function leaveHoloMessage(name) {
+//     console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//     // Логіка запису голограми
+//   }
+
+//   processCall("Манго", takeCall, activateAnsweringMachine);
+//   processCall("Полі", takeCall, leaveHoloMessage);
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//     // Імітуємо доступність абонента випадковим числом
+//     const isRecipientAvailable = Math.random() > 0.5;
+
+//     if (!isRecipientAvailable) {
+//       onNotAvailable(recipient);
+//       return;
+//     }
+
+//     onAvailable(recipient);
+//   }
+
+//   function takeCall(name) {
+//     console.log(`З'єднуємо з ${name}, очікуйте...`);
+//     // Логіка прийняття дзвінка
+//   }
+
+//   function activateAnsweringMachine(name) {
+//     console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//     // Логіка активації автовідповідача
+//   }
+
+//   function leaveHoloMessage(name) {
+//     console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//     // Логіка запису голограми
+//   }
+
+//   processCall("Манго", takeCall, activateAnsweringMachine);
+//   processCall("Полі", takeCall, leaveHoloMessage);
+
+// function procesTelephone (client, isOnline, isNotOnline) {
+//     const isClientOnline = Math.random() > 0.5
+
+//     if (!isClientOnline) {
+//         isNotOnline(client)
+//         return
+//     } isOnline(client)
+// }
+
+// function takeTell(name) {
+//     console.log(`ОЧікуємо з'єднання з ${name}`)
+// }
+
+// function answerMachiene(name) {
+//     console.log(`Абонент ${name} не на зв'язку залиште повідомення`)
+// }
+
+// function leveHolohrama(name) {
+//     console.log(`Абонент ${name} не на зв"язку залишаємо голограму`)
+// }
+
+// procesTelephone('Ropan', takeTell, answerMachiene)
+
+// procesTelephone('Ruban', takeTell, leveHolohrama)
+
+// function greet(name) {
+//     return `Hello and welcome ${name}`
+// }
+
+// console.log(greet('Ropan'))
+
+// console.log(greet)
+
+// function greet(name) {
+//     console.log(`Hello dear ${name}`)
+// }
+
+// function registerClient(name, callback) {
+//     console.log(`register client ${name}`)
+//     callback(name)
+// }
+
+// registerClient('Ropan', greet)
+
+// function registerGuest(name, callback) {
+//     console.log(`Register guest ${name}`)
+//     callback(name)
+// }
+
+// registerGuest ('Ropan', function greet(name){
+//     console.log(`Register client ${name}`)
+// })
+
+// registerGuest('Ruban', function regs(name){
+//     console.log(`Thanks ${name} your room be rady after 30 minutes`)
+// })
+
+// function callProces (recepient, onAvailable, onNotAvailable) {
+//     const isRecipientAvailable = Math.random() > 0.5
+
+//     if(!isRecipientAvailable) {
+//         onNotAvailable(recepient)
+//         return
+//     } onAvailable(recepient)
+// }
+
+// function takeCall(name) {
+//     console.log(`Register call ${name}`)
+// }
+
+// function activateAnsweringMachine(name) {
+//     console.log(`Abonent ${name} is not avaliable`)
+// }
+
+// function leaveHoloMessage(name) {
+//     console.log(`Abonent ${name} is not avalieble we saved holohrams`)
+// }
+
+// callProces('Ropan', takeCall, activateAnsweringMachine)
+
+// callProces('Ruban', takeCall, leaveHoloMessage)
+
+// function printValue(value) {
+//     console.log(value);
+//   }
+
+//   function prettyPrint(value) {
+//     console.log("Logging value: ", value);
+//   }
+
+//   function repeat(n, action) {
+//     for (let i = 0; i < n; i += 1) {
+//       action(i);
+//     }
+//   }
+
+//   // Передаємо printValue як callback-функцію
+//   repeat(3, printValue);
+//   // 0
+//   // 1
+//   // 2
+
+//   // Передаємо prettyPrint як callback-функцію
+//   repeat(3, prettyPrint);
+//   // Logging value: 0
+//   // Logging value: 1
+//   // Logging value: 2
+
+// function callvalue(value) {
+//     console.log(value)
+// }
+
+// function coolCall(value) {
+//     console.log('this is cool call', value)
+// }
+
+// function repeatCall(n, action) {
+//     for (let i = 0; i < n; i += 1) {
+//         action(i)
+//     }
+// }
+
+// repeatCall(3, callvalue)
+
+// repeatCall(4, coolCall)
+
+// function printValue(value) {
+//     console.log(value)
+// }
+
+// function preetyPrint(value) {
+//     console.log('login value: ', value)
+// }
+
+// function repeat(n, action) {
+//     for(let i = 0; i < n; i += 1){
+//         action(i)
+//     }
+// }
+
+// repeat(4, printValue)
+// repeat(8, preetyPrint)
+
+// function checkForSpam(message) {
+//     let result;
+//     // Change code below this line
+//     const blackListWordOne = "spam";
+//     const blackListWordTwo = "sale";
+
+//     result = message.toLowerCase().includes(blackListWordOne) || message.toLowerCase().includes(blackListWordTwo)
+//     // Change code above this line
+//     return result;
+//   }
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+// let newArray = firstArray.concat(secondArray)
+
+// if(newArray.length > maxLength) {
+//     return newArray.slice(0, maxLength)
+// }
+
+// return newArray
+
+//     // Change code above this line
+// }
+
+//   console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3))
+
+//   console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4))
+
+//   console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3))
+
+//   console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2))
+
+//   console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4))
+
+//   console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0))
+
+// function calculateTotal(number) {
+
+//    let sum = 0;
+
+//    for(let i = 0; i <= number; i = i + 1) {
+//      sum += i
+//    }
+
+//    return sum
+
+//    }
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// function findLongestWord(string) {
+//   const stringSplit = string.split(" ");
+//   let longestWord = stringSplit[0];
+
+//   for (let i = 0; i < stringSplit.length; i += 1) {
+//     if (longestWord.length < stringSplit[i].length) {
+//       longestWord = stringSplit[i];
+//     }
+//   }
+//   return longestWord;
+// }
+
+// function findLongestWord(string) {
+//     const splitString = string.split(" ");
+//     let longestWord = splitString[0];
+
+//     for (let i = 0; i < splitString.length; i = i + 1) {
+//         if (longestWord.length < splitString[i].length) {
+//             longestWord = splitString[i];
+//         }
+//     }
+//     return longestWord
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+// console.log(findLongestWord(" "));
+
+// function findLongestWord(string) {
+//   const splitString = string.split(" ");
+//   let longestWord = splitString[0];
+
+//   for (let i = 0; i < splitString.length; i = i + 1) {
+//     if (longestWord.length < splitString[i].length) {
+//       longestWord = splitString[i];
+//     }
+//   }
+//   return longestWord;
+// }
 
 
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+// console.log(findLongestWord(" "));
+
+
+// function createArrayOfNumbers(min, max) {
+//     const numbers = [];
+//     // Change code below this line
+//     for (let i = min; i <= max; i = i + 1) {
+//       numbers.push(i)
+//     }
+//     // Change code above this line
+//     return numbers;
+//   }
+
+// function filterArray(numbers, value) {
+//     // Change code below this line
+//    let newArray = []
+ 
+//    for (let i = 0; i < numbers.length; i = i + 1) {
+//      if (numbers[i] > value) {
+//        newArray.push(numbers[i])
+//      }
+//    }
+ 
+//    return newArray
+ 
+   
+//    // Change code above this line
+//  }
+  
+
+// function getCommonElements(array1, array2) {
+//     // Change code below this line
+//     let newArray = []
+  
+//     for(let i = 0; i < array1.length; i = i + 1) {
+//       if(array2.includes(array1[i])){
+//         newArray.push(array1[i])
+//       }
+//     }
+  
+//     return newArray
+//    // Change code above this line
+//   }
+
+// function getEvenNumbers(start, end) {
+//     // Change code below this line
+//    let num = []
+ 
+//    for (let i = start; i <= end; i = i + 1){
+//      if (i % 2 === 0) {
+//        num.push(i)
+//      }
+//    }
+//    return num
+//      // Change code above this line
+//    }
+
+// function findNumber(start, end, divisor) {
+//     // Change code below this line
+//     let number;
+  
+//     for (let i = start; i < end; i += 1) {
+//       if (i % divisor === 0) {
+//         return i;
+//       }
+//     }
+  
+//     return number;
+//     // Change code above this line
+//   }
