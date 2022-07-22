@@ -3133,13 +3133,10 @@
 //   return longestWord;
 // }
 
-
-
 // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 // console.log(findLongestWord("Google do a roll"));
 // console.log(findLongestWord("May the force be with you"));
 // console.log(findLongestWord(" "));
-
 
 // function createArrayOfNumbers(min, max) {
 //     const numbers = [];
@@ -3154,30 +3151,28 @@
 // function filterArray(numbers, value) {
 //     // Change code below this line
 //    let newArray = []
- 
+
 //    for (let i = 0; i < numbers.length; i = i + 1) {
 //      if (numbers[i] > value) {
 //        newArray.push(numbers[i])
 //      }
 //    }
- 
+
 //    return newArray
- 
-   
+
 //    // Change code above this line
 //  }
-  
 
 // function getCommonElements(array1, array2) {
 //     // Change code below this line
 //     let newArray = []
-  
+
 //     for(let i = 0; i < array1.length; i = i + 1) {
 //       if(array2.includes(array1[i])){
 //         newArray.push(array1[i])
 //       }
 //     }
-  
+
 //     return newArray
 //    // Change code above this line
 //   }
@@ -3185,7 +3180,7 @@
 // function getEvenNumbers(start, end) {
 //     // Change code below this line
 //    let num = []
- 
+
 //    for (let i = start; i <= end; i = i + 1){
 //      if (i % 2 === 0) {
 //        num.push(i)
@@ -3198,13 +3193,432 @@
 // function findNumber(start, end, divisor) {
 //     // Change code below this line
 //     let number;
-  
+
 //     for (let i = start; i < end; i += 1) {
 //       if (i % divisor === 0) {
 //         return i;
 //       }
 //     }
-  
+
 //     return number;
 //     // Change code above this line
 //   }
+
+// function findNumber(start, end, divisor) {
+//     // Change code below this line
+//     let number;
+
+//     for (let i = start; i < end; i += 1) {
+//       if (i % divisor === 0) {
+//         number = i;
+//         return number
+//       }
+//     }
+
+//     // Change code above this line
+//   }
+
+//   console.log(findNumber(2, 6, 5))
+//   console.log(findNumber(8, 17, 3))
+//   console.log(findNumber(6, 9, 4))
+//   console.log(findNumber(16, 35, 7))
+//   console.log(findNumber())
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+
+//   for (const key in book) {
+//     // Ключ
+//     // console.log(key);
+//     // Значення властивості з таким ключем
+//     console.log(book[key]);
+//   }
+
+// function countProps(object) {
+//     let propCount = 0;
+//   const keys = Object.keys(object);
+//       propCount = keys.length;
+//     return propCount;
+//   }
+
+//   console.log(countProps({}))
+//   console.log(countProps({ name: "Mango", age: 2 }))
+//   console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice (productName) {
+//     for (const product of products) {
+//         if(product.name === productName){
+//             return product.price
+//         }
+//     }
+//     return null
+// }
+
+// console.log(getProductPrice("Radar"))
+// console.log(getProductPrice("Grip"))
+// console.log(getProductPrice("Droid"))
+// console.log(getProductPrice("Grip"))
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+
+// const hexColors = []
+// const rgbColors = []
+
+// for (const color of colors) {
+//     const values = Object.values(color)
+//     hexColors.push(values[0])
+//     rgbColors.push(values[1])
+// }
+
+// console.log(hexColors)
+// console.log(rgbColors)
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+
+//   const colorHex = []
+
+//   const colorRgb = []
+
+//   for (const color of colors) {
+//     colorHex.push(color.hex)
+//   }
+
+//   for (const color of colors) {
+//     colorRgb.push(color.rgb)
+//   }
+
+// console.log(colorHex)
+
+// console.log(colorRgb)
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice (productName) {
+//     for (const product of products) {
+//         if(product.name === productName) {
+//             return product.price
+//         }
+//     }
+//     return null
+// }
+
+// console.log(getProductPrice("Radar"))
+// console.log(getProductPrice("Grip"))
+// console.log(getProductPrice("Scanner"))
+// console.log(getProductPrice("Droid"))
+// console.log(getProductPrice("Engine"))
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+
+// const colorHex = []
+// const colorRgb = []
+
+// for(const color of colors) {
+//     const values = Object.values(color)
+//     colorHex.push(values[0])
+//     colorRgb.push(values[1])
+// }
+
+// console.log(colorHex)
+// console.log(colorRgb)
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice (productName) {
+//     for (const product of products) {
+//         if(product.name === productName){
+//             return product.price
+//         }
+//     }
+//     return null
+// }
+
+// console.log(getProductPrice("Radar"))
+// console.log(getProductPrice("Scanner"))
+// console.log(getProductPrice("Droid"))
+// console.log(getProductPrice("Grip"))
+// console.log(getProductPrice("Monokong"))
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+// function getAllPropValues (propName) {
+//     const porductValues = []
+
+//     for(const product of products) {
+//         if(product[propName]) {
+//             porductValues.push(product[propName])
+//         }
+//     }
+//     return porductValues
+// }
+
+// console.log(getAllPropValues("name"))
+// console.log(getAllPropValues("price"))
+// console.log(getAllPropValues("quantity"))
+// console.log(getAllPropValues("genre"))
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   function getAllProdValues (propertyName) {
+//     const propVal = []
+
+//     for (const product of products) {
+//         if(product[propertyName]) {
+//             propVal.push(product[propertyName])
+//         }
+//     }
+
+//     return propVal
+//   }
+
+//   console.log(getAllProdValues("name"))
+//   console.log(getAllProdValues("price"))
+//   console.log(getAllProdValues("quantity"))
+//   console.log(getAllProdValues("mango"))
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getPrice (name) {
+//     for(const product of products) {
+//         if(product.name === name) {
+//             return product.price
+//         }
+//     }
+//     return null
+// }
+
+// console.log(getPrice("Radar"))
+// console.log(getPrice("Scanner"))
+// console.log(getPrice("Droid"))
+// console.log(getPrice("Grip"))
+// console.log(getPrice('Mono'))
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   function getAllValues (propNames) {
+//     const valuesProd = []
+
+//     for (const product of products) {
+//         if(product[propNames]){
+//             valuesProd.push(product[propNames])
+//         }
+//     }
+//     return valuesProd
+//   }
+
+//   console.log(getAllValues("name"))
+//   console.log(getAllValues("price"))
+//   console.log(getAllValues("quantity"))
+//   console.log(getAllValues("kwii"))
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+
+//   const hexColor = []
+
+//   const rgbColor = []
+
+//   for (const color of colors) {
+//     hexColor.push(color.hex)
+//   }
+
+//   for(const color of colors) {
+//     rgbColor.push(color.rgb)
+//   }
+
+//   console.log(hexColor)
+
+//   console.log(rgbColor)
+
+// for (const color of colors) {
+//     const values = Object.values(color)
+//     hexColor.push(values[0])
+//     rgbColor.push(values[1])
+// }
+
+// console.log(hexColor)
+// console.log(rgbColor)
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllValuesOfProducts (valNames) {
+//     const valuesOfOb = []
+
+//     for (const product of products) {
+//         if(product[valNames]){
+//             valuesOfOb.push(product[valNames])
+//         }
+//     }
+
+//     return valuesOfOb
+// }
+
+// console.log(getAllValuesOfProducts("name"))
+// console.log(getAllValuesOfProducts("price"))
+// console.log(getAllValuesOfProducts("quantity"))
+// console.log(getAllValuesOfProducts("ad"))
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+
+//   return { category: "Genreal", priority: "Normal", ...data, completed: false };
+// }
+
+// console.log(makeTask({}));
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+// console.log(makeTask({ text: "Buy bread" }));
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Класичний for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Індекс ${i}, значення ${numbers[i]}`);
+// }
+
+// // Метод перебирання forEach
+// numbers.forEach(function (number, index) {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// });
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Оголошення функції
+// numbers.forEach(function (number, index) {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// });
+
+// // Анонімна стрілочна функція
+// numbers.forEach((number, index) => {
+//   console.log(`Індекс ${index}, значення ${number}`);
+// });
+
+// Объявите две переменные: admin и name.
+// Запишите строку "Джон" в переменную name.
+// Скопируйте значение из переменной name в admin.
+// Выведите на экран значение admin, используя функцию alert (должна показать «Джон»).
+
+// let name = "Джон";
+// let admin;
+
+// admin = name;
+
+// alert(admin);
+
+// let name = "Tom";
+
+// let admin;
+
+// admin = name;
+
+// alert(admin)
+
+// let car = "BMW"
+
+// let transport;
+
+// transport = car;
+
+// alert(transport)
+
+// Создайте переменную для названия нашей планеты. Как бы вы её назвали?
+// Создайте переменную для хранения имени текущего посетителя сайта. Как бы вы назвали такую переменную?
+
+// let ourPlanetName = "Earth"
+
+// let currentUserName = "John"
+
+// let ourCityName = 'Lviv';
+
+// let currentUserName = "Mike"
+
+// alert(ourCityName)
+// alert(currentUserName)
+
+
+// let name = "Ilya"; 
+
+// alert( `hello ${1}` ); // ? 
+
+// alert( `hello ${"name"}` ); // ? , 
+
+// alert( `hello ${name}` ); // ? 
+
+// let currentUserName = prompt("What your name?", "Your name")
+
+// alert(`Your name is ${currentUserName}`)
+
