@@ -3622,3 +3622,241 @@
 
 // alert(`Your name is ${currentUserName}`)
 
+// const name = prompt("What is your name")
+
+// alert(name)
+
+
+// const message = "Hello";
+
+// hello = message;
+
+// alert(hello)
+
+// let value = true;
+
+// alert(typeof value)
+
+// value = String(value)
+
+// alert(typeof value)
+
+// let str = "123"
+
+// alert(typeof str)
+
+// let num = Number(str)
+
+// alert(typeof num)
+// alert(num)
+
+// let value = true;
+
+// alert(typeof value)
+
+// value = String(value)
+
+// alert(typeof value)
+
+// let str = "123"
+
+// alert(typeof str)
+
+// let num = Number(str)
+
+// alert(typeof num)
+
+// let message;
+
+// alert(Boolean(0))
+// alert(Boolean(""))
+// alert(Boolean(null))
+// alert(Boolean(5 / "srt"))
+// alert(Boolean(false))
+// alert(Boolean(message))
+
+
+// let number = (" 123 ");
+
+// alert(typeof number)
+
+// let numb = Number(number)
+
+// alert(typeof numb)
+
+
+// let number = "numer"
+
+// alert(typeof number)
+
+// let numb = Number(number)
+
+// alert(typeof numb)
+// alert(numb)
+
+// let number;
+
+// alert(typeof number)
+
+// let num = Number(number)
+
+// alert(num)
+
+// let number = true
+
+// alert(typeof number)
+
+// let num = Number(number)
+
+// alert(typeof num)
+// alert(num)
+
+// let number = false
+
+// alert(typeof number)
+
+// let num = Number(number)
+
+// alert(typeof num)
+
+// alert(num)
+
+// let value = true;
+
+// alert(typeof value)
+
+// value = String(value)
+
+// alert(typeof value)
+
+// let str = "123"
+
+// alert(typeof str)
+
+// let num = Number(str)
+
+// alert(typeof num)
+
+// let message;
+
+// alert(Boolean(0))
+// alert(Boolean(""))
+// alert(Boolean(null))
+// alert(Boolean(5 / 'str'))
+// alert(Boolean(message))
+
+// alert( 4 ** (1/2) ); // 2 (степень 1/2 эквивалентна взятию квадратного корня)
+// alert( 8 ** (1/3) ); // 2 (степень 1/3 эквивалентна взятию кубического корня)
+
+
+// let apple = "2"
+// let lime = "3"
+
+// alert(apple + lime)
+
+// let apple = 2;
+
+// let lime = 3;
+
+// alert(+apple + +lime)
+
+// let a = 1
+// let b = 2
+// alert(a)
+
+// let c = 3 - (a = b + 1)
+
+// alert(a)
+
+// alert(c)
+
+// let counter = 1;
+
+// let a = counter++
+
+// alert(a)
+
+// let count = 1
+
+// let b = ++count
+
+// alert(b)
+
+// let a = 2; // 4
+
+// let x = 1 + (a *= 2); // 5
+
+// alert(a)
+
+// alert(x)
+
+// let a = 1, b = 1;
+
+// let c = ++a; // ? 
+
+// let d = b++; // ?
+
+// a = 2; b = 2; c = 2; d = 1
+
+
+// "" + 1 + 0 = "10" 
+// "" - 1 + 0 = -1  
+// true + false = 1
+// 6 / "3" = 2
+// "2" * "3" = 6
+// 4 + 5 + "px" = "9px"
+// "$" + 4 + 5 = "$45"
+// "4" - 2 = 2
+// "4px" - 2 = NaN
+// "  -9  " + 5 = "  -9  5" // 
+// "  -9  " - 5 = -14 // 
+// null + 1 = 1 // 
+// undefined + 1 = NaN // 
+// " \t \n" - 2 = -2 // 
+
+
+// let a = prompt("Первое число?", 1);
+// let b = prompt("Второе число?", 2);
+
+// alert(+a + +b); // 12
+
+// let str = "0000001";
+// let num = Number(str);
+
+// alert(num)
+
+// null == undefined // true
+// null == 0 // false
+// undefined == 0 // false
+
+// 5 > 4 // true
+// "ананас" > "яблоко" // false
+// "2" > "12" // true
+// undefined == null //true
+// undefined === null // false
+// null == "\n0\n" // false
+// null === +"\n0\n" // false
+
+1 == 1 // true
+'1' == 1 // true
+1 == '1' // true
+3 == 5 // false
+0 == false // true
+'foo' == 'bar' // false 
+1 != 2 // true
+1 != '1' // false
+'1' != 1 // false
+1 != true // false
+0 != false // false
+'foo' != 'bar' // true
+3 === 3 // true
+3 === '3' // false
+'foo' === 'foo' // true
+3 !== '3' // true
+4 !== 3 // ture
+4 > 3 // true
+1 > 5 // false
+4 >= 3 // true
+3 >= 3 // true
+3 <= 4 // true
+3 <= 3 // true
