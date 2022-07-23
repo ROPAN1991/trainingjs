@@ -3609,14 +3609,13 @@
 // alert(ourCityName)
 // alert(currentUserName)
 
+// let name = "Ilya";
 
-// let name = "Ilya"; 
+// alert( `hello ${1}` ); // ?
 
-// alert( `hello ${1}` ); // ? 
+// alert( `hello ${"name"}` ); // ? ,
 
-// alert( `hello ${"name"}` ); // ? , 
-
-// alert( `hello ${name}` ); // ? 
+// alert( `hello ${name}` ); // ?
 
 // let currentUserName = prompt("What your name?", "Your name")
 
@@ -3625,7 +3624,6 @@
 // const name = prompt("What is your name")
 
 // alert(name)
-
 
 // const message = "Hello";
 
@@ -3675,7 +3673,6 @@
 // alert(Boolean(false))
 // alert(Boolean(message))
 
-
 // let number = (" 123 ");
 
 // alert(typeof number)
@@ -3683,7 +3680,6 @@
 // let numb = Number(number)
 
 // alert(typeof numb)
-
 
 // let number = "numer"
 
@@ -3748,7 +3744,6 @@
 // alert( 4 ** (1/2) ); // 2 (степень 1/2 эквивалентна взятию квадратного корня)
 // alert( 8 ** (1/3) ); // 2 (степень 1/3 эквивалентна взятию кубического корня)
 
-
 // let apple = "2"
 // let lime = "3"
 
@@ -3792,15 +3787,14 @@
 
 // let a = 1, b = 1;
 
-// let c = ++a; // ? 
+// let c = ++a; // ?
 
 // let d = b++; // ?
 
 // a = 2; b = 2; c = 2; d = 1
 
-
-// "" + 1 + 0 = "10" 
-// "" - 1 + 0 = -1  
+// "" + 1 + 0 = "10"
+// "" - 1 + 0 = -1
 // true + false = 1
 // 6 / "3" = 2
 // "2" * "3" = 6
@@ -3808,12 +3802,11 @@
 // "$" + 4 + 5 = "$45"
 // "4" - 2 = 2
 // "4px" - 2 = NaN
-// "  -9  " + 5 = "  -9  5" // 
-// "  -9  " - 5 = -14 // 
-// null + 1 = 1 // 
-// undefined + 1 = NaN // 
-// " \t \n" - 2 = -2 // 
-
+// "  -9  " + 5 = "  -9  5" //
+// "  -9  " - 5 = -14 //
+// null + 1 = 1 //
+// undefined + 1 = NaN //
+// " \t \n" - 2 = -2 //
 
 // let a = prompt("Первое число?", 1);
 // let b = prompt("Второе число?", 2);
@@ -3842,7 +3835,7 @@
 // 1 == '1' // true
 // 3 == 5 // false
 // 0 == false // true
-// 'foo' == 'bar' // false 
+// 'foo' == 'bar' // false
 // 1 != 2 // true
 // 1 != '1' // false
 // '1' != 1 // false
@@ -3921,15 +3914,166 @@
 //     alert(0)
 // }
 
-
 // let result = (a + b < 4) ? 'Мало' : 'Много';
 
+// let welcome = (`Welcome dear ${message}`)
 
-
-// let message = (login == 'Сотрудник') ? 'Привет' : 
-// (login == 'Директор') ? 'Здравствуйте' : 
+// let message = (login == 'Сотрудник') ? 'Привет' :
+// (login == 'Директор') ? 'Здравствуйте' :
 // (login == '') ? 'Нет логина' :
 // "";
 
+// alert(welcome)
 
+// Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:
 
+// 1, если значение больше нуля,
+// -1, если значение меньше нуля,
+// 0, если значение равно нулю.
+// Предполагается, что пользователь вводит только числа.
+
+// let number = prompt("Get number", "");
+
+// if(number > 0){
+//     alert(1)
+// }else if(number < 0){
+//     alert(-1)
+// }else{
+//     alert(0)
+// }
+
+// let result = (a + b < 4) ? 'Мало' : 'Много';
+
+// let message = (login == 'Сотрудник') ? 'Привет' :
+// (login == 'Директор') ? 'Здравствуйте' :
+// (login == '') ? 'Нет логина' :
+// "";
+
+// let hour = 12;
+// let isWeekend = true;
+
+// if (hour < 10 || hour > 18 || isWeekend) {
+//   alert( 'Офис закрыт.' ); // это выходной
+// }
+
+// let hour = 9;
+
+// if (hour < 10 || hour > 18) {
+//   alert( 'Офис закрыт.' );
+// }
+
+// alert( null || 2 || undefined ); // 2
+
+// alert( alert(1) || 2 || alert(3) ); // alert(1) - 1, undefinded, // 2
+
+// alert( 1 && null && 2 ); // null
+
+// alert( alert(1) && alert(2) ); // alert(1) - 1, undefinded // undefinded
+
+// alert( null || 2 && 3 || 4 ); // 1) 2 && 3 - 3; 2) null||3||4; result - 3 firt true value
+
+// Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
+
+// «Включительно» означает, что значение переменной age может быть равно 14 или 90.
+
+// let age = prompt('Age')
+
+// if (age >= 14 && age <= 90) {
+//     alert('Good')
+// } else {
+//     alert("not good")
+// }
+
+// Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно.
+
+// Напишите два варианта: первый с использованием оператора НЕ !, второй – без этого оператора.
+
+// let age = prompt('Age');
+
+// if (!(age >= 14 && age <= 90)) {
+//     alert("good")
+// } else {
+//     alert("bad")
+// }
+
+// if(age < 14 || age > 90) {
+//     alert('good')
+// } else {
+//     alert('bad')
+// }
+
+// if (-1 || 0) alert( 'first' ); // в логическом контексте true -1 // -1 - true (-1,-2,-3... true)
+// if (-1 && 0) alert( 'second' ); // в логическом контексте true -1 // 0 - false
+// if (null || -1 && 1) alert( 'third' ); // 1) 1; 2) 1 - true
+
+// Напишите код, который будет спрашивать логин с помощью prompt.
+
+// Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».
+
+// Пароль проверять так:
+
+// Если введён пароль «Я главный», то выводить «Здравствуйте!»,
+// Иначе – «Неверный пароль»,
+// При отмене – «Отменено».
+// Блок-схема:
+
+// Для решения используйте вложенные блоки if. Обращайте внимание на стиль и читаемость кода.
+
+// Подсказка: передача пустого ввода в приглашение prompt возвращает пустую строку ''. Нажатие клавиши Esc во время запроса возвращает null.
+
+// let userName = prompt("Введіть логін", "")
+
+// if (userName === "Адмін") {
+
+//     let password = prompt("Введіть пароль")
+
+//         if (password === "Я головний") {
+//             alert("Привіт БОСС")
+//     } else if (password === "" || password === null) {
+//         alert("Відмінено")
+//     } else {
+//         alert("Я вас не знаю")
+//     }
+// } else if (userName === "" || userName === null) {
+//     alert("Відмінено")
+// } else {
+//     alert("Я вас не знаю")
+// }
+
+// let userName = prompt("Введіть ім'я користувача", "");
+
+// if (userName === "Адмін") {
+
+//   let password = prompt("Введіть пароль", "");
+
+//   if (password === "Я головний") {
+//     alert("Привіт Босс!");
+//   } else if (password === "" || password === null) {
+//     alert("Відміна");
+//   } else {
+//     alert("Не правильний пароль");
+//   }
+// } else if (userName === "" || userName === null) {
+//   alert("Відміна");
+// } else {
+//   alert("Я вас не знаю");
+// }
+
+let userName = prompt("Введіть логін", "")
+
+if(userName === "Адмін") {
+
+    let password = prompt("Введіть пароль", "") 
+
+    if(password === "Я головний"){
+        alert("Привіт, БОСС!")
+    } else if(password === "" || password === null) {
+        alert("Відміна")
+    } else {
+        alert("Не правильний пароль")
+    }
+} else if (userName === "" || userName === null) {
+    alert("Відміна")
+} else {
+    alert("Я вас не знаю")
+}
