@@ -4325,3 +4325,113 @@
 //     }
 //     console.log(i)
 // }
+
+// let num
+
+// do {
+//    num = prompt("Введіть число більше 100", 0)
+// } while (num <= 100 && num)
+
+let a = 3;
+
+// switch (a) {
+//   case 4:
+//     alert('Правильно!');
+//     break;
+
+//   case 3: // (*) группируем оба case
+//   case 5:
+//     alert('Неправильно!');
+//     alert("Может вам посетить урок математики?");
+//     break;
+
+//   default:
+//     alert('Результат выглядит странновато. Честно.');
+// }
+
+// let arg = prompt("Введите число?");
+// switch (arg) {
+//   case '0':
+//   case '1':
+//     alert( 'Один или ноль' );
+//     break;
+
+//   case '2':
+//     alert( 'Два' );
+//     break;
+
+//   case 3:
+//     alert( 'Никогда не выполнится!' );
+//     break;
+//   default:
+//     alert( 'Неизвестное значение' );
+// }
+
+// Напишите if..else, соответствующий следующему switch:
+
+// switch (browser) {
+//     case 'Edge':
+//       alert( "You've got the Edge!" );
+//       break;
+  
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//       alert( 'Okay we support these browsers too' );
+//       break;
+  
+//     default:
+//       alert( 'We hope that this page looks ok!' );
+//   }
+
+// let browser = prompt("return name:", "")
+
+// if (browser === "Edge") {
+//     alert("You've got the Edge!")
+// } else if (browser === 'Chrome' || 
+// browser === "Opera" || 
+// browser === "Safari" ||
+// browser === "Firefox" ||
+// browser === "Chrome") {
+//     alert( 'Okay we support these browsers too' );
+// } else {
+//     alert('We hope that this page looks ok!')
+// }
+
+// Перепишите код с использованием одной конструкции switch:
+
+// const number = +prompt('Введите число между 0 и 3', '');
+
+// if (number === 0) {
+//   alert('Вы ввели число 0');
+// }
+
+// if (number === 1) {
+//   alert('Вы ввели число 1');
+// }
+
+// if (number === 2 || number === 3) {
+//   alert('Вы ввели число 2, а может и 3');
+// }
+
+// let number = +prompt('Введите число между 0 и 3', '');
+
+// switch(number || number === null) {
+//     case 0:
+//     alert('Вы ввели число 0');
+//     break;
+
+//     case 1:
+//     alert('Вы ввели число 1');
+//     break;
+    
+//     case 2:
+//     case 3:
+//         alert('Вы ввели число 2, а может и 3')
+//     break;
+
+//     default: 
+//     alert("WTF")
+
+// }
