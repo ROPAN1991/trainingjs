@@ -4411,6 +4411,16 @@
 
 // в user находится ссылка на объект
 
+// let age = "user age"
 
+// let user = {
+//   [age]: 30,
+// }
+// user["user name"] = "Ropan"
 
+// console.log(user)
+
+// Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
+
+// до вызова функции
 
