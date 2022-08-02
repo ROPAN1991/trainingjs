@@ -4424,3 +4424,19 @@
 
 // до вызова функции
 
+const students = [
+    { name: "Манго", courses: ["математика", "фізика"] },
+    { name: "Полі", courses: ["інформатика", "математика"] },
+    { name: "Ківі", courses: ["фізика", "біологія"] },
+  ];
+  
+  const allCourses = students.flatMap(student => student.courses);
+  // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
+
+  console.log(allCourses)
+
+//   const uniqueCourses = allCourses.filter(
+//     (course, index, array) => array.indexOf(course) === index
+//   );
+
+
