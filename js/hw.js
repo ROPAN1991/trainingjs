@@ -4424,19 +4424,23 @@
 
 // до вызова функции
 
-const students = [
-    { name: "Манго", courses: ["математика", "фізика"] },
-    { name: "Полі", courses: ["інформатика", "математика"] },
-    { name: "Ківі", courses: ["фізика", "біологія"] },
-  ];
-  
-  const allCourses = students.flatMap(student => student.courses);
-  // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
-
-  console.log(allCourses)
-
-//   const uniqueCourses = allCourses.filter(
-//     (course, index, array) => array.indexOf(course) === index
-//   );
 
 
+const tweets = [
+  { id: "000", likes: 5, tags: ["js", "nodejs"] },
+  { id: "001", likes: 2, tags: ["html", "css"] },
+  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+  { id: "003", likes: 8, tags: ["css", "react"] },
+  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+
+const getTags = tweets =>
+  tweets.reduce((allTags, tweet) => {
+    allTags.push(...tweet.tags);
+
+    return allTags;
+  }, []);
+
+const tags = getTags(tweets);
+
+console.log(tags)
