@@ -4426,21 +4426,47 @@
 
 
 
-const tweets = [
-  { id: "000", likes: 5, tags: ["js", "nodejs"] },
-  { id: "001", likes: 2, tags: ["html", "css"] },
-  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
-  { id: "003", likes: 8, tags: ["css", "react"] },
-  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
-];
+// let a = +prompt("Введіть число", 0)
+// let b = +prompt("Введіть число", 0)
 
-const getTags = tweets =>
-  tweets.reduce((allTags, tweet) => {
-    allTags.push(...tweet.tags);
+// alert(a + b)
 
-    return allTags;
-  }, []);
+// function readNumber() {
+//   let num;
 
-const tags = getTags(tweets);
+//   do {
+//     num = prompt("Введите число", 0);
+//   } while ( !isFinite(num) );
 
-console.log(tags)
+//   if (num === null || num === '') return null;
+
+//   return +num;
+// }
+
+// alert(`Число: ${readNumber()}`);
+
+// let guestList = `Guests:
+//   John
+//   Pete
+//   Mary
+// `;
+
+// alert(guestList); // список гостей, состоящий из нескольких строк
+
+// let newStr = str[0].toUpperCase() + str.slice(1);
+
+// function checkSpam(str) {
+//   let lowerStr = str.toLowerCase();
+
+//   return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+// }
+
+// alert( checkSpam('buy ViAgRA now') );
+// alert( checkSpam('free xxxxx') );
+// alert( checkSpam("innocent rabbit") );
+
+// function extractCurrencyValue(str) {
+//   return +str.slice(1);
+// }
+
+// alert( extractCurrencyValue('$120') === 120 ); // true
