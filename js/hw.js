@@ -30,3 +30,4 @@
 //     total = total + cart[i]
 // }
 
+// console.log(total)
