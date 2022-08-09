@@ -1,33 +1,21 @@
-// отримати перше і останнє значення масиву
+// робота над помилками
 
-// function getArray(array) {
-//     array = [array[0], array[array.length-1]]
-//     return array
-//    }
+// 1 - Функція повинна повертати масив з двох елементів - першого і останнього елемента параметра array. 
+// НЕ ЗАБУВАТИ ПРО ЛІТЕРАЛ МАСИВУ [] НАКОЛО ЗНАЧЕНЬ ЯКІ ТРЕБА ПОВЕРНУТИ
 
-//    console.log(getArray([1,2,3,4,5]))
+// function getExtremeElements(array) {
+//     // Change code below this line
+//   return array = [array[0], array[array.length -1]]
+//     // Change code above this line
+//   }
 
-// перебрати всі елементи масиву
+// 2 - Оголошена функція calculateEngravingPrice(message, pricePerWord). Ця функція приймає рядок, що складається зі слів, розділених лише пробілами (параметр message) та ціну гравірування одного слова (параметр pricePerWord). Напиши тіло функції, щоб вона повертала загальну вартість гравірування усіх слів в рядку.
 
-// const friends = ["Mango", "Kiwi", "Poli", "Ajax"];
-// console.table(friends);
+// НЕ ЗАБУВАТИ ПРО ВЛАСТИВІСТЬ length - довжина масиву.
 
-// for (let i = 0; i < friends.length; i = i + 1) {
-//   friends[i] += ":-)";
-// }
+// function calculateEngravingPrice(message, pricePerWord) {
+//     // Change code below this line
+//  return message.split(" ").length * pricePerWord
+//     // Change code above this line
+//  }
 
-// console.table(friends)
-
-// знайти суму всіх продуктів
-
-// const cart = [50, 44, 13, 28, 19, 71, 120]
-
-// let total = 0;
-
-// for (let i = 0; i < cart.length; i = i + 1) {
-//     console.log(cart[i])
-
-//     total = total + cart[i]
-// }
-
-// console.log(total)
