@@ -302,4 +302,51 @@
 
 // console.log(findNumbers)
 
-const allNum = [11, 22, 18, 30, 59, 47, 13, 97]
+// const scores = [1, 2, 3, 4, 5];
+
+// const deleteScores = scores.splice(1, 2)
+
+// console.log(deleteScores)
+
+// console.log(scores)
+
+// const friends = ['west', 'casper', 'slash', 'meh', 'iceman', 'longman']
+
+// const deleteFriend = friends.splice(3, 3)
+
+// console.log(deleteFriend)
+
+// console.log(friends)
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const deleteNumebers = numbers.splice(2, 5)
+
+// console.log(deleteNumebers)
+
+// console.log(numbers)
+
+// const colors = ['red', 'green', 'blue']
+// colors.splice(0, 0, 'purple')
+
+// console.log(colors)
+
+// colors.splice(2, 0, 'black')
+
+// console.log(colors)
+
+// colors.splice(4, 0, 'yelow')
+
+// console.log(colors)
+
+// const languages = ["C", "C++", "Java", "JavaScript"];
+
+// languages.splice(0, 2, "HTML", "CSS")
+
+// console.log(languages)
+
+// const oldNumbers = [1,2,3]
+// const newNumbers = [4,5]
+// const allNumbers = oldNumbers.concat(newNumbers)
+
+// console.log(allNumbers)
