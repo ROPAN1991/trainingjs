@@ -213,3 +213,9 @@
 //   }
 //   return false;
 // }
+
+const friends = ["Mango", "Poli", "Ajax"]
+
+for (let i = 0; i < friends.length; i += 1) {
+    console.log(friends[i])
+}
