@@ -214,8 +214,92 @@
 //   return false;
 // }
 
-const friends = ["Mango", "Poli", "Ajax"]
+// const friends = ["Mango", "Poli", "Ajax"];
 
-for (let i = 0; i < friends.length; i += 1) {
-    console.log(friends[i])
-}
+// for (let i = 0; i < friends.length; i += 1) {
+//   console.table(friends[i])
+// }
+
+// for (let friend of friends) {
+//   console.log(friend);
+// }
+
+// firstEl = friends[0];
+// secondEl = friends[1];
+
+// friends[0] = "Kiwi";
+// friends[1] = "Pongo";
+
+// console.log(friends);
+
+// console.log(friends.length);
+// const lastElement = friends.length - 1;
+// console.log(lastElement);
+
+// const clients = ["Alex", "John", "Piter"];
+// const clientFind = "John";
+
+// 1) варіант // let message;
+
+// let message = `Clients not find`;
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   if (clientFind === clients[i]) {
+//     message = `Clients find`;
+//   }
+// // 1) варінат //   message = `Clients not find`
+// }
+
+// console.log(message);
+
+// const numbers = [12, 7, 20, 4, 19, 8, 22, 5, 11, 9];
+
+// const treshhold = 10;
+
+// for (let number of numbers) {
+//   if (number > treshhold) {
+//     console.log(`Числа більші за 10: ${number}`);
+//     continue;
+//   }
+// }
+
+// const name = "Mango"
+
+// console.log(name.split(""))
+
+// const helloW = "Hello world this is Javascript"
+
+// console.log(helloW.split(" "))
+
+// const words = ["Hello", "world", "javascript", "its", "interesting"]
+
+// console.log(words.join(""))
+// console.log(words.join(" "))
+// console.log(words.join("$"))
+
+// const friends = ["west", "slash", "mex"];
+
+// friends.push("iceman", "demonx");
+
+// console.log(friends);
+
+// friends.pop();
+
+// console.log(friends);
+
+// friends.pop()
+// console.log(friends)
+
+// friends.unshift('casper')
+// console.log(friends)
+
+// friends.shift()
+// console.log(friends)
+
+// const numbers = [9,8,7,6,5,4,3,2,1]
+
+// const findNumbers = numbers.slice(5, 7)
+
+// console.log(findNumbers)
+
+const allNum = [11, 22, 18, 30, 59, 47, 13, 97]
