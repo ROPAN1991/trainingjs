@@ -350,3 +350,79 @@
 // const allNumbers = oldNumbers.concat(newNumbers)
 
 // console.log(allNumbers)
+
+// function multiply (a, b, c) {
+//     console.log(`Результат виконання функції`)
+//     return a * b * c
+// }
+
+// let result = multiply(3, 3, 3)
+// console.log(result)
+
+// result = multiply(4, 3, 2)
+// console.log(result)
+
+// result = multiply(5,3,3)
+// console.log(result)
+
+// function sum(a,b,c) {
+//     console.log("Результат виконання коду")
+//     return a + b + c
+// } 
+// let result = sum(2,3,4)
+// console.log(result)
+
+// result = sum(3,3,1)
+// console.log(result)
+
+// result = sum(5,5,1)
+// console.log(result)
+
+// function sum (a, b, c) {
+//     console.log(`Результат додавання ${a + b + c}`)
+// }
+
+// console.log("До виклику функції")
+// sum(2,3,4)
+// console.log("Після виклику функції")
+
+// function counter (countFrom = 0, countTo = 10, step = 1) {
+//     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`)
+//     for (let i = countFrom; i <= countTo; i += step) {
+//         console.log(i)
+//     }
+// }
+
+// counter(1, 5)
+// counter(2)
+// counter()
+
+// function multiply() {
+//     let total = 1
+
+//     for (const argument of arguments) {
+//         total *= argument
+//     }
+
+//     return total
+
+    
+// }
+
+// console.log(multiply(3,2,4))
+
+function withdraw (amount, balance) {
+    if (amount > balance) {
+        console.log("У вас недостатньо коштів на рахунку")
+        return
+    } else if(amount === 0) {
+        console.log("Для проведення операції введіть суму більшу за 0")
+        return
+    } console.log("Операція успішна")
+}
+
+withdraw(500, 200)
+withdraw(0, 200)
+withdraw(200, 500)
+
+
