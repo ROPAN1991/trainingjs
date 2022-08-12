@@ -368,7 +368,7 @@
 // function sum(a,b,c) {
 //     console.log("Результат виконання коду")
 //     return a + b + c
-// } 
+// }
 // let result = sum(2,3,4)
 // console.log(result)
 
@@ -406,23 +406,80 @@
 
 //     return total
 
-    
 // }
 
 // console.log(multiply(3,2,4))
 
-function withdraw (amount, balance) {
-    if (amount > balance) {
-        console.log("У вас недостатньо коштів на рахунку")
-        return
-    } else if(amount === 0) {
-        console.log("Для проведення операції введіть суму більшу за 0")
-        return
-    } console.log("Операція успішна")
-}
+// function withdraw (amount, balance) {
+//     if (amount > balance) {
+//         console.log("У вас недостатньо коштів на рахунку")
+//         return
+//     } else if(amount === 0) {
+//         console.log("Для проведення операції введіть суму більшу за 0")
+//         return
+//     } console.log("Операція успішна")
+// }
 
-withdraw(500, 200)
-withdraw(0, 200)
-withdraw(200, 500)
+// withdraw(500, 200)
+// withdraw(0, 200)
+// withdraw(200, 500)
 
+// multiply(2, 4, 2)
 
+// function multiply (a,b,c) {
+//     console.log(`Result: ${a * b * c}`)
+// }
+
+// const sum = function (a,b,c) {
+//     console.log(`This is sum: ${a + b + c}`)
+// }
+
+// sum(3,2,4)
+
+// let globalValue = 10
+// console.log(globalValue)
+
+// function foo() {
+//     console.log(globalValue)
+// }
+
+// for(let i = 0; i < 5; i++) {
+//     console.log(globalValue)
+//     if (i === 2) {
+//         console.log(globalValue)
+//     }
+// }
+
+// function foo() {
+//   const a = 7;
+//   connsole.log(a);
+
+//   for (let i = 0; i < 3; i++) {
+//     console.log(a);
+//     if (i === 2) {
+//       console.log(a);
+//     }
+//   }
+// }
+
+// console.log(a)
+
+function fnA() {
+    console.log("Лог всередині функції fnA до виклику fnB"); // "Лог всередині функції fnA до виклику fnB" - 2
+    fnB();
+    console.log("Лог всередині функції fnA після виклику fnB"); // "Лог всередині функції fnA після виклику fnB" - 4
+  }
+  
+  function fnB() {
+    console.log("Лог всередині функції fnB"); // "Лог всередині функції fnB" - 3
+  }
+  
+  console.log("Лог до виклику fnA");  // "Лог до виклику fnA" - 1
+  fnA();
+  console.log("Лог після виклику fnA"); // "Лог після виклику fnA" - 5
+  
+  // "Лог до виклику fnA" - 1
+  // "Лог всередині функції fnA до виклику fnB" - 2
+  // "Лог всередині функції fnB" - 3
+  // "Лог всередині функції fnA після виклику fnB" - 4
+  // "Лог після виклику fnA" - 5
