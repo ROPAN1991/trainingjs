@@ -502,19 +502,17 @@
 
 // foo(); //1
 
+// 1) СТВОРЮЄМО ЗМІННУ ДЛЯ ЗБЕРІГАННЯ НОВОГО МАСИВУ
+// 2) ПЕРЕБИРАЄМО ЦИКЛОМ for ЗНАЧЕННЯ ВІД min до max, ВКЛЮЧНО з max
+// 3) В ТІЛІ ЦИКЛУ ПУШИМО В МАСИВ КОЖЕН ЕЛЕМЕНТ (і) З ЦИКЛУ
+// 4) ПОВЕРТАЄМО НОВИЙ МАСИВ
 
-// Напиши функцію makeArray(firstArray, secondArray, maxLength) для створення нового масиву з усіма елементами двох вихідних firstArray і secondArray. Параметр maxLength містить максимально допустиму довжину нового масиву.
-
-// Якщо кількість елементів нового масиву більша за maxLength, функція повинна повернути копію масиву довжиною maxLength елементів. В іншому випадку функція повинна повернути новий масив повністю.
-
-// 1) 
-
-function makeArray(firstArray, secondArray, maxLength) {
-    let newArray = firstArray.concat(secondArray)
-
-    if(newArray.length > maxLength) {
-        return newArray.slice(0, maxLength)
+function createArrayOfNumbers(min, max) {
+    const numbers = [];
+    for(let i = min; i <= max; i += 1) {
+        numbers.push(i)
     }
+    return numbers;
+  }
+  
 
-    return newArray
-}
