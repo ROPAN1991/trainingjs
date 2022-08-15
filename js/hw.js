@@ -24,11 +24,13 @@
 
 // НЕ ЗАБУВАТИ ПРО СТАРТОВЕ ЗНАЧЕННЯ 0 В МЕТОДІ slice ВІД ЯКОГО І ДО ЯКОГО ЕЛЕМЕНТА ПОТРІБНО ВІДРІЗАТИ МАСИВ. В ДАНОМУ ВИПАДКУ ВІД 0 до maxLength (Якщо не зазначено end, копіювання буде зі start і до кінця вихідного масиву.)
 
+// 1) Стоврюємо новий масив newArray в якому зшиваємо два масиви firstArray і secondArray
+// 2) Пишемо перевірку, якщо кількість всіх елементів вихіного масиву (newArray.length) більша за максимально допустиму довжину нового масиву maxlength, використовуючи метод slice створимо копію вихідного масиву, яка міститиме максимальну кількість елементів від 0 до maxLength.
+// 3) Повернемо новий масив  
+
+
 // function makeArray(firstArray, secondArray, maxLength) {
-//     // Change code below this line
 // let newArray = firstArray.concat(secondArray)
-// console.log(newArray)
-//     // Change code above this line
 //     if(newArray.length > maxLength) {
 //         return newArray.slice(0, maxLength)
 //     }
@@ -501,5 +503,18 @@
 // foo(); //1
 
 
+// Напиши функцію makeArray(firstArray, secondArray, maxLength) для створення нового масиву з усіма елементами двох вихідних firstArray і secondArray. Параметр maxLength містить максимально допустиму довжину нового масиву.
 
+// Якщо кількість елементів нового масиву більша за maxLength, функція повинна повернути копію масиву довжиною maxLength елементів. В іншому випадку функція повинна повернути новий масив повністю.
 
+// 1) 
+
+function makeArray(firstArray, secondArray, maxLength) {
+    let newArray = firstArray.concat(secondArray)
+
+    if(newArray.length > maxLength) {
+        return newArray.slice(0, maxLength)
+    }
+
+    return newArray
+}
