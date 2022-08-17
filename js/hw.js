@@ -501,3 +501,49 @@
 
 // foo(); //1
 
+// Створенння об'єкта
+
+// let book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// const bookTitle = book.title
+// console.log(bookTitle)
+
+// const bookAuthor = book.author
+// console.log(bookAuthor)
+
+// const bookGenres = book.genres
+// console.log(bookGenres)
+
+// Звернення до вкладених властивостей
+
+// let user = {
+//   name: "Jacques Gluke",
+//   tag: "jcqgk",
+
+//   location: {
+//     country: "Jamaika",
+//     city: "Ocho Rios",
+//   },
+
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+// };
+
+// const locate = user.location
+// console.log(locate)
+
+// const city = user.location.city
+// console.log(city)
+
+// const firstHobbie = user.hobbies[0]
+// console.log(firstHobbie)
