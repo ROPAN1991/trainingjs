@@ -548,17 +548,18 @@
 // const firstHobbie = user.hobbies[0]
 // console.log(firstHobbie)
 
-const book = {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["historical prose", "adventure"],
-    isPublic: true,
-    rating: 8.38,
-  };
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     isPublic: true,
+//     rating: 8.38,
+//   };
 
-const bookTitle = book["title"]
-console.log(bookTitle)
+// const bookTitle = book["title"]
+// console.log(bookTitle)
 
-const propKey = "author"
-const bookAuthor = book[propKey]
-console.log(bookAuthor)
+// const propKey = "author"
+// const bookAuthor = book[propKey]
+// console.log(bookAuthor)
+
