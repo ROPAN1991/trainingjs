@@ -7,26 +7,8 @@
 // В циклі for використовувалися методи includes і push
 
 function getCommonElements(array1, array2) {
-  const newArray = [];
 
-  for (let i = 0; i < array2.length; i += 1) {
-    if (array1.includes(array2[i])) {
-      newArray.push(array2[i]);
-    }
-  }
-  return newArray;
 }
 
 console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 
-// function getCommonElements(array1, array2) {
-//   let newArray = []
- 
-//   for(let i = 0; i < array1.length; i += 1) {
-//      if(array2.includes(array1[i])) {
-//          newArray.push(array1[i])
-//      }
-//   }
-//   return newArray
- 
-//    }
