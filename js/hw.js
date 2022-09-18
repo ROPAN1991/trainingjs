@@ -1,29 +1,23 @@
-// // Напиши функцію includes(array, value), яка робить те саме, що і метод масиву масив.includes(значення) - перевіряє, чи присутнє в масиві array значення value, повертаючи true, якщо присутнє, і false в іншому випадку.
+// Спільними елементами масивів називають ті елементи, які присутні у всіх масивах.
 
-// // При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
+// Наприклад, у двох масивах [1, 3, 5] і [0, 8, 5, 3] спільними будуть числа 3 і 5, оскільки вони присутні в обох вихідних масивах. А числа 0, 1 і 8 присутні тільки в одному з масивів.
 
-// // а твій варіант не працює тому, що на кажній ітерації циклу форс тіло цикла повертає одне з тру або фолс. таким чином ти написав цикл, який робить тільки одну(першу) ітерацію
+// Напиши функцію getCommonElements(array1, array2), яка отримує два масиви довільної довжини в параметри array1 і array2, і повертає новий масив, що складається з тих елементів, які присутні в обох вихідних масивах.
 
-function includes(array, value) {
-    for (const arr of array) {
-      if (arr === value) {
-        return true;
-      }
+function getCommonElements(array1, array2) {
+  let newArray = [];
+
+  for (let i = 0; i < array2.length; i += 1) {
+    if (array1.includes(array2[i])) {
+      newArray.push(array2[i]);
     }
-    
-    return false;
   }
+  return newArray;
+}
 
-console.log(includes([1, 2, 3, 4, 5], 3));
-console.log(includes([1, 2, 3, 4, 5], 17));
-console.log(
-  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
-);
-console.log(
-  includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
-);
-console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
-console.log(includes());
-
-
+console.log(getCommonElements([1, 2, 3], [2, 4]));
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// console.log(getCommonElements());
