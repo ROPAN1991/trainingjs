@@ -1,10 +1,12 @@
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
 
-let user = {
-    name: "John",
-    age: 30
-  };
-  
-  let key = prompt("Что вы хотите узнать о пользователе?", "name");
-  
-  // доступ к свойству через переменную
-  alert( user[key] ); // John (если ввели "name")
+const salariesArray = Object.values(salaries).reduce((acc, value) => {
+  acc += value;
+  return acc;
+}, 0);
+
+console.log(salariesArray);
