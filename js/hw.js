@@ -1,12 +1,13 @@
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+  },
+  down() {
+    this.step--;
+  },
+  showStep: function() {
+    alert( this.step );
+  }
 };
 
-const salariesArray = Object.values(salaries).reduce((acc, value) => {
-  acc += value;
-  return acc;
-}, 0);
-
-console.log(salariesArray);
