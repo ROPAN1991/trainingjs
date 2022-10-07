@@ -1,18 +1,27 @@
-// Напиши функцію countProps(object), яка рахує і повертає кількість власних властивостей об'єкта в параметрі object. Використовуй змінну propCount для зберігання кількості властивостей об'єкта.
+// Напиши функцію getProductPrice(productName), яка приймає один параметр productName - назва продукту. Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products і повертає його ціну (властивість price). Якщо продукт з такою назвою не знайдений, функція повинна повертати null.
 
-function countProps(object) {
-  let propCount = [];
-  // Change code below this line
-  // const keys = Object.keys(object)
-  // propCount = keys.length
-  for(let keys in object){
-    if(object.hasOwnProperty(keys))
-    propCount.push(keys)
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
+
+let price = 0
+
+for(const product of products){
+  console.log(product)
+  if(product.name.includes(productName)){
+    price = product.price
   }
-  // Change code above this line
-  return propCount.length;
+  
 }
 
-console.log(countProps({}));
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+return price
+}
+
+console.log(getProductPrice("Radar"))
+console.log(getProductPrice("Engine"))
+
