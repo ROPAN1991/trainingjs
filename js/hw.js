@@ -1,15 +1,29 @@
-const highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
+// Напиши функцію makeTask(data) яка приймає один параметр data - об'єкт з наступними властивостями.
 
-const {
-  yesterday: highYesterday,
-  today: highToday,
-  tomorrow: highTomorrow,
-  highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
-} = highTemperatures;
+// text - текст завдання.
+// category - категорія завдання.
+// priority - пріоритет завдання.
+// Функція повинна створити і повернути новий об'єкт завдання, не змінюючи напряму параметр data. У новому об'єкті повинна бути властивість completed, значення якої зберігається в однойменній локальній змінній.
 
-const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+// В параметрі data гарантовано буде тільки властивість text, а інші дві, category і priority, можуть бути відсутніми. Тоді, в новому об'єкті завдання, у властивостях category і priority повинні бути значення за замовчуванням, що зберігаються в однойменних локальних змінних.
 
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+
+  const newObject = {};
+
+  for (const key in data) {
+    newObject[key] = data[key];
+  }
+  newObject.completed = completed 
+  newObject.category = newObject.category || category
+  
+  newObject.priority = newObject.priority || priority
+
+  return newObject;
+}
+
+// console.log(makeTask({}));
+makeTask({ category: "Finance", text: "Take interest" });
