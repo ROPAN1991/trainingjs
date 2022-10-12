@@ -16,18 +16,22 @@ function makeTask(data) {
 
   for (const key in data) {
     newObject[key] = data[key];
+    // console.log(newObject[key])
+    console.log(data[key])
   }
   newObject.completed = completed 
   newObject.category = newObject.category || category
+
   
   newObject.priority = newObject.priority || priority
 
   return newObject;
 }
 
-console.log(makeTask({}));
-console.log(makeTask({ category: "Finance", text: "Take interest" }));
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
-console.log(makeTask({ category: "Finance", text: "Take interest" }))
-console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
-console.log(makeTask({ text: "Buy bread" }))
+
+// console.log(makeTask({}));
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
+// console.log(makeTask({ category: "Finance", text: "Take interest" }))
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
+// console.log(makeTask({ text: "Buy bread" }))
