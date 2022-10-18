@@ -141,25 +141,3 @@
 // console.log(atTheOldToad.potions)
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"))
 
-// Виконай рефакторинг методів об'єкта atTheOldToad таким чином, щоб вони працювали не з масивом рядків, а з масивом об'єктів.
-
-// getPotions() - метод для отримання всього зілля. Повертає значення властивості potions.
-// addPotion(newPotion) - додає зілля newPotion (вже об'єкт) в масив у властивості potions, але тільки, якщо такого зілля ще немає в інвентарі. В іншому випадку повертається рядок.
-// removePotion(potionName) - видаляє об'єкт зілля з ім'ям potionName з масиву у властивості potions.
-// updatePotionName(oldName, newName) - оновлює властивість name об'єкта-зілля з назвою oldName на newName в масиві potions.
-
-// Напиши функцію countProps(object), яка рахує і повертає кількість власних властивостей об'єкта в параметрі object. Використовуй змінну propCount для зберігання кількості властивостей об'єкта.
-
-function countProps(object) {
-    let propCount = 0;
-  
-    for (const keys in object) {
-      if (object.hasOwnProperty(keys)){
-        propCount = keys.length;
-      }
-    }
-      return propCount;
-}
-
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
