@@ -141,3 +141,14 @@
 // console.log(atTheOldToad.potions)
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"))
 
+// Change code below this line
+function add(...args) {
+  let sum = 0
+  for(const argument of args) {
+    sum += argument
+  }
+  return sum
+  // Change code above this line
+}
+
+console.log(add(15, 27))
