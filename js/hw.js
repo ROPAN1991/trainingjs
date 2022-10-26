@@ -141,3 +141,9 @@
 // console.log(atTheOldToad.potions)
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"))
 
+const numbers = [5, 10, 15, 20, 25];
+
+numbers.forEach((number, index) => {
+    console.log(`Індекс ${index}, значення ${number}`);
+  });
+
