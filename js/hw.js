@@ -182,8 +182,11 @@ const students = [
   { name: "Ківі", courses: ["фізика", "біологія"] },
 ];
 
-const allCourses = students.flatMap((student) => student.courses);
+const allcourses = students.flatMap((student) => student.courses);
+console.log(allcourses);
 
-const uniqueCourses = allCourses.filter((course, index, array) => {
-  array.indexOf(course) === index;
+const uniqeCourses = allcourses.filter((course, index, array) => {
+  return array.indexOf(course)
+  
 });
+console.log(uniqeCourses);
