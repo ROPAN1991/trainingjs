@@ -141,3 +141,49 @@
 // console.log(atTheOldToad.potions)
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"))
 
+// const friends = ["ropan", "mex", "west", "aezering"]
+
+// const friendsInUpeerCase = friends.map(friend => friend.toUpperCase())
+// console.log(friendsInUpeerCase)
+
+// const students = [
+//     {name: "Poli", scores: 40},
+//     {name: "Kiwi", scores: 70},
+//     {name: "Ajax", scores: 90},
+//     {name: "Mango", scores: 100}
+// ]
+
+// const names = students.map(student => student.name)
+// console.log(names)
+
+// const students = [
+//     { name: "Манго", courses: ["математика", "фізика"] },
+//     { name: "Полі", courses: ["інформатика", "математика"] },
+//     { name: "Ківі", courses: ["фізика", "біологія"] },
+//   ];
+
+// const courses = students.flatMap(student => student.courses)
+// console.log(courses)
+
+// const values = [51, -3, 27, 21, -68, 42, -37];
+
+// const positiveValue = values.filter(value => value >= 0)
+// console.log(positiveValue)
+
+// const negativeValue = values.filter(value => value < 0)
+// console.log(negativeValue)
+
+// const biggestValue = values.filter(value => value > 1000)
+// console.log(biggestValue)
+
+const students = [
+  { name: "Манго", courses: ["математика", "фізика"] },
+  { name: "Полі", courses: ["інформатика", "математика"] },
+  { name: "Ківі", courses: ["фізика", "біологія"] },
+];
+
+const allCourses = students.flatMap((student) => student.courses);
+
+const uniqueCourses = allCourses.filter((course, index, array) => {
+  array.indexOf(course) === index;
+});
