@@ -176,17 +176,14 @@
 // const biggestValue = values.filter(value => value > 1000)
 // console.log(biggestValue)
 
-const students = [
-  { name: "Манго", courses: ["математика", "фізика"] },
-  { name: "Полі", courses: ["інформатика", "математика"] },
-  { name: "Ківі", courses: ["фізика", "біологія"] },
-];
+const numbers = [1,2,2,3,3,4,5]
+const oldSum = 20
 
-const allcourses = students.flatMap((student) => student.courses);
-console.log(allcourses);
+const filteredNumbers = numbers.filter((number, index, array) => array.indexOf(number) === index)
+console.log(filteredNumbers)
 
-const uniqeCourses = allcourses.filter((course, index, array) => {
-  return array.indexOf(course)
-  
-});
-console.log(uniqeCourses);
+const reducedFilteredNumbers = filteredNumbers.reduce((acc, value) => oldSum + acc + value)
+
+console.log(reducedFilteredNumbers)
+
+
