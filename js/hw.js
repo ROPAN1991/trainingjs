@@ -192,26 +192,41 @@
 // Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onSuccess, передаючи йому аргументом назву замовленої піци.
 // Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів. Будь ласка, нічого там не міняй.
 
-const pizzaPalace = {
-  pizzas: ["Ultracheese", "Smoked", "Four meats"],
-  order(pizzaName, onSuccess, onError) {
-    if (this.pizzas.includes(pizzaName)) {
-      return onSuccess(pizzaName);
-    } else {
-      return onError(pizzaName);
-    }
-  },
-};
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     } else {
+//       return onError(pizzaName);
+//     }
+//   },
+// };
 
-function makePizza(pizzaName) {
-  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-}
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
 
-function onOrderError(pizzaName) {
-  return `Error! There is no pizza with a name ${pizzaName} in the assortment.`;
-}
+// function onOrderError(pizzaName) {
+//   return `Error! There is no pizza with a name ${pizzaName} in the assortment.`;
+// }
 
-console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
-console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
-console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
-console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+
+// const changeEven = (numbers, value) => {
+
+//   const newArray = []
+//   numbers.forEach(element => {
+//     if(element % 2 === 0) {
+//       element += value
+//     }
+//     newArray.push(element)
+//   });
+//   return newArray
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10))
+
