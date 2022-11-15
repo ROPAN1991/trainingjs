@@ -302,160 +302,262 @@
 //     age: 39,
 //   },
 // ]
-  // const getUsers = (users) => {
-  //     return users.flatMap(user => user.friends).filter((friend, index, array) => array.indexOf(friend) === index)
-  // }
+// const getUsers = (users) => {
+//     return users.flatMap(user => user.friends).filter((friend, index, array) => array.indexOf(friend) === index)
+// }
 
-  // console.log(getUsers(users))
+// console.log(getUsers(users))
 
-  // const isEveryUserActive = (users) => {
-  //     return users.every(user => user.isActive)
-  //  };
+// const isEveryUserActive = (users) => {
+//     return users.every(user => user.isActive)
+//  };
 
-  // const players = {
-  //     mango: 1270,
-  //     poly: 468,
-  //     ajax: 710,
-  //     kiwi: 244
-  //   };
-  //   const playtimes = Object.values(players); // [1270, 468, 710, 244]
-  //   // Change code below this line
+// const players = {
+//     mango: 1270,
+//     poly: 468,
+//     ajax: 710,
+//     kiwi: 244
+//   };
+//   const playtimes = Object.values(players); // [1270, 468, 710, 244]
+//   // Change code below this line
 
-  //   const totalPlayTime = playtimes;
+//   const totalPlayTime = playtimes;
 
-  //   // Change code above this line
-  //   const averagePlayTime = totalPlayTime / playtimes.length;
+//   // Change code above this line
+//   const averagePlayTime = totalPlayTime / playtimes.length;
 
-  // const players = [
-  //     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-  //     { name: "Poly", playtime: 469, gamesPlayed: 2 },
-  //     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-  //     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-  //   ];
-  //   // Change code below this line
+// const players = [
+//     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//     { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+//   ];
+//   // Change code below this line
 
-  //   const totalAveragePlaytimePerGame = players.reduce((acc, player) => acc += player.playtime / player.gamesPlayed, 0);
+//   const totalAveragePlaytimePerGame = players.reduce((acc, player) => acc += player.playtime / player.gamesPlayed, 0);
 
-  //   const players = [
-  //     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-  //     { name: "Poly", playtime: 469, gamesPlayed: 2 },
-  //     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-  //     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-  //   ];
+//   const players = [
+//     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//     { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+//   ];
 
-  //   const totalAveragePlaytimePerGame = players.reduce((acc, player) => {return acc + player.playtime / player.gamesPlayed}, 0)
+//   const totalAveragePlaytimePerGame = players.reduce((acc, player) => {return acc + player.playtime / player.gamesPlayed}, 0)
 
-  //   console.log(totalAveragePlaytimePerGame)
+//   console.log(totalAveragePlaytimePerGame)
 
-  // Доповни код таким чином, щоб у змінній names вийшов масив імен авторів в алфавітному порядку, рейтинг книг яких більший за значення змінної MIN_BOOK_RATING.
+// Доповни код таким чином, щоб у змінній names вийшов масив імен авторів в алфавітному порядку, рейтинг книг яких більший за значення змінної MIN_BOOK_RATING.
 
-  // const books = [
-  //   {
-  //     title: "The Last Kingdom",
-  //     author: "Bernard Cornwell",
-  //     rating: 8.38,
-  //   },
-  //   {
-  //     title: "Beside Still Waters",
-  //     author: "Robert Sheckley",
-  //     rating: 8.51,
-  //   },
-  //   {
-  //     title: "The Dream of a Ridiculous Man",
-  //     author: "Fyodor Dostoevsky",
-  //     rating: 7.75,
-  //   },
-  //   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-  //   {
-  //     title: "The Dreams in the Witch House",
-  //     author: "Howard Lovecraft",
-  //     rating: 8.67,
-  //   },
-  // ];
-  // const MIN_BOOK_RATING = 8;
-  // // Change code below this line
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
 
-  // const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a,b) => a.localeCompare(b))
-  // console.log(names)
+// const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a,b) => a.localeCompare(b))
+// console.log(names)
 
-  // Доповни функцію getNamesSortedByFriendCount(users) таким чином, щоб вона повертала масив імен користувачів, відсортований за зростанням кількості їхніх друзів (властивість friends).
+// Доповни функцію getNamesSortedByFriendCount(users) таким чином, щоб вона повертала масив імен користувачів, відсортований за зростанням кількості їхніх друзів (властивість friends).
 
-  const users = [
-    {
-      name: "Moore Hensley",
-      email: "moorehensley@indexia.com",
-      eyeColor: "blue",
-      friends: ["Sharron Pace"],
-      isActive: false,
-      balance: 2811,
-      gender: "male"
-    },
-    {
-      name: "Sharlene Bush",
-      email: "sharlenebush@tubesys.com",
-      eyeColor: "blue",
-      friends: ["Briana Decker", "Sharron Pace"],
-      isActive: true,
-      balance: 3821,
-      gender: "female"
-    },
-    {
-      name: "Ross Vazquez",
-      email: "rossvazquez@xinware.com",
-      eyeColor: "green",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      isActive: false,
-      balance: 3793,
-      gender: "male"
-    },
-    {
-      name: "Elma Head",
-      email: "elmahead@omatom.com",
-      eyeColor: "green",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      isActive: true,
-      balance: 2278,
-      gender: "female"
-    },
-    {
-      name: "Carey Barr",
-      email: "careybarr@nurali.com",
-      eyeColor: "blue",
-      friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
-      isActive: true,
-      balance: 3951,
-      gender: "male"
-    },
-    {
-      name: "Blackburn Dotson",
-      email: "blackburndotson@furnigeer.com",
-      eyeColor: "brown",
-      friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
-      isActive: false,
-      balance: 1498,
-      gender: "male"
-    },
-    {
-      name: "Sheree Anthony",
-      email: "shereeanthony@kog.com",
-      eyeColor: "brown",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      isActive: true,
-      balance: 2764,
-      gender: "female"
-    }
-  ]
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male",
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female",
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male",
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female",
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+    isActive: true,
+    balance: 3951,
+    gender: "male",
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: [
+      "Jacklyn Lucas",
+      "Linda Chapman",
+      "Adrian Cross",
+      "Solomon Fokes",
+    ],
+    isActive: false,
+    balance: 1498,
+    gender: "male",
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female",
+  },
+];
 
 // const getNamesSortedByFriendCount = users => {
-//   return [...users].sort((a,b) => a.friends.length - b.friends.length).map(user => user.name)  
+//   return [...users].sort((a,b) => a.friends.length - b.friends.length).map(user => user.name)
 //  };
 
 // console.log(getNamesSortedByFriendCount(users));
 
 // Доповни функцію getTotalBalanceByGender(users, gender) таким чином, щоб вона повертала загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
 
-const getTotalBalanceByGender = (users, gender) => {
-  return users.reduce((total, user) => total += user.balance, 0)
-};
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users.reduce((total, user) => total += user.balance, 0)
+// };
 
-console.log(getTotalBalanceByGender(users))
+// console.log(getTotalBalanceByGender(users))
+
+// Необхідно написати логіку обробки замовлення піци. Виконай рефакторинг методу order таким чином, щоб він приймав другим і третім параметром два колбеки onSuccess і onError.
+
+// Якщо у властивості pizzas відсутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onError, передаючи йому аргументом рядок "There is no pizza with a name <имя пиццы> in the assortment."
+// Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onSuccess, передаючи йому аргументом назву замовленої піци.
+// Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів. Будь ласка, нічого там не міняй.
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (this.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     } else {
+//       return onError(pizzaName);
+//     }
+//   },
+// };
+
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+// function onOrderError(pizzaName) {
+//   return `Error! There is no pizza with a name ${pizzaName} in the assortment.`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+
+// Функція calculateTotalPrice(orderedItems) приймає один параметр orderedItems - масив чисел, і розраховує загальну суму його елементів, яка зберігається у змінній totalPrice і повертається як результат роботи функції.
+
+// Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(item => totalPrice += item);
+
+//   return totalPrice
+
+//   // Change code above this line
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
+// console.log(calculateTotalPrice([164, 48, 291]))
+
+// Функція filterArray(numbers, value) приймає масив чисел numbers і повертає новий масив, в якому будуть тільки ті елементи оригінального масиву, які більші за значення параметра value.
+
+// Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   return filteredNumbers;
+// }
+
+// Функція changeEven(numbers, value) приймає масив чисел numbers і оновлює кожен елемент, значення якого - це парне число, додаючи до нього значення параметра value.
+
+// Виконай рефакторинг функції таким чином, щоб вона стала чистою - не змінювала масив чисел numbers, а створювала, наповнювала і повертала новий масив з оновленими значеннями.
+
+// function changeEven(numbers, value) {
+//   const newArray = []
+  
+//   numbers.forEach(number => {
+//     if(number % 2 === 0) {
+//       number += value
+//     }
+//     newArray.push(number)
+//   })
+//   // Change code above this line
+//   return newArray
+// }
+
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
+
+function changeEven(numbers, value) {
+
+  const newArray = []
+  numbers.forEach(element => {
+    if(element % 2 === 0) {
+      element += value
+    }
+    newArray.push(element)
+  });
+  return newArray
+}
+
+console.log(changeEven([1, 2, 3, 4, 5], 10))
