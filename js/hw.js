@@ -535,7 +535,7 @@ const users = [
 
 // function changeEven(numbers, value) {
 //   const newArray = []
-  
+
 //   numbers.forEach(number => {
 //     if(number % 2 === 0) {
 //       number += value
@@ -548,16 +548,48 @@ const users = [
 
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
 
-function changeEven(numbers, value) {
+// function changeEven(numbers, value) {
 
-  const newArray = []
-  numbers.forEach(element => {
-    if(element % 2 === 0) {
-      element += value
-    }
-    newArray.push(element)
-  });
-  return newArray
-}
+//   const newArray = []
+//   numbers.forEach(element => {
+//     if(element % 2 === 0) {
+//       element += value
+//     }
+//     newArray.push(element)
+//   });
+//   return newArray
+// }
 
-console.log(changeEven([1, 2, 3, 4, 5], 10))
+// console.log(changeEven([1, 2, 3, 4, 5], 10))
+
+// Використовуючи метод every(), доповни код таким чином, щоб:
+
+// У змінній eachElementInFirstIsEven був результат перевірки всіх елементів масиву firstArray на парність.
+// У змінній eachElementInFirstIsOdd був результат перевірки всіх елементів масиву firstArray на непарність.
+// У змінній eachElementInSecondIsEven був результат перевірки всіх елементів масиву secondArray на парність.
+// У змінній eachElementInSecondIsOdd був результат перевірки всіх елементів масиву secondArray на непарність.
+// У змінній eachElementInThirdIsEven був результат перевірки всіх елементів масиву thirdArray на парність.
+// У змінній eachElementInThirdIsOdd був результат перевірки всіх елементів масиву thirdArray на непарність.
+
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change code below this line
+
+const eachElementInFirstIsEven = firstArray.every(element => element % 2 === 0);
+const eachElementInFirstIsOdd = firstArray.every(element => element % 2 !== 0);
+
+const eachElementInSecondIsEven = secondArray.every(element => element % 2 === 0);
+const eachElementInSecondIsOdd = secondArray.every(element => element % 2 !== 0);
+
+const eachElementInThirdIsEven = thirdArray.every(element => element % 2 === 0);
+const eachElementInThirdIsOdd = thirdArray.every(element => element % 2 !== 0);
+
+console.log(eachElementInFirstIsEven)
+console.log(eachElementInFirstIsOdd)
+
+console.log(eachElementInSecondIsEven)
+console.log(eachElementInSecondIsOdd)
+
+console.log(eachElementInThirdIsEven)
+console.log(eachElementInThirdIsOdd)
