@@ -594,83 +594,52 @@
 // console.log(eachElementInThirdIsEven)
 // console.log(eachElementInThirdIsOdd)
 
-// Доповни функцію getUsersWithFriend(users, friendName) таким чином, щоб вона повертала масив користувачів, у яких є один з ім'ям в параметрі friendName. Масив друзів користувача зберігається у властивості friends.
+// Ігровому сервісу необхідний функціонал підрахунку середнього часу, проведеного в іграх. Доповни код таким чином, щоб у змінній totalPlayTime вийшло загальний ігровий час з масиву playtimes.
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male",
-    age: 37,
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female",
-    age: 34,
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male",
-    age: 24,
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female",
-    age: 21,
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    gender: "male",
-    age: 27,
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    gender: "male",
-    age: 38,
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female",
-    age: 39,
-  },
-];
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
 
-const getUsersWithFriend = (users, friendName) => {
-  return users.filter(user => user.name.includes(friendName))
+// const totalPlayTime = playtimes.reduce((initialValue, playtime) => {
+//   return initialValue + playtime
+// }, 0);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// console.log(averagePlayTime)
+
+// Функція changeEven(numbers, value) приймає масив чисел numbers і оновлює кожен елемент, значення якого - це парне число, додаючи до нього значення параметра value.
+
+// Виконай рефакторинг функції таким чином, щоб вона стала чистою - не змінювала масив чисел numbers, а створювала, наповнювала і повертала новий масив з оновленими значеннями.
+
+function changeEven(numbers, value) {
+  const newArray = []
+  // Change code below this line
+
+  numbers.forEach(number => {
+    if(number % 2 === 0) {
+      number += value
+    }
+    newArray.push(number)
+  })
+
+
+  // for (let i = 0; i < numbers.length; i += 1) {
+  //   if (numbers[i] % 2 === 0) {
+  //     numbers[i] = numbers[i] + value;
+  //   }
+  // }
+
+
+  // Change code above this line
+  return newArray
 }
 
+console.log(changeEven([1, 2, 3, 4, 5], 10))
 
