@@ -719,16 +719,17 @@
 
 // console.log(getNamesSortedByFriendCount(users))
 
-function showThis() {
-  console.log("this is show this: ", this)
+function greetingGuest (greeting) {
+  console.log(`${greeting}, ${this.username}`)
 }
 
-showThis()
-
-const user = {
-  name: "Petya"
+const mango = {
+  username: "Mango"
 }
 
-user.showUserThis = showThis
+const poly = {
+  username: "Poly"
+}
 
-user.showUserThis()
+greetingGuest.call(mango, "Hello dear")
+greetingGuest.call(poly, "Welcome")
