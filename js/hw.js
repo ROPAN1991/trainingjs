@@ -629,13 +629,11 @@
 //     newArray.push(number)
 //   })
 
-
 //   // for (let i = 0; i < numbers.length; i += 1) {
 //   //   if (numbers[i] % 2 === 0) {
 //   //     numbers[i] = numbers[i] + value;
 //   //   }
 //   // }
-
 
 //   // Change code above this line
 //   return newArray
@@ -712,24 +710,36 @@
 // ]
 
 // const getNamesSortedByFriendCount = users => {
-  
+
 //    return [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name)
-   
+
 // }
 
 // console.log(getNamesSortedByFriendCount(users))
 
-function greetingGuest (greeting) {
-  console.log(`${greeting}, ${this.username}`)
-}
+// function greetingGuest (greeting) {
+//   console.log(`${greeting}, ${this.username}`)
+// }
 
-const mango = {
-  username: "Mango"
-}
+// const mango = {
+//   username: "Mango"
+// }
 
-const poly = {
-  username: "Poly"
-}
+// const poly = {
+//   username: "Poly"
+// }
 
-greetingGuest.call(mango, "Hello dear")
-greetingGuest.call(poly, "Welcome")
+// greetingGuest.call(mango, "Hello dear")
+// greetingGuest.call(poly, "Welcome")
+
+const bookShelf = {
+  authors: ["Ropan", "Ruban"],
+  getAuthor() {
+    return this.authors;
+  },
+  addAuthor(authorName) {
+    this.authors.push(authorName);
+  },
+};
+
+console.log(bookShelf.getAuthor());
