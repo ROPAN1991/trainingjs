@@ -780,21 +780,120 @@
 // greeting.call(mango, "Welcome")
 // greeting.call(poly, "Hello, dear")
 
-function greet(greeting) {
-  return `${greeting}, Hello, welcome to ${this.service}`
+// function greet(greeting) {
+//   return `${greeting}, Hello, welcome to ${this.service}`
+// }
+
+// const steam = {
+//   service: "Steam"
+// }
+
+// const steamGreeter = greet.bind(steam)
+
+// console.log(steamGreeter("Ropan"))
+
+// const google = {
+//   service: "Google"
+// }
+
+// const googleGreeter = greet.bind(google)
+// console.log(googleGreeter("Ruban"))
+
+// class User {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+// }
+
+// const mango = new User("Mango", "mango@mail.com")
+// console.log(mango)
+// const poly = new User("Poly", "poly@mail.com")
+// console.log(poly)
+
+// class User {
+//   name;
+//   #email;
+//   constructor({ email, name }) {
+//     this.#email = email;
+//     this.name = name;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     return (this.#email = newEmail);
+//   }
+
+//   get name() {
+//     return this.name;
+//   }
+
+//   set name(newName) {
+//     return (this.name = newName);
+//   }
+// }
+
+// const mango = new User({ name: "Mango", email: "mangomangoshake@mail.com" });
+
+// console.log(mango.email);
+// mango.email = "mango@mail.com";
+// console.log(mango.email);
+// mango.name = "MANGOOOOO";
+// console.log(mango.name);
+// mango.name = "MNG"
+// console.log(mango.name);
+
+// class User {
+//   name
+//   #email
+//   constructor({name, email}) {
+//     this.name = name
+//     this.#email = email
+//   }
+
+//   get name () {
+//     return this.name
+//   }
+
+//   set name (newName) {
+//     return this.name = newName
+//   }
+
+//   get email() {
+//     return this.#email
+//   }
+
+//   set email(newEmail) {
+//     return this.#email = newEmail
+//   }
+// }
+
+// const poly = new User ({name: "Poly", email: "poly@mail.com" })
+// console.log(poly)
+// poly.email = "poliSuperP@mail.com"
+// poly.name = "POLYYYYYYYYYYYYYYYY"
+// console.log(poly.email)
+// console.log(poly.name)
+
+class User {
+  static Roles = {
+    ADMIN: "admin",
+    EDITOR: "editor",
+  };
+
+  #email;
+  #role;
+
+  get role() {
+    return this.#role;
+  }
+
+  set role(newRole) {
+    return (this.#role = newRole);
+  }
 }
 
-const steam = {
-  service: "Steam"
-}
-
-const steamGreeter = greet.bind(steam)
-
-console.log(steamGreeter("Ropan"))
-
-const google = {
-  service: "Google"
-}
-
-const googleGreeter = greet.bind(google)
-console.log(googleGreeter("Ruban"))
+const mango = new User({email: "mango@mail.com", role: this.Roles.ADMIN})
