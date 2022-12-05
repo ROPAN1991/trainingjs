@@ -732,14 +732,69 @@
 // greetingGuest.call(mango, "Hello dear")
 // greetingGuest.call(poly, "Welcome")
 
-const bookShelf = {
-  authors: ["Ropan", "Ruban"],
-  getAuthor() {
-    return this.authors;
-  },
-  addAuthor(authorName) {
-    this.authors.push(authorName);
-  },
-};
+// function greetingGuest (greeting) {
+//   console.log(`${greeting}, ${this.name}`)
+// }
 
-console.log(bookShelf.getAuthor());
+// const mango = {
+//   name: "Mango"
+// }
+
+// const poly = {
+//   name: "Poly"
+// }
+
+// greetingGuest.call(mango, "Welcome")
+// greetingGuest.call(poly, "Hello")
+
+// function greet(clientName) {
+//   return `${clientName}, Hello, welcome to ${this.service}`
+// }
+
+// const steam = {
+//   service: "Steam"
+// }
+
+// const steamGreater = greet.bind(steam)
+// console.log(steamGreater("ROPAN"))
+
+// const google = {
+//   service: "Google"
+// }
+
+// const googleGreeter = greet.bind(google)
+// console.log(googleGreeter("RUBAN"))
+
+// function greeting(greeting) {
+//   console.log(`${greeting}, ${this.name}`)
+// }
+
+// const mango = {
+//   name: "Mango"
+// }
+
+// const poly = {
+//   name: "Poly"
+// }
+
+// greeting.call(mango, "Welcome")
+// greeting.call(poly, "Hello, dear")
+
+function greet(greeting) {
+  return `${greeting}, Hello, welcome to ${this.service}`
+}
+
+const steam = {
+  service: "Steam"
+}
+
+const steamGreeter = greet.bind(steam)
+
+console.log(steamGreeter("Ropan"))
+
+const google = {
+  service: "Google"
+}
+
+const googleGreeter = greet.bind(google)
+console.log(googleGreeter("Ruban"))
