@@ -878,22 +878,48 @@
 // console.log(poly.email)
 // console.log(poly.name)
 
-class User {
-  static Roles = {
-    ADMIN: "admin",
-    EDITOR: "editor",
-  };
+// class User {
+//   static Roles = {
+//     ADMIN: "admin",
+//     EDITOR: "editor",
+//   };
 
-  #email;
-  #role;
+//   #email;
+//   #role;
 
-  get role() {
-    return this.#role;
+//   get role() {
+//     return this.#role;
+//   }
+
+//   set role(newRole) {
+//     return (this.#role = newRole);
+//   }
+// }
+
+// const mango = new User({email: "mango@mail.com", role: this.Roles.ADMIN})
+
+class Storage {
+  constructor(items) {
+    this.items = items;
   }
 
-  set role(newRole) {
-    return (this.#role = newRole);
+  getItems() {
+    return this.items;
+  }
+
+  addItem(newItem) {
+    return this.items.push(newItem);
+  }
+
+  removeItem(itemToRemove) {
+    
   }
 }
 
-const mango = new User({email: "mango@mail.com", role: this.Roles.ADMIN})
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
