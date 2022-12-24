@@ -898,28 +898,46 @@
 
 // const mango = new User({email: "mango@mail.com", role: this.Roles.ADMIN})
 
-class Storage {
-  constructor(items) {
-    this.items = items;
-  }
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
 
-  getItems() {
-    return this.items;
-  }
+//   getItems() {
+//     return this.items;
+//   }
 
-  addItem(newItem) {
-    return this.items.push(newItem);
-  }
+//   addItem(newItem) {
+//     return this.items.push(newItem);
+//   }
 
-  removeItem(itemToRemove) {
+//   removeItem(itemToRemove) {
     
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+  if(message.length <= maxLength) {
+    result = message
+  } else {
+    result = message.slice(0, maxLength) + "..."
   }
+    
+  
+  /// Change code above this line
+  return result;
 }
 
-// Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+console.log(formatMessage("Curabitur ligula sapien", 16))
+console.log(formatMessage("Curabitur ligula sapien", 23))
+console.log(formatMessage("Vestibulum facilisis purus nec", 20))
