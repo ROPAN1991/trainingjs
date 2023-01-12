@@ -924,20 +924,34 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-  if(message.length <= maxLength) {
-    result = message
-  } else {
-    result = message.slice(0, maxLength) + "..."
-  }
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if(message.length <= maxLength) {
+//     result = message
+//   } else {
+//     result = message.slice(0, maxLength) + "..."
+//   }
     
   
-  /// Change code above this line
-  return result;
+//   /// Change code above this line
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16))
+// console.log(formatMessage("Curabitur ligula sapien", 23))
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20))
+
+
+const user = {
+  name: "Petya",
+  showThis() {
+    return this
+  },
+  showName() {
+    return this.name
+  }
 }
 
-console.log(formatMessage("Curabitur ligula sapien", 16))
-console.log(formatMessage("Curabitur ligula sapien", 23))
-console.log(formatMessage("Vestibulum facilisis purus nec", 20))
+console.log(user.showThis())
+console.log(user.showName())
