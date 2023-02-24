@@ -912,7 +912,7 @@
 //   }
 
 //   removeItem(itemToRemove) {
-    
+
 //   }
 // }
 
@@ -932,8 +932,7 @@
 //   } else {
 //     result = message.slice(0, maxLength) + "..."
 //   }
-    
-  
+
 //   /// Change code above this line
 //   return result;
 // }
@@ -942,16 +941,26 @@
 // console.log(formatMessage("Curabitur ligula sapien", 23))
 // console.log(formatMessage("Vestibulum facilisis purus nec", 20))
 
+// const user = {
+//   name: "Petya",
+//   showThis() {
+//     return this
+//   },
+//   showName() {
+//     return this.name
+//   }
+// }
 
-const user = {
-  name: "Petya",
-  showThis() {
-    return this
-  },
-  showName() {
-    return this.name
-  }
-}
+// console.log(user.showThis())
+// console.log(user.showName())
 
-console.log(user.showThis())
-console.log(user.showName())
+const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// Change code below this line
+const firstTwoEls = fruits.slice(0,2);
+const nonExtremeEls = fruits.slice(1, fruits.length-1);
+const lastThreeEls = fruits.slice(fruits.length-3);
+
+console.log(firstTwoEls)
+console.log(nonExtremeEls)
+console.log(lastThreeEls)
