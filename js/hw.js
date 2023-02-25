@@ -954,13 +954,18 @@
 // console.log(user.showThis())
 // console.log(user.showName())
 
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// Напиши функцію includes(array, value), яка робить те саме, що і метод масиву масив.includes(значення) - перевіряє, чи присутнє в масиві array значення value, повертаючи true, якщо присутнє, і false в іншому випадку.
 
-// Change code below this line
-const firstTwoEls = fruits.slice(0,2);
-const nonExtremeEls = fruits.slice(1, fruits.length-1);
-const lastThreeEls = fruits.slice(fruits.length-3);
+// При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
 
-console.log(firstTwoEls)
-console.log(nonExtremeEls)
-console.log(lastThreeEls)
+function includes(array, value) {
+    for(const arr of array) {
+        if(arr === value) {
+            return true
+        }
+    }
+    return false
+  }
+
+console.log(includes([1, 2, 3, 4, 5], 3))
+console.log(includes([1, 2, 3, 4, 5], 17))
