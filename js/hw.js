@@ -958,14 +958,14 @@
 
 // При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
 
-function includes(array, value) {
-    for(const arr of array) {
-        if(arr === value) {
-            return true
-        }
-    }
-    return false
-  }
+// function includes(array, value) {
+//     for(const arr of array) {
+//         if(arr === value) {
+//             return true
+//         }
+//     }
+//     return false
+//   }
 
-console.log(includes([1, 2, 3, 4, 5], 3))
-console.log(includes([1, 2, 3, 4, 5], 17))
+// console.log(includes([1, 2, 3, 4, 5], 3))
+// console.log(includes([1, 2, 3, 4, 5], 17))
