@@ -8,9 +8,7 @@
 // // console.log(a)
 // // console.log(b)
 
-
 // // ------------------------ знатйти друга
-
 
 // const friends = [
 //   {name: "Mango", online: false},
@@ -33,7 +31,7 @@
 //   }
 
 //   return "НЕ ЗНАЙШЛИ :("
-  
+
 // }
 
 // // console.log(findFriendByName(friends, "Poli"));
@@ -98,7 +96,7 @@
 //     if (friend.online) {
 //       friendsByStatus.online.push(friend);
 //       continue;
-//     } 
+//     }
 //       friendsByStatus.offline.push(friend);
 //   }
 
@@ -107,7 +105,7 @@
 
 // // console.log(getFriendsByStatus(friends));
 
-// // ------------------------ дізнатись загальну кількість об'єктів 
+// // ------------------------ дізнатись загальну кількість об'єктів
 
 // const x = {
 //   a: 1,
@@ -144,7 +142,7 @@
 
 // // console.log(c)
 
-// // -------------------------- змінюємо налаштування на сайті 
+// // -------------------------- змінюємо налаштування на сайті
 
 // const defaultSettings = {
 //   theme: "light",
@@ -171,15 +169,15 @@
 //   rating: 5,
 //   tracks: ['track-1', 'track-2', 'track-3'],
 //   trackCount: 3
-// } 
+// }
 
 // // const {name, rating, tracks, trackCount} = playlist
 
 // // --------------- щоб перейменувати локальну змінну через свойство на об'єкт
 
-// // const {name, 
-// //   rating, 
-// //   tracks, 
+// // const {name,
+// //   rating,
+// //   tracks,
 // //   trackCount: numberOfTracks
 // // } = playlist
 
@@ -187,7 +185,7 @@
 
 // // console.log(name, rating, tracks, trackCount)
 
-// // ----------------------------- диструктуризація в глибину об'єктів 
+// // ----------------------------- диструктуризація в глибину об'єктів
 
 // const profile = {
 //   profileName: 'John Smith',
@@ -211,7 +209,7 @@
 
 // // console.log(profileName, tag, locationProfile, avatar, folowers, views, likes)
 
-// // --------------------------- приклад деструктуризації масивів 
+// // --------------------------- приклад деструктуризації масивів
 
 // const rgb = [ 255, 100, 80 ];
 // const [red, green, blue] = rgb;
@@ -252,7 +250,6 @@
 // // console.log(restProps)
 
 // // ------------------------------------- патерн об'єкт налаштувань
-
 
 // const showProfileInfo = function (userProfile) {
 //   const {profiletThree, tagThree, locationThree, ...restProps} = userProfile;
@@ -320,3 +317,25 @@
 // const firstMenuItem = document.querySelector(".menu-item");
 // firstMenuItem.style.color = 'tomato';
 // console.log(firstMenuItem);
+
+// function countProps(object) {
+//     let propCount = 0;
+//   const keys = Object.keys(object)
+//   propCount = keys.length
+//   console.log(keys)
+//     return propCount
+//   }
+
+function countProps(object) {
+  let propCount = [];
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      propCount.push(key);
+    }
+  }
+  return propCount.length;
+}
+
+console.log(countProps({}));
+console.log(countProps({ name: "Mango", age: 2 }));
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
