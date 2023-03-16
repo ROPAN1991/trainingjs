@@ -326,16 +326,23 @@
 //     return propCount
 //   }
 
-function countProps(object) {
-  let propCount = [];
-  for (const key in object) {
-    if (object.hasOwnProperty(key)) {
-      propCount.push(key);
+
+// Напиши функцію findLongestWord(string), яка приймає довільний рядок, що складається тільки зі слів, розділених пробілом (параметр string), і повертає найдовше слово в цьому рядку.
+
+
+function findLongestWord(string) {
+  // Change code below this line
+  let stringSpliter = string.split(" ")
+  let longestWord = stringSpliter[0]
+  console.log(longestWord)
+
+  for(let i = 0; i < stringSpliter.length; i += 1) {
+    console.log(stringSpliter[i])
+    if(longestWord.length < stringSpliter[i].length) {
+      longestWord = stringSpliter[i]
     }
   }
-  return propCount.length;
+  return longestWord
+  // Change code above this line
 }
-
-console.log(countProps({}));
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }))
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
