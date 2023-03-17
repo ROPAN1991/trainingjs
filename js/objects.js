@@ -326,23 +326,21 @@
 //     return propCount
 //   }
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+];
 
-// Напиши функцію findLongestWord(string), яка приймає довільний рядок, що складається тільки зі слів, розділених пробілом (параметр string), і повертає найдовше слово в цьому рядку.
-
-
-function findLongestWord(string) {
-  // Change code below this line
-  let stringSpliter = string.split(" ")
-  let longestWord = stringSpliter[0]
-  console.log(longestWord)
-
-  for(let i = 0; i < stringSpliter.length; i += 1) {
-    console.log(stringSpliter[i])
-    if(longestWord.length < stringSpliter[i].length) {
-      longestWord = stringSpliter[i]
-    }
-  }
-  return longestWord
-  // Change code above this line
-}
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
