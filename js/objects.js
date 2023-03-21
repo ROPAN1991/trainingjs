@@ -360,18 +360,3 @@
 // console.log(book.author)
 // console.log(bookAuthor)
 
-// Напиши функцію calculateTotalPrice(productName), яка приймає один параметр productName - назва товару. Функція повинна повернути загальну вартість (ціна * кількість) товару з таким ім'ям з масиву products.
-
-const {yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"} = highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
-// Change code below this line
-
-
-
-
-
-// Change code above this line
-const meanTemperature = (yesterday + today + tomorrow) / 3;
