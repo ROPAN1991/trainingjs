@@ -360,3 +360,52 @@
 // console.log(book.author)
 // console.log(bookAuthor)
 
+// class Car {
+//     constructor({name, model}) {
+//         this.name = name,
+//         this.model = model
+//     }
+// }
+
+// const bmw = new Car({
+//     name: "BMW",
+//     model: "X7"
+// })
+// console.log(bmw)
+
+// class User {
+//     constructor({ name, email }) {
+//       this.name = name;
+//       this.email = email;
+//     }
+
+//     // Метод getEmail
+//     getEmail() {
+//       return this.email;
+//     }
+
+//     // Метод changeEmail
+//     changeEmail(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+
+class User {
+    static #takenEmails = [];
+  
+    static isEmailTaken(email) {
+      return User.#takenEmails.includes(email);
+    }
+  
+    #email;
+  
+    constructor({ email }) {
+      this.#email = email;
+      User.#takenEmails.push(email);
+    }
+  }
+  
+  const mango = new User({ email: "mango@mail.com" });
+  
+  console.log(User.isEmailTaken("poly@mail.com"));
+  console.log(User.isEmailTaken("mango@mail.com"));
