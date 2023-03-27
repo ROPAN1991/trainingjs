@@ -360,3 +360,6 @@
 // console.log(book.author)
 // console.log(bookAuthor)
 
+const mango = {
+    name: "Mango"
+}
