@@ -360,16 +360,15 @@
 // console.log(book.author)
 // console.log(bookAuthor)
 
-console.log(document);
+const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+const list = document.querySelector(".list");
 
-const body = document.body;
-console.log(body);
+const markup = technologies
+  .map((technology) => `<li class="list-item">${technology}</li>`)
+  .join("");
 
-const list = body.firstElementChild;
-console.log(list);
+// Check the console, you'll see a single string with HTML tags
+console.log(markup);
 
-const firstListItem = list.firstElementChild;
-console.log(firstListItem);
-
-const listItems = list.children;
-console.log(listItems);
+// Adding all the markup in one operation
+list.innerHTML = markup;
