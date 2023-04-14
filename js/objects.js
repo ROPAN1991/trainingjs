@@ -1,371 +1,59 @@
-// // const a = { x: 1, y: 2 };
-// // const b = a;
+// -------------------------------------------НАВІГАЦІЯ ПО DOM ДЕРЕВУ------------------------------------------------------------------
 
-// // console.log({ a: 1 } === { b: 1 });
+// const ulList = document.querySelector("ul");
 
-// // a.c = 100
+// const parentNodeOfUL = ulList.parentNode;
 
-// // console.log(a)
-// // console.log(b)
+// console.log(parentNodeOfUL); // <body></body> - батьківський елемент для списку ul
 
-// // ------------------------ знатйти друга
+// const childNodesOfUl = ulList.childNodes;
 
-// const friends = [
-//   {name: "Mango", online: false},
-//   {name: "Kiwi", online: true},
-//   {name: "Poli", online: true},
-//   {name: "Ajax", online: false},
-// ];
+// console.log(childNodesOfUl); // псевдомасив з усіма дочірніми елементам включно з текстовими (відсутня більшість методів масиву)
 
-// // console.table(friends)
+// const childrenOfUl = ulList.children;
 
-// const findFriendByName = function (allFriends, name) {
-//   for (const friend of allFriends) {
-//     console.log(friend);
-//     console.log(friend.name);
+// console.log(childrenOfUl); // псевдомасив зі збереженими дочірніми вузлами-елементами, тобто тими, що відповідають тегам(відсутня більшість методів масиву)
 
-//   if (friend.name === name) {
-//     return "Знайшли";
-//     }
+// const firstChildOfUl = ulList.firstChild;
 
-//   }
+// console.log(firstChildOfUl); // вибере перший дочірній елемент (включаючи текстові вузли).
 
-//   return "НЕ ЗНАЙШЛИ :("
+// const firstElementChildOfUl = ulList.firstElementChild;
 
-// }
+// console.log(firstElementChildOfUl); // вибере перший дочірній елемент-вузол (тобто той що відповідає першому тегу)
 
-// // console.log(findFriendByName(friends, "Poli"));
-// // console.log(findFriendByName(friends, "Andrew"));
+// const lastChildOfUl = ulList.lastChild;
 
-// //----------------------------------- отримати імена всіх друзів
+// console.log(lastChildOfUl); // вибере останні дочірній елемент (включючи текстові вузли)
 
-// const getAllNames = function (allFriends) {
-//   const names = [];
+// const lastElementChildOfUl = ulList.lastElementChild;
 
-// for (const friend of allFriends) {
-//   console.log(friend.name)
-//   names.push(friend.name)
-// }
+// console.log(lastElementChildOfUl); // вибере останній дочірній вузол-елемент всередині (тобто той, що відповідає останньому тегу)
 
-//   return names;
+// const previousSiblingOfUl = ulList.previousSibling;
 
-// };
+// console.log(previousSiblingOfUl); // вибере елемент «зліва» від elem (його попереднього сусіда вклюно з текстовими вузлами)
 
-// // console.log(getAllNames(friends));
+// const previousElementSiblingOfUl = ulList.previousElementSibling;
 
-// //---------------------------------- отримати значення друзів онлайн
+// console.log(previousElementSiblingOfUl); // вибере вузол-елемент «зліва» від elem (його попереднього сусіда того, який відповідає тегу).
 
-// const getOnlineFriends = function (allFriends) {
-//   const onlineFriends = []
-//   for (const friend of allFriends) {
-//     console.log(friend)
-//     console.log(friend.online)
+// const nextSiblingOfUl = ulList.nextSibling;
 
-//       if (friend.online){
-//         onlineFriends.push(friend)
-//       }
-//   }
-//   return onlineFriends;
-// }
-// // console.log(getOnlineFriends(friends));
+// console.log(nextSiblingOfUl); // вибере елемент «праворуч» від elem (його наступного сусіда включно з текстовими вузлами)
 
-// const getOfflinefriends = function (allFriends) {
-//   const offlineFriend = []
+// const nextElementSiblingOfUl = ulList.nextElementSibling;
 
-//   for (const friend of allFriends) {
-//     console.log(friend.online)
+// console.log(nextElementSiblingOfUl); // вибере вузол-елемент «праворуч» від elem (його наступного сусіда того, який відповідає тегу).
 
-//     if (!friend.online) {
-//       offlineFriend.push(friend)
-//     }
-//   }
+// const item = document.querySelector('.item')
 
-//   return offlineFriend
-// }
-// // console.log(getOfflinefriends(friends))
+// console.log(item) // повертає перший знайдений елемент, якщо елемента з таким селектором (за класом, айдішником) немає повертає null
 
-// // --------------------- вивести і оналйн і офлайн друзів
+// const items = document.querySelectorAll('.item')
 
-// const getFriendsByStatus = function (allFriends) {
-//   const friendsByStatus = {
-//     online: [],
-//     offline: []
-//   };
+// console.log(items) // повертає псевдомасив всіх знайдених елементів з селектором (за класом, айдішником) якщо не знаходить повертає порожній масив
 
-//   for (const friend of allFriends) {
-//     if (friend.online) {
-//       friendsByStatus.online.push(friend);
-//       continue;
-//     }
-//       friendsByStatus.offline.push(friend);
-//   }
 
-//   return friendsByStatus
-// }
 
-// // console.log(getFriendsByStatus(friends));
 
-// // ------------------------ дізнатись загальну кількість об'єктів
-
-// const x = {
-//   a: 1,
-//   b: 2,
-//   c: 50,
-//   d: 100.
-// };
-
-// //  ----------------------- знайти найменшу температуру
-
-// const temps = [18, 14, 12, 21, 17, 29, 24];
-// // console.log(Math.min(...temps));
-
-// // -------------------------- зшиваємо декілька масивів з температурою
-
-// const lastWeekTemps = [1, 2, 3];
-// const currentTemps = [4, 5, 6];
-// const nextWeekTemps = [6, 7, 8];
-
-// const allTemps = [...lastWeekTemps, ...currentTemps, ...nextWeekTemps];
-// // console.log(allTemps)
-
-// // ----------------------------- роспиляємо об'єкти
-
-// const a = { x: 1, y: 2 };
-// const b = { x: 0, z: 3 };
-
-// const c = {
-//   ...a,
-//   x: 10,
-//   ...b,
-//   y: 20
-// }
-
-// // console.log(c)
-
-// // -------------------------- змінюємо налаштування на сайті
-
-// const defaultSettings = {
-//   theme: "light",
-//   showNotifications: true,
-//   hideSudebar: false,
-// };
-
-// const userSettings = {
-//   showNotifications: false,
-//   hideSudebar: true,
-// }
-
-// const finalSettings = {
-//   ...defaultSettings,
-//   ...userSettings,
-// }
-
-// // console.log(finalSettings)
-
-// // --------------------------- деструктуризація об'єктів
-
-// const playlist = {
-//   name: 'Мій суперплейлист',
-//   rating: 5,
-//   tracks: ['track-1', 'track-2', 'track-3'],
-//   trackCount: 3
-// }
-
-// // const {name, rating, tracks, trackCount} = playlist
-
-// // --------------- щоб перейменувати локальну змінну через свойство на об'єкт
-
-// // const {name,
-// //   rating,
-// //   tracks,
-// //   trackCount: numberOfTracks
-// // } = playlist
-
-// // console.log(numberOfTracks)
-
-// // console.log(name, rating, tracks, trackCount)
-
-// // ----------------------------- диструктуризація в глибину об'єктів
-
-// const profile = {
-//   profileName: 'John Smith',
-//   tag: 'jhnsmt',
-//   locationProfile: 'Ocho Rios, Jamaika',
-//   avatar: 'https://www.instagram.com/',
-//   stats: {
-//     folowers: 5603,
-//     views: 4827,
-//     likes: 1308
-//   }
-// }
-
-// const {
-//   profileName,
-//   tag,
-//   locationProfile,
-//   avatar,
-//   stats: { folowers, views, likes },
-// } = profile;
-
-// // console.log(profileName, tag, locationProfile, avatar, folowers, views, likes)
-
-// // --------------------------- приклад деструктуризації масивів
-
-// const rgb = [ 255, 100, 80 ];
-// const [red, green, blue] = rgb;
-
-// // console.log(red, green, blue)
-
-// // ---------------------------------------- знати найбільший рейтинг і вивести ім'я і рейтинг. ТРЕБА ВИРІШИТИ!!!!!!
-
-// // const authors = {
-// //   ben: 4,
-// //   jack: 7,
-// //   tom: 9,
-// //   smith: 6
-// // }
-
-// // const entries = Object.entries(authors);
-
-// // for (const [theName, theRating] of entries ) {
-// //   console.log(theName, theRating)
-// // }
-
-// // ----------------------------------- забираємо частину свойств в локальну змінну, а все інше що не диструктуризували забираємно на змінну
-
-// // const profileTwo = {
-// //   profileNameTwo: 'Ben Clock',
-// //   tagTwo: 'bnclk',
-// //   locationTwo: 'Ukraine, Kyiv',
-// //   avatarTwo: 'https://www.facebook.com/',
-// //   statsTwo: {
-// //     folowersTwo: 5603,
-// //     viewsTwo: 4827,
-// //     likesTwo: 1308
-// //   }
-// // }
-
-// // const {profileNameTwo, tagTwo, locationTwo, ...restProps} = profileTwo;
-// // console.log(profileNameTwo, tagTwo, locationTwo);
-// // console.log(restProps)
-
-// // ------------------------------------- патерн об'єкт налаштувань
-
-// const showProfileInfo = function (userProfile) {
-//   const {profiletThree, tagThree, locationThree, ...restProps} = userProfile;
-//   console.log(restProps)
-// };
-
-// const profiletThree = {
-//   profileNameThree: 'Snoop Dogg',
-//   tagThree: 'snd',
-//   locationThree: 'USA, New York',
-//   avatarThree: 'https://www.google.com/',
-//   statsThree: {
-//     folowersThree: 10000000,
-//     viewsThree: 868680698068,
-//     likesThree: 124325676
-//   }
-// }
-
-// // showProfileInfo(profile)
-
-// const book = {
-//   title: "The Last Kingdom",
-//   author: "Bernard Cornwell",
-//   genres: ["historical prose", "adventure"],
-//   isPublic: true,
-//   rating: 8.38,
-// };
-
-// book.pageCount = 836;
-// book.originalLanguage = "en";
-// book.translations = ["ua", "ru"];
-
-// console.log(book.pageCount); // 836
-// console.log(book.originalLanguage); // 'en'
-// console.log(book.translations); // ['ua', 'ru']
-
-// console.log(document);
-
-// const body = document.body;
-// console.log(body);
-
-// const list = body.firstElementChild;
-// console.log(list);
-
-// const firstListItem = list.firstElementChild;
-// console.log(firstListItem);
-
-// const listItems = list.children;
-// console.log(listItems);
-
-// const listWithId = document.querySelector('#menu');
-// listWithId.style.textTransform = 'uppercase';
-// listWithId.style.fontSize = '24px';
-// console.log(listWithId);
-
-// const listWithClass = document.querySelector('.menu');
-// console.log(listWithClass);
-
-// const menuItemsByTagName = document.querySelectorAll("li");
-// console.log(menuItemsByTagName);
-
-// const menuItemsByClass = document.querySelectorAll(".menu-item");
-// console.log(menuItemsByClass);
-
-// const firstMenuItem = document.querySelector(".menu-item");
-// firstMenuItem.style.color = 'tomato';
-// console.log(firstMenuItem);
-
-// function countProps(object) {
-//     let propCount = 0;
-//   const keys = Object.keys(object)
-//   propCount = keys.length
-//   console.log(keys)
-//     return propCount
-//   }
-
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "Beside Still Waters",
-//     author: "Robert Sheckley",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "The Dream of a Ridiculous Man",
-//     author: "Fyodor Dostoevsky",
-//     rating: 7.75,
-//   },
-// ];
-
-// const book = {
-//   title: "The Last Kingdom",
-//   author: "Bernard Cornwell",
-//   genres: ["historical prose", "adventure"],
-//   isPublic: true,
-//   rating: 8.38,
-// };
-
-// console.log(book["author"])
-
-// const propKey = "author"
-// const bookAuthor = book[propKey]
-
-// console.log(book.author)
-// console.log(bookAuthor)
-
-const button = document.querySelector(".btn");
-
-const handleClick = (event) => {
-  console.log("event: ", event);
-  console.log("event type: ", event.type);
-  console.log("currentTarget: ", event.currentTarget);
-};
-
-button.addEventListener("click", handleClick);

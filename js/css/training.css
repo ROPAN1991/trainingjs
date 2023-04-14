@@ -26,7 +26,6 @@
   margin-bottom: 8px;
 } */
 
-body {
-  padding: 16px;
-  text-align: center;
+ul {
+  text-align: start;
 }
