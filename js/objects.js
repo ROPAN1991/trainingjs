@@ -54,6 +54,8 @@
 
 // console.log(items) // повертає псевдомасив всіх знайдених елементів з селектором (за класом, айдішником) якщо не знаходить повертає порожній масив
 
+// -------------------------------------------НАВІГАЦІЯ ПО DOM ДЕРЕВУ------------------------------------------------------------------
+
 // ----------------------------------------------ВЛАСТИВОСТІ АТРИБУТІВ----------------------------------------------------------------//
 
 // const message = document.querySelector("#message")
@@ -78,6 +80,8 @@
 
 // console.log(message.value)
 
+
+
 // ----------------------------------------------ВЛАСТИВОСТІ АТРИБУТІВ----------------------------------------------------------------//
 
 // ----------------------------------------------ВЛАСТИВІСТЬ textContent-------------------------------------------------------------
@@ -89,6 +93,7 @@
 // const title = document.querySelector(".article-title")
 
 // console.log(title.textContent)
+
 
 // ----------------------------------------------ВЛАСТИВІСТЬ textContent-------------------------------------------------------------
 
@@ -135,6 +140,7 @@
 // console.log(text.classList)
 
 // console.log(text.classList.contains('green'))
+
 // ----------------------------------------------Властивість classList--------------------------------------------------------------
 
 // ----------------------------------------------Властивість style--------------------------------------------------------------
@@ -208,6 +214,24 @@
 
 // ---------------------------------------------------АТРИБУТИ---------------------------------------------------------------
 
+// const image = document.querySelector('.image')
+
+// console.log(image.attributes)
+
+// console.log(image.hasAttribute('src'))
+
+// image.setAttribute('width', '480px')
+
+// console.log(image.attributes)
+
+// console.log(image.getAttribute('alt'))
+
+// image.removeAttribute('width')
+
+// console.log(image.hasAttribute('width'))
+
+// ---------------------------------------------------АТРИБУТИ---------------------------------------------------------------
+
 // ----------------------------------------------------data-атрибути---------------------------------------------------------
 
 // const saveBtn = document.querySelector('button[data-action="save"]')
@@ -217,6 +241,14 @@
 // const closeBtn = document.querySelector('button[data-action="close"]')
 
 // console.log(closeBtn.dataset.action)
+
+// const closeBtn = document.querySelector('button[data-action="close"]')
+
+// console.log(closeBtn.dataset.action)
+
+// const saveBtn = document.querySelector('button[data-action="save"]')
+
+// console.log(saveBtn.dataset.action)
 
 // ----------------------------------------------------data-атрибути---------------------------------------------------------
 
@@ -261,6 +293,7 @@
 // text.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tenetur assumenda fugiat maxime, soluta aspernatur quasi nihil in asperiores ad distinctio illo et debitis error iure voluptate numquam maiores nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum tenetur assumenda fugiat maxime, soluta aspernatur quasi nihil in asperiores ad distinctio illo et debitis error iure voluptate numquam maiores nisi!";
 
 // list.after(text)
+
 // -------------------------------------------ДОДАВАННЯ ЕЛЕМЕНТІВ-------------------------------------------------------------
 
 // -------------------------------------------ВИДАЛЕННЯ ЕЛЕМЕНТІВ-------------------------------------------------------------
@@ -299,6 +332,8 @@
 // const link = document.querySelector('.article .link')
 
 // console.log(link.innerHTML)
+
+
 // --------------------------------------------ВЛАСТИВІСТЬ innerHTML читання---------------------------------------------------
 
 // --------------------------------------------ВЛАСТИВІСТЬ innerHTML заміна---------------------------------------------------
@@ -351,13 +386,23 @@
 // list.insertAdjacentHTML("beforeend", markup);
 // list.insertAdjacentHTML("beforebegin", "<h2>Popular technologies</h2>");
 
+// const list = document.querySelector('.list')
+
+// const newTechnologies = ['React', 'TypeScript', 'Node.js']
+
+// const markup = newTechnologies.map(technology => `<li class="list-item new">${technology}</li>`).join("")
+// console.log(markup)
+
+// list.insertAdjacentHTML('beforeend', markup)
+
 const list = document.querySelector('.list')
 
 const newTechnologies = ['React', 'TypeScript', 'Node.js']
 
-const markup = newTechnologies.map(technology => `<li class="list-item new">${technology}</li>`).join("")
-console.log(markup)
+const markup = newTechnologies.map(technology => `<li class="list-item new">${technology}</li>`)
 
 list.insertAdjacentHTML('beforeend', markup)
+
+list.insertAdjacentHTML('beforebegin', '<h1>New Technologies</h1>')
 
 // --------------------------------------------ВЛАСТИВІСТЬ insertAdjacentHTML()---------------------------------------------------

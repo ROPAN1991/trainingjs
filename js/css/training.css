@@ -1,46 +1,12 @@
-/* body {
-  padding: 16px;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.list-item {
-  padding: 8px;
-  border-width: 2px;
-  border-style: dashed;
-}
-
-.list-item:nth-child(even) {
-  border-color: tomato;
-}
-
-.list-item:nth-child(odd) {
-  border-color: blueviolet;
-}
-
-.list-item:not(:last-child) {
-  margin-bottom: 8px;
-} */
-
-/* ul {
-  text-align: start;
-} */
+/* Властивості атрибутів */
 
 /* body {
   margin: 24px;
-}
-
-.is-hidden {
-  display: none;
-}
-
-a {
-  text-decoration: none;
 } */
+
+/* Властивості атрибутів */
+
+/* додавання елементів */
 
 /* body {
   margin: 24px;
@@ -56,9 +22,10 @@ a {
   margin-bottom: 12px;
 } */
 
-/* body {
-  font-family: sans-serif;
-} */
+
+/* додавання елементів */
+
+/* Властивість innerHTML */
 
 /* body {
   margin: 16px;
@@ -68,6 +35,7 @@ a {
   color: tomato;
   text-decoration: underline;
 } */
+
 
 /* body {
   padding: 16px;
@@ -95,8 +63,11 @@ a {
 
 .list-item:not(:last-child) {
   margin-bottom: 8px;
-} */
+}  */
 
+/* Властивість innerHTML */
+
+/* ВЛАСТИВІСТЬ insertAdjacentHTML() */
 
 body {
   padding: 16px;
@@ -136,3 +107,5 @@ body {
 .list-item:not(:last-child) {
   margin-bottom: 8px;
 }
+
+/* ВЛАСТИВІСТЬ insertAdjacentHTML() */
