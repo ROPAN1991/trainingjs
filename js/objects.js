@@ -395,14 +395,47 @@
 
 // list.insertAdjacentHTML('beforeend', markup)
 
-const list = document.querySelector('.list')
+// const list = document.querySelector('.list')
 
-const newTechnologies = ['React', 'TypeScript', 'Node.js']
+// const newTechnologies = ['React', 'TypeScript', 'Node.js']
 
-const markup = newTechnologies.map(technology => `<li class="list-item new">${technology}</li>`)
+// const markup = newTechnologies.map(technology => `<li class="list-item new">${technology}</li>`)
 
-list.insertAdjacentHTML('beforeend', markup)
+// list.insertAdjacentHTML('beforeend', markup)
 
-list.insertAdjacentHTML('beforebegin', '<h1>New Technologies</h1>')
+// list.insertAdjacentHTML('beforebegin', '<h1>New Technologies</h1>')
 
 // --------------------------------------------ВЛАСТИВІСТЬ insertAdjacentHTML()---------------------------------------------------
+
+// --------------------------------------------ПОДІї------------------------------------------------------------------
+
+const singleBtn = document.querySelector("#single");
+
+const handleClick = () => {
+  console.log("click event listener callback");
+};
+
+singleBtn.addEventListener("click", handleClick);
+
+// ===============================================
+const multiBtn = document.querySelector("#multiple");
+
+const firstCallback = () => {
+  console.log("First callback!");
+};
+const secondCallback = () => {
+  console.log("Second callback!");
+};
+const thirdCallback = () => {
+  console.log("Third callback!");
+};
+
+multiBtn.addEventListener("click", firstCallback);
+multiBtn.addEventListener("click", secondCallback);
+multiBtn.addEventListener("click", thirdCallback);
+
+
+
+// --------------------------------------------ПОДІї------------------------------------------------------------------
+
+
