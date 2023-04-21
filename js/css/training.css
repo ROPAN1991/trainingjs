@@ -110,7 +110,9 @@
 
 /* ВЛАСТИВІСТЬ insertAdjacentHTML() */
 
-body {
+/* <!-- Метод addEventListener() --> */
+
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,4 +120,16 @@ body {
   min-height: 100vh;
   padding: 1rem;
   text-align: center;
+} */
+
+/* <!-- Метод addEventListener() --> */
+
+/*  */
+
+body {
+  padding: 16px;
+  text-align: center;
 }
+
+
+/*  */

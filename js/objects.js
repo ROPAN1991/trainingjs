@@ -409,33 +409,83 @@
 
 // --------------------------------------------ПОДІї------------------------------------------------------------------
 
-const singleBtn = document.querySelector("#single");
+// const singleBtn = document.querySelector("#single");
 
-const handleClick = () => {
-  console.log("click event listener callback");
-};
+// const handleClick = () => {
+//   console.log("click event listener callback");
+// };
 
-singleBtn.addEventListener("click", handleClick);
+// singleBtn.addEventListener("click", handleClick);
 
-// ===============================================
-const multiBtn = document.querySelector("#multiple");
+// // ===============================================
+// const multiBtn = document.querySelector("#multiple");
 
-const firstCallback = () => {
-  console.log("First callback!");
-};
-const secondCallback = () => {
-  console.log("Second callback!");
-};
-const thirdCallback = () => {
-  console.log("Third callback!");
-};
+// const firstCallback = () => {
+//   console.log("First callback!");
+// };
+// const secondCallback = () => {
+//   console.log("Second callback!");
+// };
+// const thirdCallback = () => {
+//   console.log("Third callback!");
+// };
 
-multiBtn.addEventListener("click", firstCallback);
-multiBtn.addEventListener("click", secondCallback);
-multiBtn.addEventListener("click", thirdCallback);
+// multiBtn.addEventListener("click", firstCallback);
+// multiBtn.addEventListener("click", secondCallback);
+// multiBtn.addEventListener("click", thirdCallback);
 
 
 
 // --------------------------------------------ПОДІї------------------------------------------------------------------
 
+// --------------------------------------------Метод addEventListener()---------------------------------------------
 
+// const singleBtn = document.querySelector('#single')
+
+// const handleClick = () => {
+//   console.log('This is single click')
+// }
+
+// singleBtn.addEventListener('click', handleClick)
+
+// const multipleBtn = document.querySelector('#multiple')
+
+// const firstClick = () => {
+//   console.log('This is first click')
+// }
+
+// const secondClick = () => {
+//   console.log('This is second click')
+// }
+
+// const lastClick = () => {
+//   console.log('This is last click')
+// }
+
+// multipleBtn.addEventListener('click', firstClick)
+// multipleBtn.addEventListener('click', secondClick)
+// multipleBtn.addEventListener('click', lastClick)
+
+// --------------------------------------------Метод addEventListener()---------------------------------------------
+
+// --------------------------------------------Метод removeEventListener()---------------------------------------------
+
+const addListenerBtn = document.querySelector('[data-action="add"]');
+const removeListenerBtn = document.querySelector('[data-action="remove"]');
+const btn = document.querySelector("#btn");
+
+const handleClick = () => {
+  console.log("click event listener callback");
+};
+
+addListenerBtn.addEventListener("click", () => {
+  btn.addEventListener("click", handleClick);
+  console.log("click event listener was added to btn");
+});
+
+removeListenerBtn.addEventListener("click", () => {
+  btn.removeEventListener("click", handleClick);
+  console.log("click event listener was removed from btn");
+});
+
+// --------------------------------------------Метод removeEventListener()---------------------------------------------
