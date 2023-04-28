@@ -80,8 +80,6 @@
 
 // console.log(message.value)
 
-
-
 // ----------------------------------------------ВЛАСТИВОСТІ АТРИБУТІВ----------------------------------------------------------------//
 
 // ----------------------------------------------ВЛАСТИВІСТЬ textContent-------------------------------------------------------------
@@ -93,7 +91,6 @@
 // const title = document.querySelector(".article-title")
 
 // console.log(title.textContent)
-
 
 // ----------------------------------------------ВЛАСТИВІСТЬ textContent-------------------------------------------------------------
 
@@ -333,7 +330,6 @@
 
 // console.log(link.innerHTML)
 
-
 // --------------------------------------------ВЛАСТИВІСТЬ innerHTML читання---------------------------------------------------
 
 // --------------------------------------------ВЛАСТИВІСТЬ innerHTML заміна---------------------------------------------------
@@ -434,8 +430,6 @@
 // multiBtn.addEventListener("click", secondCallback);
 // multiBtn.addEventListener("click", thirdCallback);
 
-
-
 // --------------------------------------------ПОДІї------------------------------------------------------------------
 
 // --------------------------------------------Метод addEventListener()---------------------------------------------
@@ -470,22 +464,132 @@
 
 // --------------------------------------------Метод removeEventListener()---------------------------------------------
 
-const addListenerBtn = document.querySelector('[data-action="add"]');
-const removeListenerBtn = document.querySelector('[data-action="remove"]');
-const btn = document.querySelector("#btn");
+// const addListenerBtn = document.querySelector('[data-action="add"]');
+// const removeListenerBtn = document.querySelector('[data-action="remove"]');
+// const btn = document.querySelector("#btn");
 
-const handleClick = () => {
-  console.log("click event listener callback");
-};
+// const handleClick = () => {
+//   console.log("click event listener callback");
+// };
 
-addListenerBtn.addEventListener("click", () => {
-  btn.addEventListener("click", handleClick);
-  console.log("click event listener was added to btn");
-});
+// addListenerBtn.addEventListener("click", () => {
+//   btn.addEventListener("click", handleClick);
+//   console.log("click event listener was added to btn");
+// });
 
-removeListenerBtn.addEventListener("click", () => {
-  btn.removeEventListener("click", handleClick);
-  console.log("click event listener was removed from btn");
-});
+// removeListenerBtn.addEventListener("click", () => {
+//   btn.removeEventListener("click", handleClick);
+//   console.log("click event listener was removed from btn");
+// });
+
+// const btn = document.querySelector("#btn");
+
+// const addEventListenerBtn = document.querySelector('[data-action="add"]');
+// const removeEventListenerBtn = document.querySelector('[data-action="remove"]');
+
+// const handleClick = () => {
+//   console.log("Перевірочний клік");
+// };
+
+// addEventListenerBtn.addEventListener("click", () => {
+//   btn.addEventListener("click", handleClick);
+//   console.log("зараз лічильник перевірочного кліка працює");
+// });
+
+// removeEventListenerBtn.addEventListener("click", () => {
+//   btn.removeEventListener("click", handleClick);
+//   console.log("після цього оголошення перевірочний клік не працюватиме");
+// });
+
+// const user = {
+//   firstname: "Ihor",
+//   secondname: "Ropan",
+//   showUwerName() {
+//     console.log(`${this.firstname}, ${this.secondname}`)
+//   }
+// }
+
+// btn.addEventListener('click', user.showUwerName.bind(user))
 
 // --------------------------------------------Метод removeEventListener()---------------------------------------------
+
+// --------------------------------------------Об'єкт події-------------------------------------------------------------
+
+// const btn = document.querySelector('#btn')
+
+// const handleClick = event => {
+//   console.log(event);
+// };
+
+// btn.addEventListener("click", handleClick);
+
+// const button = document.querySelector(".btn");
+
+// const handleClick = (event) => {
+//   console.log("event: ", event);
+//   console.log("event type: ", event.type);
+//   console.log("currentTarget: ", event.currentTarget);
+// };
+
+// button.addEventListener("click", handleClick);
+
+// event.type - тип події.
+// event.currentTarget - елемент, на якому виконується обробник події.
+
+// ---------------------------------------------Об'єкт події-------------------------------------------------------------
+
+// --------------------------------------------Дії браузера за замовчуванням---------------------------------------------
+
+// const form = document.querySelector(".register-form");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const {
+
+//     elements: { username, password }
+//   } = event.currentTarget;
+//   console.log(username.value, password.value);
+// });
+
+// --------------------------------------------Дії браузера за замовчуванням---------------------------------------------
+
+// --------------------------------------------події клавіатури----------------------------------------------------------
+
+// const clearLogBtn = document.querySelector('[data-action="clear"]');
+// const logList = document.querySelector(".log-list");
+// let keypressCounter = 1;
+
+// document.addEventListener("keydown", logMessage);
+// document.addEventListener("keyup", logMessage);
+// clearLogBtn.addEventListener("click", reset);
+
+// function logMessage({ type, key, code }) {
+//   const markup = `<div class="log-item">
+//     <span class="chip">${keypressCounter}</span>
+//     <ul>
+//       <li><b>Event</b>: ${type}</li>
+//       <li><b>Key</b>: ${key}</li>
+//       <li><b>Code</b>: ${code}</li>
+//     </ul>
+//   </div>`;
+
+//   logList.insertAdjacentHTML("afterbegin", markup);
+
+//   if (type === "keyup") {
+//     incrementKeypressCounter();
+//   }
+// }
+
+// function reset() {
+//   keypressCounter = 1;
+//   logList.innerHTML = "";
+// }
+
+// function incrementKeypressCounter() {
+//   keypressCounter += 1;
+// }
+
+// --------------------------------------------події клавіатури----------------------------------------------------------
+
+
+
