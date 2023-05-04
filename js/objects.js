@@ -233,6 +233,20 @@
 
 // const saveBtn = document.querySelector('button[data-action="save"]')
 
+// const closeBtn = document.querySelector('button[data-action="close"]')
+
+// console.log(saveBtn.dataset.action)
+
+// console.log(closeBtn.dataset.action)
+
+// const dishes = document.querySelectorAll('.dishes > li')
+
+// dishes.forEach((dish) => {
+//     console.log(dish.dataset.id)
+// })
+
+// const saveBtn = document.querySelector('button[data-action="save"]')
+
 // console.log(saveBtn.dataset.action)
 
 // const closeBtn = document.querySelector('button[data-action="close"]')
@@ -589,18 +603,15 @@
 //     keypressCounter += 1;
 //   }
 
-
 // --------------------------------------------події клавіатури----------------------------------------------------------
 
 // const clearLogBtn = document.querySelector('[data-action="clear"]')
 // const logList = document.querySelector('.log-list')
 // let keypressCounter = 1
 
-
 // document.addEventListener('keydown', logMessage)
 // document.addEventListener("keyup", logMessage);
 // clearLogBtn.addEventListener('click', reset)
-
 
 // function logMessage ({type, key, code}) {
 //     const markup = `<div class="log-item">
